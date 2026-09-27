@@ -27,10 +27,8 @@ jobs:
         with:
           node-version: 20
       - name: Install
-        working-directory: automation
         run: npm install --no-audit --no-fund
       - name: Build calendar and games.json
-        working-directory: automation
         env:
           GOOGLE_ICS: ${{ secrets.GOOGLE_ICS }}
           ARBITER_ICS: ${{ secrets.ARBITER_ICS }}
