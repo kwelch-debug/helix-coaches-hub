@@ -1,1 +1,1022 @@
-[]
+[
+ {
+  "date": "2026-09-28",
+  "time": "7:15 PM",
+  "team": "Girls Field Hockey",
+  "level": "Varsity",
+  "opponent": "Eastlake",
+  "homeAway": "Away",
+  "location": "Eastlake",
+  "id": "4928661@mmboltapi.azurewebsites.net|2026-09-28"
+ },
+ {
+  "date": "2026-09-28",
+  "time": "6:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "JV",
+  "opponent": "Eastlake",
+  "homeAway": "Away",
+  "location": "Eastlake",
+  "id": "4928662@mmboltapi.azurewebsites.net|2026-09-28"
+ },
+ {
+  "date": "2026-09-28",
+  "time": "7:00 PM",
+  "team": "Girls Flag Football",
+  "level": "JV Grey",
+  "opponent": "Cathedral Catholic",
+  "homeAway": "Away",
+  "location": "Cathedral Catholic",
+  "id": "4928562@mmboltapi.azurewebsites.net|2026-09-28"
+ },
+ {
+  "date": "2026-09-28",
+  "time": "4:00 PM",
+  "team": "Girls Tennis",
+  "level": "JV",
+  "opponent": "Coronado",
+  "homeAway": "Away",
+  "location": "Coronado High School",
+  "id": "4854158@mmboltapi.azurewebsites.net|2026-09-28"
+ },
+ {
+  "date": "2026-09-28",
+  "time": "6:30 PM",
+  "team": "Girls Volleyball",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416646@mmboltapi.azurewebsites.net|2026-09-28"
+ },
+ {
+  "date": "2026-09-28",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "JV",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4430014@mmboltapi.azurewebsites.net|2026-09-28"
+ },
+ {
+  "date": "2026-09-28",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "Freshman",
+  "opponent": "Steele Canyon High School",
+  "homeAway": "Home",
+  "location": "Steele Canyon",
+  "id": "4427183@mmboltapi.azurewebsites.net|2026-09-28"
+ },
+ {
+  "date": "2026-09-29",
+  "time": "3:00 PM",
+  "team": "Girls Golf",
+  "level": "Varsity",
+  "opponent": "West Hills",
+  "homeAway": "Home",
+  "location": "Cottonwood GC",
+  "id": "4442031@mmboltapi.azurewebsites.net|2026-09-29"
+ },
+ {
+  "date": "2026-09-29",
+  "time": "4:00 PM",
+  "team": "Girls Golf",
+  "level": "JV",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Cottonwood GC",
+  "id": "4871937@mmboltapi.azurewebsites.net|2026-09-29"
+ },
+ {
+  "date": "2026-09-29",
+  "time": "3:30 PM",
+  "team": "Girls Tennis",
+  "level": "Varsity",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4442052@mmboltapi.azurewebsites.net|2026-09-29"
+ },
+ {
+  "date": "2026-09-29",
+  "time": "3:30 PM",
+  "team": "Girls Tennis",
+  "level": "JV",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4442070@mmboltapi.azurewebsites.net|2026-09-29"
+ },
+ {
+  "date": "2026-09-29",
+  "time": "4:00 PM",
+  "team": "Girls Tennis",
+  "level": "Novice",
+  "opponent": "Grossmont",
+  "homeAway": "Away",
+  "location": "Grossmont",
+  "id": "4871962@mmboltapi.azurewebsites.net|2026-09-29"
+ },
+ {
+  "date": "2026-09-30",
+  "time": "4:00 PM",
+  "team": "Girls Flag Football",
+  "level": "JV Grey",
+  "opponent": "Point Loma High School",
+  "homeAway": "Away",
+  "location": "Point Loma High School",
+  "id": "4928563@mmboltapi.azurewebsites.net|2026-09-30"
+ },
+ {
+  "date": "2026-09-30",
+  "time": "6:30 PM",
+  "team": "Girls Volleyball",
+  "level": "Varsity",
+  "opponent": "Santana",
+  "homeAway": "Away",
+  "location": "Santana",
+  "id": "4416647@mmboltapi.azurewebsites.net|2026-09-30"
+ },
+ {
+  "date": "2026-09-30",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "JV",
+  "opponent": "Santana",
+  "homeAway": "Away",
+  "location": "Santana",
+  "id": "4416657@mmboltapi.azurewebsites.net|2026-09-30"
+ },
+ {
+  "date": "2026-09-30",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "Freshman",
+  "opponent": "Santana",
+  "homeAway": "Away",
+  "location": "Santana",
+  "id": "4430060@mmboltapi.azurewebsites.net|2026-09-30"
+ },
+ {
+  "date": "2026-10-01",
+  "time": "7:15 PM",
+  "team": "Girls Flag Football",
+  "level": "Varsity",
+  "opponent": "El Capitan/Lakeside",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416674@mmboltapi.azurewebsites.net|2026-10-01"
+ },
+ {
+  "date": "2026-10-01",
+  "time": "5:45 PM",
+  "team": "Girls Flag Football",
+  "level": "JV Grey",
+  "opponent": "El Capitan HS",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4852204@mmboltapi.azurewebsites.net|2026-10-01"
+ },
+ {
+  "date": "2026-10-01",
+  "time": "3:30 PM",
+  "team": "Girls Golf",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon Golf Club",
+  "id": "4442032@mmboltapi.azurewebsites.net|2026-10-01"
+ },
+ {
+  "date": "2026-10-02",
+  "time": "7:00 PM",
+  "team": "Boys Football",
+  "level": "Varsity",
+  "opponent": "Mount Miguel",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416684@mmboltapi.azurewebsites.net|2026-10-02"
+ },
+ {
+  "date": "2026-10-02",
+  "time": "4:30 PM",
+  "team": "Boys Football",
+  "level": "JV",
+  "opponent": "Mount Miguel",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416680@mmboltapi.azurewebsites.net|2026-10-02"
+ },
+ {
+  "date": "2026-10-02",
+  "time": "6:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Varsity",
+  "opponent": "Grossmont",
+  "homeAway": "Away",
+  "location": "Grossmont Pool",
+  "id": "4416696@mmboltapi.azurewebsites.net|2026-10-02"
+ },
+ {
+  "date": "2026-10-02",
+  "time": "5:00 PM",
+  "team": "Boys Water Polo",
+  "level": "JV",
+  "opponent": "Grossmont",
+  "homeAway": "Away",
+  "location": "Grossmont Pool",
+  "id": "4416688@mmboltapi.azurewebsites.net|2026-10-02"
+ },
+ {
+  "date": "2026-10-02",
+  "time": "7:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Novice",
+  "opponent": "Grossmont",
+  "homeAway": "Away",
+  "location": "Grossmont Pool",
+  "id": "4434265@mmboltapi.azurewebsites.net|2026-10-02"
+ },
+ {
+  "date": "2026-10-02",
+  "time": "5:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "Varsity",
+  "opponent": "Otay Ranch Senior High School",
+  "homeAway": "Away",
+  "location": "Otay Ranch Senior High School",
+  "id": "4425992@mmboltapi.azurewebsites.net|2026-10-02"
+ },
+ {
+  "date": "2026-10-02",
+  "time": "5:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "JV",
+  "opponent": "Otay Ranch Senior High School",
+  "homeAway": "Away",
+  "location": "Otay Ranch Senior High School",
+  "id": "4430282@mmboltapi.azurewebsites.net|2026-10-02"
+ },
+ {
+  "date": "2026-10-05",
+  "time": "3:30 PM",
+  "team": "Girls Tennis",
+  "level": "Varsity",
+  "opponent": "Valhalla",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4442053@mmboltapi.azurewebsites.net|2026-10-05"
+ },
+ {
+  "date": "2026-10-05",
+  "time": "3:30 PM",
+  "team": "Girls Tennis",
+  "level": "JV",
+  "opponent": "Valhalla",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4442071@mmboltapi.azurewebsites.net|2026-10-05"
+ },
+ {
+  "date": "2026-10-05",
+  "time": "6:30 PM",
+  "team": "Girls Volleyball",
+  "level": "Varsity",
+  "opponent": "El Capitan/Lakeside",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416648@mmboltapi.azurewebsites.net|2026-10-05"
+ },
+ {
+  "date": "2026-10-05",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "JV",
+  "opponent": "El Capitan/Lakeside",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4430016@mmboltapi.azurewebsites.net|2026-10-05"
+ },
+ {
+  "date": "2026-10-05",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "Freshman",
+  "opponent": "El Capitan/Lakeside",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4430061@mmboltapi.azurewebsites.net|2026-10-05"
+ },
+ {
+  "date": "2026-10-06",
+  "time": "7:15 PM",
+  "team": "Girls Flag Football",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416675@mmboltapi.azurewebsites.net|2026-10-06"
+ },
+ {
+  "date": "2026-10-06",
+  "time": "5:45 PM",
+  "team": "Girls Flag Football",
+  "level": "JV Green",
+  "opponent": "Steele Canyon HS",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4852393@mmboltapi.azurewebsites.net|2026-10-06"
+ },
+ {
+  "date": "2026-10-06",
+  "time": "3:30 PM",
+  "team": "Girls Golf",
+  "level": "Varsity",
+  "opponent": "Granite Hills",
+  "homeAway": "Home",
+  "location": "Cottonwood GC",
+  "id": "4442033@mmboltapi.azurewebsites.net|2026-10-06"
+ },
+ {
+  "date": "2026-10-07",
+  "time": "6:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Varsity",
+  "opponent": "Valhalla",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416697@mmboltapi.azurewebsites.net|2026-10-07"
+ },
+ {
+  "date": "2026-10-07",
+  "time": "5:00 PM",
+  "team": "Boys Water Polo",
+  "level": "JV",
+  "opponent": "Valhalla",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416689@mmboltapi.azurewebsites.net|2026-10-07"
+ },
+ {
+  "date": "2026-10-07",
+  "time": "7:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Novice",
+  "opponent": "Valhalla",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4442109@mmboltapi.azurewebsites.net|2026-10-07"
+ },
+ {
+  "date": "2026-10-07",
+  "time": "5:30 PM",
+  "team": "Girls Field Hockey",
+  "level": "Varsity",
+  "opponent": "Bonita Vista Senior High School",
+  "homeAway": "Home",
+  "location": "Helix Charter High School",
+  "id": "4425993@mmboltapi.azurewebsites.net|2026-10-07"
+ },
+ {
+  "date": "2026-10-07",
+  "time": "7:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "JV",
+  "opponent": "Bonita Vista Senior High School",
+  "homeAway": "Home",
+  "location": "Helix Charter High School",
+  "id": "4430283@mmboltapi.azurewebsites.net|2026-10-07"
+ },
+ {
+  "date": "2026-10-07",
+  "time": "6:30 PM",
+  "team": "Girls Volleyball",
+  "level": "Varsity",
+  "opponent": "Granite Hills",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416649@mmboltapi.azurewebsites.net|2026-10-07"
+ },
+ {
+  "date": "2026-10-07",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "JV",
+  "opponent": "Granite Hills",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416659@mmboltapi.azurewebsites.net|2026-10-07"
+ },
+ {
+  "date": "2026-10-07",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "Freshman",
+  "opponent": "Granite Hills",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4430062@mmboltapi.azurewebsites.net|2026-10-07"
+ },
+ {
+  "date": "2026-10-08",
+  "time": "5:15 PM",
+  "team": "Boys Football",
+  "level": "Freshman",
+  "opponent": "Grossmont High School",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4427143@mmboltapi.azurewebsites.net|2026-10-08"
+ },
+ {
+  "date": "2026-10-08",
+  "time": "7:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Novice",
+  "opponent": "Santana",
+  "homeAway": "Away",
+  "location": "Santana Pool",
+  "id": "4434266@mmboltapi.azurewebsites.net|2026-10-08"
+ },
+ {
+  "date": "2026-10-08",
+  "time": "6:00 PM",
+  "team": "Girls Flag Football",
+  "level": "Varsity",
+  "opponent": "Grossmont",
+  "homeAway": "Away",
+  "location": "Grossmont",
+  "id": "4416676@mmboltapi.azurewebsites.net|2026-10-08"
+ },
+ {
+  "date": "2026-10-08",
+  "time": "5:45 PM",
+  "team": "Girls Flag Football",
+  "level": "JV Green",
+  "opponent": "Grossmont HS",
+  "homeAway": "Away",
+  "location": "Grossmont High School",
+  "id": "4852395@mmboltapi.azurewebsites.net|2026-10-08"
+ },
+ {
+  "date": "2026-10-08",
+  "time": "3:30 PM",
+  "team": "Girls Golf",
+  "level": "Varsity",
+  "opponent": "West Hills",
+  "homeAway": "Away",
+  "location": "Carlton Oaks",
+  "id": "4442034@mmboltapi.azurewebsites.net|2026-10-08"
+ },
+ {
+  "date": "2026-10-08",
+  "time": "4:00 PM",
+  "team": "Girls Golf",
+  "level": "JV",
+  "opponent": "Christian",
+  "homeAway": "Away",
+  "location": "Cottonwood GC",
+  "id": "4871955@mmboltapi.azurewebsites.net|2026-10-08"
+ },
+ {
+  "date": "2026-10-08",
+  "time": "3:30 PM",
+  "team": "Girls Tennis",
+  "level": "Varsity",
+  "opponent": "El Capitan/Lakeside",
+  "homeAway": "Away",
+  "location": "El Capitan",
+  "id": "4442054@mmboltapi.azurewebsites.net|2026-10-08"
+ },
+ {
+  "date": "2026-10-08",
+  "time": "3:30 PM",
+  "team": "Girls Tennis",
+  "level": "JV",
+  "opponent": "El Capitan/Lakeside",
+  "homeAway": "Away",
+  "location": "El Capitan",
+  "id": "4442072@mmboltapi.azurewebsites.net|2026-10-08"
+ },
+ {
+  "date": "2026-10-08",
+  "time": "4:00 PM",
+  "team": "Girls Tennis",
+  "level": "Novice",
+  "opponent": "El Capitan",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4847586@mmboltapi.azurewebsites.net|2026-10-08"
+ },
+ {
+  "date": "2026-10-09",
+  "time": "7:00 PM",
+  "team": "Boys Football",
+  "level": "Varsity",
+  "opponent": "Grossmont",
+  "homeAway": "Away",
+  "location": "Grossmont",
+  "id": "4416685@mmboltapi.azurewebsites.net|2026-10-09"
+ },
+ {
+  "date": "2026-10-09",
+  "time": "4:30 PM",
+  "team": "Boys Football",
+  "level": "JV",
+  "opponent": "Grossmont",
+  "homeAway": "Away",
+  "location": "Grossmont",
+  "id": "4416681@mmboltapi.azurewebsites.net|2026-10-09"
+ },
+ {
+  "date": "2026-10-09",
+  "time": "6:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Varsity",
+  "opponent": "Santana",
+  "homeAway": "Away",
+  "location": "Santana Pool",
+  "id": "4416698@mmboltapi.azurewebsites.net|2026-10-09"
+ },
+ {
+  "date": "2026-10-09",
+  "time": "5:00 PM",
+  "team": "Boys Water Polo",
+  "level": "JV",
+  "opponent": "Santana",
+  "homeAway": "Away",
+  "location": "Santana Pool",
+  "id": "4416690@mmboltapi.azurewebsites.net|2026-10-09"
+ },
+ {
+  "date": "2026-10-09",
+  "time": "5:30 PM",
+  "team": "Girls Field Hockey",
+  "level": "Varsity",
+  "opponent": "Olympian High School",
+  "homeAway": "Home",
+  "location": "Helix Charter High School",
+  "id": "4425995@mmboltapi.azurewebsites.net|2026-10-09"
+ },
+ {
+  "date": "2026-10-09",
+  "time": "7:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "JV",
+  "opponent": "Olympian High School",
+  "homeAway": "Home",
+  "location": "Helix Charter High School",
+  "id": "4430285@mmboltapi.azurewebsites.net|2026-10-09"
+ },
+ {
+  "date": "2026-10-12",
+  "time": "5:30 PM",
+  "team": "Girls Field Hockey",
+  "level": "Varsity",
+  "opponent": "Eastlake High School",
+  "homeAway": "Home",
+  "location": "Helix Charter High School",
+  "id": "4425997@mmboltapi.azurewebsites.net|2026-10-12"
+ },
+ {
+  "date": "2026-10-12",
+  "time": "7:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "JV",
+  "opponent": "Eastlake High School",
+  "homeAway": "Home",
+  "location": "Helix Charter High School",
+  "id": "4430287@mmboltapi.azurewebsites.net|2026-10-12"
+ },
+ {
+  "date": "2026-10-12",
+  "time": "5:30 PM",
+  "team": "Girls Field Hockey",
+  "level": "JV",
+  "opponent": "Eastlake High School",
+  "homeAway": "Home",
+  "location": "Helix Charter High School",
+  "id": "4430288@mmboltapi.azurewebsites.net|2026-10-12"
+ },
+ {
+  "date": "2026-10-12",
+  "time": "6:30 PM",
+  "team": "Girls Volleyball",
+  "level": "Varsity",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416650@mmboltapi.azurewebsites.net|2026-10-12"
+ },
+ {
+  "date": "2026-10-12",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "JV",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4430018@mmboltapi.azurewebsites.net|2026-10-12"
+ },
+ {
+  "date": "2026-10-12",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "Freshman",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4430063@mmboltapi.azurewebsites.net|2026-10-12"
+ },
+ {
+  "date": "2026-10-13",
+  "time": "7:15 PM",
+  "team": "Girls Flag Football",
+  "level": "Varsity",
+  "opponent": "Granite Hills",
+  "homeAway": "Away",
+  "location": "Granite Hills",
+  "id": "4416677@mmboltapi.azurewebsites.net|2026-10-13"
+ },
+ {
+  "date": "2026-10-13",
+  "time": "5:45 PM",
+  "team": "Girls Flag Football",
+  "level": "JV Grey",
+  "opponent": "Granite Hills HS",
+  "homeAway": "Away",
+  "location": "Granite Hills High School",
+  "id": "4852207@mmboltapi.azurewebsites.net|2026-10-13"
+ },
+ {
+  "date": "2026-10-13",
+  "time": "3:30 PM",
+  "team": "Girls Golf",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Cottonwood GC",
+  "id": "4442035@mmboltapi.azurewebsites.net|2026-10-13"
+ },
+ {
+  "date": "2026-10-13",
+  "time": "3:30 PM",
+  "team": "Girls Tennis",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4442055@mmboltapi.azurewebsites.net|2026-10-13"
+ },
+ {
+  "date": "2026-10-13",
+  "time": "3:30 PM",
+  "team": "Girls Tennis",
+  "level": "JV",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4442073@mmboltapi.azurewebsites.net|2026-10-13"
+ },
+ {
+  "date": "2026-10-13",
+  "time": "4:00 PM",
+  "team": "Girls Tennis",
+  "level": "Novice",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon",
+  "id": "4847587@mmboltapi.azurewebsites.net|2026-10-13"
+ },
+ {
+  "date": "2026-10-14",
+  "time": "6:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416699@mmboltapi.azurewebsites.net|2026-10-14"
+ },
+ {
+  "date": "2026-10-14",
+  "time": "5:00 PM",
+  "team": "Boys Water Polo",
+  "level": "JV",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416691@mmboltapi.azurewebsites.net|2026-10-14"
+ },
+ {
+  "date": "2026-10-14",
+  "time": "7:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Novice",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4434269@mmboltapi.azurewebsites.net|2026-10-14"
+ },
+ {
+  "date": "2026-10-14",
+  "time": "6:30 PM",
+  "team": "Girls Volleyball",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon",
+  "id": "4416651@mmboltapi.azurewebsites.net|2026-10-14"
+ },
+ {
+  "date": "2026-10-14",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "JV",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon",
+  "id": "4416661@mmboltapi.azurewebsites.net|2026-10-14"
+ },
+ {
+  "date": "2026-10-14",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "Freshman",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon",
+  "id": "4430064@mmboltapi.azurewebsites.net|2026-10-14"
+ },
+ {
+  "date": "2026-10-15",
+  "time": "4:00 PM",
+  "team": "Boys Football",
+  "level": "Freshman",
+  "opponent": "Westview",
+  "homeAway": "Away",
+  "location": "Westview HS",
+  "id": "4886560@mmboltapi.azurewebsites.net|2026-10-15"
+ },
+ {
+  "date": "2026-10-15",
+  "time": "6:00 PM",
+  "team": "Boys Football",
+  "level": "JV",
+  "opponent": "Santana",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4924106@mmboltapi.azurewebsites.net|2026-10-15"
+ },
+ {
+  "date": "2026-10-19",
+  "time": "6:30 PM",
+  "team": "Girls Volleyball",
+  "level": "Varsity",
+  "opponent": "Santana",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416652@mmboltapi.azurewebsites.net|2026-10-19"
+ },
+ {
+  "date": "2026-10-19",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "JV",
+  "opponent": "Santana",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416662@mmboltapi.azurewebsites.net|2026-10-19"
+ },
+ {
+  "date": "2026-10-19",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "Freshman",
+  "opponent": "Santana High School",
+  "homeAway": "Home",
+  "location": "Santana",
+  "id": "4427189@mmboltapi.azurewebsites.net|2026-10-19"
+ },
+ {
+  "date": "2026-10-20",
+  "time": "6:00 PM",
+  "team": "Girls Flag Football",
+  "level": "Varsity",
+  "opponent": "El Capitan/Lakeside",
+  "homeAway": "Away",
+  "location": "El Capitan",
+  "id": "4416678@mmboltapi.azurewebsites.net|2026-10-20"
+ },
+ {
+  "date": "2026-10-20",
+  "time": "5:45 PM",
+  "team": "Girls Flag Football",
+  "level": "JV Green",
+  "opponent": "El Capitan HS",
+  "homeAway": "Away",
+  "location": "El Capitan HS",
+  "id": "4852399@mmboltapi.azurewebsites.net|2026-10-20"
+ },
+ {
+  "date": "2026-10-21",
+  "time": "6:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Varsity",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416700@mmboltapi.azurewebsites.net|2026-10-21"
+ },
+ {
+  "date": "2026-10-21",
+  "time": "5:00 PM",
+  "team": "Boys Water Polo",
+  "level": "JV",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416692@mmboltapi.azurewebsites.net|2026-10-21"
+ },
+ {
+  "date": "2026-10-21",
+  "time": "7:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Novice",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4434270@mmboltapi.azurewebsites.net|2026-10-21"
+ },
+ {
+  "date": "2026-10-21",
+  "time": "6:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "Varsity",
+  "opponent": "Otay Ranch Senior High School",
+  "homeAway": "Home",
+  "location": "Helix Charter High School",
+  "id": "4425999@mmboltapi.azurewebsites.net|2026-10-21"
+ },
+ {
+  "date": "2026-10-21",
+  "time": "7:15 PM",
+  "team": "Girls Field Hockey",
+  "level": "JV",
+  "opponent": "Del Norte",
+  "homeAway": "Home",
+  "location": "Helix Charter High School",
+  "id": "4430289@mmboltapi.azurewebsites.net|2026-10-21"
+ },
+ {
+  "date": "2026-10-21",
+  "time": "6:30 PM",
+  "team": "Girls Volleyball",
+  "level": "Varsity",
+  "opponent": "El Capitan/Lakeside",
+  "homeAway": "Away",
+  "location": "El Capitan",
+  "id": "4416653@mmboltapi.azurewebsites.net|2026-10-21"
+ },
+ {
+  "date": "2026-10-21",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "JV",
+  "opponent": "El Capitan/Lakeside",
+  "homeAway": "Away",
+  "location": "El Capitan",
+  "id": "4416663@mmboltapi.azurewebsites.net|2026-10-21"
+ },
+ {
+  "date": "2026-10-21",
+  "time": "5:00 PM",
+  "team": "Girls Volleyball",
+  "level": "Freshman",
+  "opponent": "El Capitan High School",
+  "homeAway": "Away",
+  "location": "El Capitan",
+  "id": "4427190@mmboltapi.azurewebsites.net|2026-10-21"
+ },
+ {
+  "date": "2026-10-22",
+  "time": "5:15 PM",
+  "team": "Boys Football",
+  "level": "Freshman",
+  "opponent": "Steele Canyon",
+  "homeAway": "Home",
+  "location": "Stadium Field",
+  "id": "4427368@mmboltapi.azurewebsites.net|2026-10-22"
+ },
+ {
+  "date": "2026-10-22",
+  "time": "7:15 PM",
+  "team": "Girls Flag Football",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon",
+  "id": "4416679@mmboltapi.azurewebsites.net|2026-10-22"
+ },
+ {
+  "date": "2026-10-22",
+  "time": "5:45 PM",
+  "team": "Girls Flag Football",
+  "level": "JV Grey",
+  "opponent": "Steele Canyon HS",
+  "homeAway": "Away",
+  "location": "Steele Canyon High School",
+  "id": "4852290@mmboltapi.azurewebsites.net|2026-10-22"
+ },
+ {
+  "date": "2026-10-23",
+  "time": "7:00 PM",
+  "team": "Boys Football",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon",
+  "id": "4416686@mmboltapi.azurewebsites.net|2026-10-23"
+ },
+ {
+  "date": "2026-10-23",
+  "time": "4:30 PM",
+  "team": "Boys Football",
+  "level": "JV",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon",
+  "id": "4416682@mmboltapi.azurewebsites.net|2026-10-23"
+ },
+ {
+  "date": "2026-10-23",
+  "time": "7:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "Varsity",
+  "opponent": "Bonita Vista Senior High School",
+  "homeAway": "Away",
+  "location": "Bonita Vista Senior High School",
+  "id": "4426000@mmboltapi.azurewebsites.net|2026-10-23"
+ },
+ {
+  "date": "2026-10-23",
+  "time": "6:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "JV",
+  "opponent": "Bonita Vista Senior High School",
+  "homeAway": "Away",
+  "location": "Bonita Vista Senior High School",
+  "id": "4430290@mmboltapi.azurewebsites.net|2026-10-23"
+ },
+ {
+  "date": "2026-10-26",
+  "time": "6:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Varsity",
+  "opponent": "Valhalla",
+  "homeAway": "Away",
+  "location": "Valhalla Pool",
+  "id": "4416701@mmboltapi.azurewebsites.net|2026-10-26"
+ },
+ {
+  "date": "2026-10-26",
+  "time": "5:00 PM",
+  "team": "Boys Water Polo",
+  "level": "JV",
+  "opponent": "Valhalla",
+  "homeAway": "Away",
+  "location": "Valhalla",
+  "id": "4442106@mmboltapi.azurewebsites.net|2026-10-26"
+ },
+ {
+  "date": "2026-10-26",
+  "time": "7:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Novice",
+  "opponent": "Valhalla",
+  "homeAway": "Away",
+  "location": "Valhalla Pool",
+  "id": "4434271@mmboltapi.azurewebsites.net|2026-10-26"
+ },
+ {
+  "date": "2026-10-26",
+  "time": "5:30 PM",
+  "team": "Girls Field Hockey",
+  "level": "Varsity",
+  "opponent": "Rancho Buena Vista High School",
+  "homeAway": "Away",
+  "location": "Rancho Buena Vista High School",
+  "id": "4425983@mmboltapi.azurewebsites.net|2026-10-26"
+ },
+ {
+  "date": "2026-10-26",
+  "time": "4:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "JV",
+  "opponent": "Rancho Buena Vista High School",
+  "homeAway": "Away",
+  "location": "RBV",
+  "id": "4427114@mmboltapi.azurewebsites.net|2026-10-26"
+ }
+]
