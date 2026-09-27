@@ -29,7 +29,8 @@ import fs from "node:fs";
 import path from "node:path";
 import IcalExpander from "ical-expander";
 
-const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), "..");
+const HERE = path.dirname(new URL(import.meta.url).pathname);
+const ROOT = fs.existsSync(path.join(HERE, "index.html")) ? HERE : path.resolve(HERE, "..");
 const INDEX = path.join(ROOT, "index.html");
 const GAMES = path.join(ROOT, "games.json");
 const START = "<!-- FACILITY-CALENDAR:START";
