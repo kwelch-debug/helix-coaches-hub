@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/games.json"
+  [headers.values]
+    Cache-Control = "no-cache"
+    Access-Control-Allow-Origin = "*"

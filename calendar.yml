@@ -1,0 +1,45 @@
+# Calendar robot — runs in GitHub's cloud; no computer needs to be on.
+# To turn it off: GitHub → Actions → "Update facility calendar" → ··· → Disable workflow.
+name: Update facility calendar
+
+on:
+  schedule:
+    # Times are UTC. GitHub often starts scheduled runs late, so these run early:
+    # ~5:10 AM, ~11:10 AM and ~2:40 PM Pacific (daylight time; one hour earlier in winter).
+    - cron: "10 12 * * *"
+    - cron: "10 18 * * *"
+    - cron: "40 21 * * *"
+  workflow_dispatch: {}   # adds a "Run workflow" button for a manual refresh
+
+permissions:
+  contents: write
+
+concurrency:
+  group: calendar
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Install
+        working-directory: automation
+        run: npm install --no-audit --no-fund
+      - name: Build calendar and games.json
+        working-directory: automation
+        env:
+          GOOGLE_ICS: ${{ secrets.GOOGLE_ICS }}
+          ARBITER_ICS: ${{ secrets.ARBITER_ICS }}
+        run: node build-calendar.mjs
+      - name: Commit if changed
+        run: |
+          git config user.name  "Helix calendar robot"
+          git config user.email "actions@users.noreply.github.com"
+          git add index.html games.json
+          if git diff --cached --quiet; then echo "No changes."; exit 0; fi
+          git commit -m "Update facility calendar and games"
+          git push

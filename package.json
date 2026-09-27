@@ -1,0 +1,7 @@
+{
+  "name": "helix-coaches-hub-automation",
+  "private": true,
+  "type": "module",
+  "scripts": { "calendar": "node build-calendar.mjs" },
+  "dependencies": { "ical-expander": "^3.2.0" }
+}

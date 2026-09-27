@@ -1,0 +1,844 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Helix Coaches Hub</title>
+<meta name="description" content="Everything Helix Charter High School coaches need, in one place.">
+<meta name="theme-color" content="#024A3C">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Coaches Hub">
+
+<!--
+╔══════════════════════════════════════════════════════════════════════╗
+║  HUB DATA — THE ONLY PART MOST UPDATES NEED                           ║
+║                                                                      ║
+║  • Edit text between the quotes. Keep the commas and brackets.        ║
+║  • Dates are written  "YYYY-MM-DD"  (e.g. "2026-10-14").              ║
+║  • A link left as ""  shows "Coming soon" on the site — never a       ║
+║    dead link. Paste the real URL between the quotes when you have it. ║
+║  • NO STUDENT DATA anywhere on this site. No names, rosters,          ║
+║    clearance status, grades or injuries. (FERPA.)                     ║
+║  • After editing, commit the change to GitHub, or the calendar        ║
+║    robot will overwrite it on its next run.                           ║
+╚══════════════════════════════════════════════════════════════════════╝
+-->
+<script>
+const HUB = {
+
+  schoolYear: "2026–27",
+
+  /* ── 1. QUICK LINKS (the four buttons under the header) ───────────── */
+  quickLinks: [
+    { label: "Home Campus",      url: "https://www.cifsdshome.org/reports/team-roster" },
+    { label: "Bus Request",      url: "https://docs.google.com/spreadsheets/d/1V8hdz5mgObF7J59aztkYRrWP_TPCNe39AJZpS3KV_qA/edit?gid=0#gid=0" },
+    { label: "Report Score",     url: "#score" },
+    { label: "Coach Clearance",  url: "https://hchs23grad.my.canva.site/helix-athletics-coach-clearance" }
+  ],
+
+  /* ── 2. CONTACTS ─────────────────────────────────────────────────────
+     phone: main line is (619) 644-1940. Put the extension in "ext".   */
+  contacts: [
+    { role: "Athletic Director · Grade Level Principal", name: "Damon Chase, CMAA",
+      email: "chase@helixcharter.net", ext: "127", hours: "7:30 am – 4:00 pm" },
+    { role: "Assistant Athletic Director", name: "Kathryn Welch",
+      email: "kwelch@helixcharter.net", ext: "206", hours: "Varies (teaching schedule) — email first" },
+    { role: "Assistant Athletic Director", name: "Jordan Jackson",
+      email: "jjackson@helixcharter.net", ext: "206", hours: "Varies (teaching schedule) — email first" },
+    { role: "Head Athletic Trainer", name: "Andie Jimenez", trainer: true,
+      email: "jimenez@helixcharter.net", ext: "399", hours: "Training room 2:00 pm – at least 6:00 pm" },
+    { role: "Certified Athletic Trainer", name: "Chris Whyte",
+      email: "whyte@helixcharter.net", ext: "", hours: "" },
+    { role: "Sports Social Worker", name: "Katie Morrill",
+      email: "morrill@helixcharter.net", ext: "206", hours: "" },
+    { role: "ASB / Finance", name: "Adam Krzywicki",
+      email: "krzywicki@helixcharter.net", ext: "444", hours: "" },
+    { role: "Facilities, reservations & keys", name: "Lindsey Danner",
+      email: "danner@helixcharter.net", ext: "151", hours: "" },
+    { role: "Uniforms", name: "Sam Friend",
+      email: "friend@helixcharter.net", ext: "", hours: "" },
+    { role: "Executive Director", name: "Kevin Osborn",
+      email: "kosborn@helixcharter.net", ext: "", hours: "" },
+    { role: "Transportation", name: "Bus dispatch",
+      email: "", phones: [["Before 5:30 pm", "(619) 644-8186 ext. 5"], ["After 5:30 pm", "(619) 592-0703"]], hours: "" }
+  ],
+
+  /* Trainer flyers & protocols (shown on the Head Athletic Trainer card) */
+  trainerLinks: [
+    { label: "Heat & Humidity Policy",   url: "https://docs.google.com/document/d/1ujM3Vj7PqsgVAjAJQ_M1msggvJ9Jvnr-wyPqv6leKnU/edit?usp=sharing" },
+    { label: "Emergency Action Plans",   url: "https://docs.google.com/document/d/1Dmg5cxHXbhRulWmBEifmJI8suVADqHUpz0f9hvdp_AU/edit?usp=sharing" },
+    { label: "Concussion Referral Form", url: "https://docs.google.com/document/d/1ryt7Og2AoBHPbPK8PgG4Eo_6w-IL1f_zOZ59hibiljs/edit?usp=sharing" },
+    { label: "CIF Concussion Return-to-Play", url: "http://www.cifsds.org/uploads/2/3/3/6/23368454/cif_concussion_return_to_play_protocol_(1).pdf" },
+    { label: "Sudden Cardiac Arrest Protocol", url: "https://docs.google.com/document/d/1GxICIQowLR898ktJPsRn0oFXn0_THeihnhQt0s_WR5g/edit?usp=sharing" },
+    { label: "Dietary Supplement Policy", url: "https://docs.google.com/document/d/1boUM56vhAFfHr53GrfykZQ8BD4Gs5ROYCjQ25FGwH9g/edit?usp=sharing" },
+    { label: "Infectious Disease & Cleaning", url: "https://docs.google.com/document/d/1xRFIc2u6uh80b8CcOQxLqfucDgp9F1G0icnVKVi6-nw/edit?usp=sharing" }
+  ],
+
+  /* ── 3. COMING UP — shared dates (shown on This Week for the next 14 days)
+     start / end: "YYYY-MM-DD" (end optional). tab: which tab has the details.
+     Group per-sport dates into ONE row using "detail".                  */
+  comingUp: [
+    { start: "2026-09-08", label: "Progress report grades due (Fall Sem 1)", tab: "eligibility" },
+    { start: "2026-09-10", label: "Athletic eligibility determined", tab: "eligibility" },
+    { start: "2026-09-12", end: "2026-09-24", label: "Fall sit-out periods end", detail: "G Tennis 9/12 · G Golf 9/15 · Flag FB & G Volleyball 9/16 · Field Hockey & B Water Polo 9/19 · XC 9/23 · Football 9/24", tab: "transfers" },
+    { start: "2026-10-07", end: "2026-10-08", label: "Finals — Fall Semester 1", tab: "eligibility" },
+    { start: "2026-10-01", label: "Winter schedules due to Kathryn Welch", tab: "clearance" },
+    { start: "2026-10-12", label: "Final grades due (Fall Sem 1)", tab: "eligibility" },
+    { start: "2026-10-14", label: "Athletic eligibility determined", tab: "eligibility" },
+    { start: "2026-10-16", end: "2026-11-07", label: "Fall regular seasons end", detail: "G Tennis 10/16 · G Golf 10/22 · Flag FB & G Volleyball 10/23 · Field Hockey & B Water Polo 10/30 · Football 10/31 · XC 11/7", tab: "schedules" },
+    { start: "2026-11-09", label: "Progress report grades due (Fall Sem 2)", tab: "eligibility" },
+    { start: "2026-11-11", label: "Athletic eligibility determined", tab: "eligibility" },
+    { start: "2026-11-14", end: "2026-11-19", label: "Winter first contests", detail: "Basketball, Soccer & G Water Polo 11/14 · Wrestling 11/19", tab: "schedules" },
+    { start: "2026-12-01", label: "Spring schedules due to Kathryn Welch", tab: "clearance" },
+    { start: "2026-12-17", end: "2026-12-18", label: "Finals — Fall Semester 2", tab: "eligibility" },
+    { start: "2026-12-21", label: "Final grades due (Fall Sem 2)", tab: "eligibility" },
+    { start: "2026-12-23", label: "Athletic eligibility determined", tab: "eligibility" },
+    { start: "2026-12-25", end: "2026-12-29", label: "Winter sit-out periods end", detail: "G Water Polo & G Wrestling 12/25 · B Wrestling 12/28 · Basketball & Soccer 12/29", tab: "transfers" },
+    { start: "2027-01-30", end: "2027-02-12", label: "Winter regular seasons end", detail: "G Wrestling 1/30 · G Water Polo 2/5 · B Wrestling 2/6 · Basketball & Soccer 2/12", tab: "schedules" },
+    { start: "2027-02-08", label: "Progress report grades due (Spring Sem 1)", tab: "eligibility" },
+    { start: "2027-02-10", label: "Athletic eligibility determined", tab: "eligibility" },
+    { start: "2027-02-13", end: "2027-02-20", label: "Spring first contests", detail: "Lacrosse, Swim/Dive, B Tennis, Track, Beach VB & B Volleyball 2/13 · Baseball, Softball & B Golf 2/20", tab: "schedules" },
+    { start: "2027-03-10", end: "2027-03-11", label: "Finals — Spring Semester 1", tab: "eligibility" },
+    { start: "2027-03-15", label: "Final grades due (Spring Sem 1)", tab: "eligibility" },
+    { start: "2027-03-16", end: "2027-03-30", label: "Spring sit-out periods end", detail: "Beach VB 3/16 · B Tennis 3/19 · Lacrosse & B Volleyball 3/23 · Swim/Dive 3/24 · B Golf 3/26 · Track 3/27 · Baseball & Softball 3/30", tab: "transfers" },
+    { start: "2027-03-17", label: "Athletic eligibility determined", tab: "eligibility" },
+    { start: "2027-04-17", end: "2027-05-08", label: "Spring regular seasons end", detail: "Beach VB 4/17 · B Tennis 4/23 · B Golf 4/29 · Lacrosse & B Volleyball 4/30 · Swim/Dive 5/2 · Baseball & Softball 5/7 · Track 5/8", tab: "schedules" },
+    { start: "2027-04-26", label: "Progress report grades due (Spring Sem 2)", tab: "eligibility" },
+    { start: "2027-04-28", label: "Athletic eligibility determined", tab: "eligibility" },
+    { start: "2027-06-02", end: "2027-06-03", label: "Finals — Spring Semester 2", tab: "eligibility" },
+    { start: "2027-06-01", label: "Fall 2027 schedules due to Kathryn Welch", tab: "clearance" },
+    { start: "2027-06-04", label: "Final grades due (Spring Sem 2)", tab: "eligibility" }
+    // NEEDED: first-practice dates, and the athlete-of-the-week deadline if there is one.
+  ],
+
+  /* ── 4. SEASONS — one row per team.
+     first / last / sop = first contest, last contest, sit-out-period end
+     (source: CIF-SDS sit-out sheet). league = league schedule link ("" = Coming soon).
+     page = team page on helixathletics.net
+     maxpreps = end of the team's MaxPreps address ("" = none)
+     coach / email / ext = head coach (email = the address they actually read;
+     separate two coaches' emails with a comma)                          */
+  seasons: {
+    Fall: [
+      { sport: "Cross Country",        coach: "Babey Wagnew", email: "wagnew@helixcharter.net", ext: "127",
+        first: "Aug 10", last: "Nov 7",  sop: "Sept 23", league: "", page: "cross%20country/boys", maxpreps: "cross-country/" },
+      { sport: "Field Hockey (G)",     coach: "Jamie Imperato", email: "imperato@helixcharter.net", ext: "127",
+        first: "Aug 10", last: "Oct 30", sop: "Sept 19", league: "", page: "field%20hockey/girls", maxpreps: "field-hockey/" },
+      { sport: "Flag Football (G)",    coach: "Dwayne Brown", email: "dbrown@helixcharter.net", ext: "127",
+        first: "Aug 10", last: "Oct 23", sop: "Sept 16", league: "", page: "flag%20football/girls", maxpreps: "flag-football/girls/fall/" },
+      { sport: "Football",             coach: "Damaja Jones", email: "djones@helixcharter.net", ext: "130",
+        first: "Aug 20", last: "Oct 31", sop: "Sept 24", league: "", page: "football/boys", maxpreps: "football/" },
+      { sport: "Golf (G)",             coach: "Cole Holland", email: "holland@helixcharter.net", ext: "371",
+        first: "Aug 10", last: "Oct 22", sop: "Sept 15", league: "", page: "golf/girls", maxpreps: "golf/girls/" },
+      { sport: "Tennis (G)",           coach: "Dan Potter", email: "dpotter@helixcharter.net", ext: "127",
+        first: "Aug 10", last: "Oct 16", sop: "Sept 12", league: "", page: "tennis/girls", maxpreps: "tennis/girls/" },
+      { sport: "Volleyball (G)",       coach: "Zoe Varela-Beltz", email: "varela-beltz@helixcharter.net", ext: "354",
+        first: "Aug 10", last: "Oct 23", sop: "Sept 16", league: "", page: "volleyball/girls", maxpreps: "volleyball/" },
+      { sport: "Water Polo (B)",       coach: "Spencer Bailey", email: "sbailey@helixcharter.net", ext: "127",
+        first: "Aug 10", last: "Oct 30", sop: "Sept 19", league: "", page: "water%20polo/boys", maxpreps: "water-polo/spring/" },
+      { sport: "Cheer",                coach: "Michelle Estrella", email: "estrella@helixcharter.net", ext: "127",
+        first: "TBD",    last: "TBD",    sop: "TBD",     league: "", page: "cheer/girls", maxpreps: "" }
+    ],
+    Winter: [
+      { sport: "Basketball (B)",       coach: "Jason Cavazos", email: "cavazos@helixcharter.net", ext: "127",
+        first: "Nov 14", last: "Feb 12", sop: "Dec 29", league: "", page: "basketball/boys", maxpreps: "basketball/" },
+      { sport: "Basketball (G)",       coach: "Dana Hosley", email: "hosley@helixcharter.net", ext: "127",
+        first: "Nov 14", last: "Feb 12", sop: "Dec 29", league: "", page: "basketball/girls", maxpreps: "basketball/girls/" },
+      { sport: "Soccer (B)",           coach: "Ryan Bettencourt", email: "bettencourt@helixcharter.net", ext: "127",
+        first: "Nov 14", last: "Feb 12", sop: "Dec 29", league: "", page: "soccer/boys", maxpreps: "soccer/winter/" },
+      { sport: "Soccer (G)",           coach: "Fenan Berhe", email: "berhe@helixcharter.net", ext: "172",
+        first: "Nov 14", last: "Feb 12", sop: "Dec 29", league: "", page: "soccer/girls", maxpreps: "soccer/girls/winter/" },
+      { sport: "Water Polo (G)",       coach: "Lenelle Wylie", email: "wylie@helixcharter.net", ext: "398",
+        first: "Nov 14", last: "Feb 5",  sop: "Dec 25", league: "", page: "water%20polo/girls", maxpreps: "water-polo/girls/winter/" },
+      { sport: "Wrestling (B)",        coach: "Adam Krzywicki", email: "krzywicki@helixcharter.net", ext: "444",
+        first: "Nov 19", last: "Feb 6",  sop: "Dec 28", league: "", page: "wrestling/boys", maxpreps: "wrestling/" },
+      { sport: "Wrestling (G)",        coach: "Adam Krzywicki", email: "krzywicki@helixcharter.net", ext: "444",
+        first: "Nov 19", last: "Jan 30", sop: "Dec 25", league: "", page: "wrestling/girls", maxpreps: "wrestling/girls/" }
+    ],
+    Spring: [
+      { sport: "Baseball",             coach: "Diego Reynoso", email: "reynoso@helixcharter.net", ext: "127",
+        first: "Feb 20", last: "May 7",  sop: "Mar 30", league: "", page: "baseball/boys", maxpreps: "baseball/" },
+      { sport: "Softball",             coach: "Molly Sturdivant", email: "sturdivant@helixcharter.net", ext: "127",
+        first: "Feb 20", last: "May 7",  sop: "Mar 30", league: "", page: "softball/girls", maxpreps: "softball/" },
+      { sport: "Golf (B)",             coach: "Frank Theroux", email: "theroux@helixcharter.net", ext: "127",
+        first: "Feb 20", last: "Apr 29", sop: "Mar 26", league: "", page: "golf/boys", maxpreps: "golf/spring/" },
+      { sport: "Lacrosse (B)",         coach: "John Whittles", email: "whittles@helixcharter.net", ext: "127",
+        first: "Feb 13", last: "Apr 30", sop: "Mar 23", league: "", page: "lacrosse/boys", maxpreps: "lacrosse/" },
+      { sport: "Lacrosse (G)",         coach: "John Rader", email: "rader@helixcharter.net", ext: "127",
+        first: "Feb 13", last: "Apr 30", sop: "Mar 23", league: "", page: "lacrosse/girls", maxpreps: "lacrosse/girls/" },
+      { sport: "Swim & Dive",          coach: "Lenelle Wylie & Scott Lemler", email: "wylie@helixcharter.net, lemler@helixcharter.net", ext: "398",
+        first: "Feb 13", last: "May 2",  sop: "Mar 24", league: "", page: "swim%20and%20dive/boys", maxpreps: "" },
+      { sport: "Tennis (B)",           coach: "Dan Potter", email: "dpotter@helixcharter.net", ext: "127",
+        first: "Feb 13", last: "Apr 23", sop: "Mar 19", league: "", page: "tennis/boys", maxpreps: "tennis/" },
+      { sport: "Track & Field",        coach: "Rodney Van", email: "helixtrackcoach@gmail.com", ext: "127",
+        first: "Feb 13", last: "May 8",  sop: "Mar 27", league: "", page: "outdoor%20track%20and%20field/boys", maxpreps: "track-field/" },
+      { sport: "Beach Volleyball (G)", coach: "Isabel Lopez-Fletes", email: "lopez-fletes@helixcharter.net", ext: "291",
+        first: "Feb 13", last: "Apr 17", sop: "Mar 16", league: "", page: "beach%20volleyball/girls", maxpreps: "beach-volleyball/" },
+      { sport: "Volleyball (B)",       coach: "Linda Brown", email: "lbrown@helixcharter.net", ext: "127",
+        first: "Feb 13", last: "Apr 30", sop: "Mar 23", league: "", page: "volleyball/boys", maxpreps: "volleyball/boys/" }
+    ]
+  },
+
+  /* ── 5. ELIGIBILITY CALENDAR (from the board-approved 2026–27 school calendar) */
+  eligibility: [
+    { mark: "Progress report — Fall Sem 1",   due: "2026-09-08", determined: "2026-09-10" },
+    { mark: "Final grades — Fall Sem 1",      due: "2026-10-12", determined: "2026-10-14" },
+    { mark: "Progress report — Fall Sem 2",   due: "2026-11-09", determined: "2026-11-11" },
+    { mark: "Final grades — Fall Sem 2",      due: "2026-12-21", determined: "2026-12-23" },
+    { mark: "Progress report — Spring Sem 1", due: "2027-02-08", determined: "2027-02-10" },
+    { mark: "Final grades — Spring Sem 1",    due: "2027-03-15", determined: "2027-03-17" },
+    { mark: "Progress report — Spring Sem 2", due: "2027-04-26", determined: "2027-04-28" },
+    { mark: "Final grades — Spring Sem 2",    due: "2027-06-04", determined: "" }
+  ],
+
+  /* ── 6. MINIMUM DAYS (early release) — from the school calendar */
+  minimumDays: [
+    ["2026-09-02", "Parent Shadow Day (A Day) / Mid HS Reflection Day 1"],
+    ["2026-09-03", "Mid HS Reflection Day 2"],
+    ["2026-09-17", "PM Staff PD"],
+    ["2026-11-05", "PM Staff PD"],
+    ["2026-12-09", "PM Staff PD"],
+    ["2027-01-28", "PM Staff PD / Parent Shadow Day (B Day)"],
+    ["2027-02-25", "PM Staff PD"],
+    ["2027-04-22", "PM Staff PD, Spring Fling"],
+    ["2027-05-12", "PM Staff PD"],
+    ["2027-05-19", "Senior Boards"],
+    ["2027-05-20", "Senior Boards"]
+  ],
+
+  /* ── 7. OTHER LINKS used around the hub ("" = Coming soon) */
+  links: {
+    scoreForm:        "",   // Score form link — paste from the Apps Script setup log
+    scoreFormPrefill: "",   // Pre-filled link template — paste from the Apps Script setup log
+    gamesJson:        "games.json",  // written by the calendar robot; leave as is
+    perryWeather:     "https://app.perryweather.com/",  // swap for a public link if Perry Weather gives you one
+    bulletinRequest:  "",   // Bulletin / announcement request form
+    logoFolder:       "",   // Official logo Drive folder
+    socialAccount:    "https://www.instagram.com/helixathletics/",
+    maxprepsSchool:   "https://www.maxpreps.com/ca/la-mesa/helix-scotties/",
+    leagueSite:       "",   // Grossmont Conference schedules page
+    bellSchedule:     "",   // Bell schedules
+    transferForms:    "",   // CIF-SDS transfer forms
+    seasonEndChecklist: "https://docs.google.com/document/d/1wIdrcNc-3vZQl2E9IZjCBuQAbvjq0qpWEb9t9or5jqU/edit?usp=sharing",
+    awardsForm:       "https://docs.google.com/forms/d/e/1FAIpQLSesK0NXsEg1yzl8zJnOl8egIGas_2Ej879xFo2WdsoEq2PGrw/viewform?usp=sharing",
+    stipendSheet:     "https://docs.google.com/spreadsheets/d/1KtwxY329TsQJYKFKr47iUfsAah_6-X7tWwT1T6wadrI/edit?gid=0#gid=0"
+  }
+};
+</script>
+
+<style>
+/* ── BRAND (edit colors here) ─────────────────────────────────────── */
+:root{
+  --green:#024A3C;      /* Pantone 3308 */
+  --green-2:#036650;
+  --gray:#53565A;       /* Cool Gray 11 */
+  --red:#C8102E;        /* Pantone 186 */
+  --bg:#F3F5F4; --card:#FFFFFF; --ink:#16201D; --muted:#5B6662; --line:#DCE3E0;
+  --chip:#E6EFEC; --tbd-bg:#FFF6DA; --tbd-ink:#6B4E00; --tbd-line:#E3C465;
+  --radius:14px;
+  --font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root{ --bg:#0E1513; --card:#17211E; --ink:#E7EEEB; --muted:#9FB0AA; --line:#2A3833;
+         --chip:#1F2E2A; --tbd-bg:#3A300F; --tbd-ink:#F5DE95; --tbd-line:#7C6420; --green-2:#5FC2A3; }
+}
+*{box-sizing:border-box}
+html{scroll-padding-top:120px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--font);-webkit-text-size-adjust:100%}
+a{color:var(--green-2)}
+header.top{
+  background:
+    repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 10px, transparent 10px 34px),
+    repeating-linear-gradient(0deg, rgba(0,0,0,.10) 0 10px, transparent 10px 34px),
+    repeating-linear-gradient(90deg, transparent 0 22px, rgba(200,16,46,.35) 22px 24px, transparent 24px 34px),
+    var(--green);
+  color:#fff;padding:14px 16px 12px;padding-top:max(14px, env(safe-area-inset-top));
+}
+.brand{display:flex;align-items:center;gap:12px;max-width:760px;margin:0 auto}
+.brand img{height:46px;width:auto}
+.brand h1{margin:0;font-size:22px;letter-spacing:.3px;line-height:1.1}
+.brand p{margin:2px 0 0;font-size:13px;opacity:.85}
+.quick{display:grid;grid-template-columns:repeat(4,1fr);gap:6px;max-width:760px;margin:12px auto 0}
+.quick a,.quick span{display:flex;align-items:center;justify-content:center;text-align:center;min-height:44px;padding:6px 4px;border-radius:10px;
+  background:rgba(255,255,255,.14);color:#fff;text-decoration:none;font-size:13px;font-weight:600;line-height:1.2;border:1px solid rgba(255,255,255,.25)}
+.quick span{opacity:.6;border-style:dashed;flex-direction:column}
+.quick span small{font-weight:400;font-size:10px}
+.search{max-width:760px;margin:10px auto 0;position:relative}
+.search input{width:100%;font-size:16px;padding:10px 12px;border-radius:10px;border:0;background:#fff;color:#16201D}
+.results{position:absolute;left:0;right:0;top:100%;margin-top:4px;background:var(--card);color:var(--ink);border-radius:10px;box-shadow:0 8px 28px rgba(0,0,0,.25);z-index:30;overflow:hidden}
+.results button{display:block;width:100%;text-align:left;background:none;border:0;border-bottom:1px solid var(--line);padding:10px 12px;font:inherit;color:inherit;cursor:pointer}
+.results b{color:var(--green-2)} .results small{display:block;color:var(--muted);font-size:13px}
+nav.tabs{position:sticky;top:0;z-index:20;background:var(--card);border-bottom:1px solid var(--line);overflow-x:auto;white-space:nowrap;scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+nav.tabs .inner{display:inline-flex;gap:2px;padding:0 8px}
+nav.tabs a{display:inline-block;padding:12px 11px;font-size:14px;font-weight:600;color:var(--muted);text-decoration:none;border-bottom:3px solid transparent}
+nav.tabs a[aria-selected="true"]{color:var(--green-2);border-bottom-color:var(--red)}
+main{max-width:760px;margin:0 auto;padding:14px 16px 40px}
+section.panel{display:none} section.panel.active{display:block}
+h2{font-size:22px;margin:4px 0 12px}
+h3{font-size:17px;margin:18px 0 8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:14px;margin:0 0 12px}
+.card h3:first-child{margin-top:0}
+.muted{color:var(--muted);font-size:14px}
+.tbd{display:inline;-webkit-box-decoration-break:clone;box-decoration-break:clone;background:var(--tbd-bg);color:var(--tbd-ink);border:1px dashed var(--tbd-line);border-radius:8px;padding:1px 7px;font-size:13px;font-weight:600}
+.tbd-box{background:var(--tbd-bg);color:var(--tbd-ink);border:1px dashed var(--tbd-line);border-radius:var(--radius);padding:12px 14px;margin:0 0 12px;font-size:14px}
+.soon{color:var(--muted);font-size:13px;font-style:italic;white-space:nowrap}
+.btn{display:block;text-align:center;background:var(--red);color:#fff;text-decoration:none;font-weight:700;font-size:18px;padding:16px;border-radius:12px;margin:8px 0 14px}
+.btn.disabled{background:var(--gray);opacity:.7}
+ol.steps,ul.list{padding-left:22px;margin:6px 0} ol.steps li,ul.list li{margin:6px 0}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted)}
+tr.past td{color:var(--muted)} tr.next td{background:var(--chip);font-weight:600}
+.tablewrap{overflow-x:auto} td.nw{white-space:nowrap}
+details{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;margin:0 0 12px}
+details summary{font-weight:700;cursor:pointer}
+.up{list-style:none;padding:0;margin:0}
+.up li{display:flex;gap:12px;padding:9px 0;border-bottom:1px solid var(--line)}
+.up li:last-child{border-bottom:0}
+.up .when{flex:0 0 86px;font-weight:700;color:var(--green-2);font-size:14px;line-height:1.25}
+.up .when small{display:block;font-weight:500;color:var(--muted);font-size:12px}
+.up a{color:inherit;text-decoration:none} .up .what{font-size:15px} .up .detail{display:block;color:var(--muted);font-size:13px}
+.contacts{display:grid;gap:12px}
+@media(min-width:640px){.contacts{grid-template-columns:1fr 1fr}}
+.contact .role{font-size:12px;text-transform:uppercase;letter-spacing:.4px;color:var(--muted);font-weight:700}
+.contact .name{font-size:18px;font-weight:700;margin:2px 0 6px}
+.contact a.act{display:inline-block;margin:3px 6px 3px 0;padding:6px 10px;border-radius:8px;background:var(--chip);text-decoration:none;font-size:14px;font-weight:600}
+.flyers{margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:14px}
+.flyers a{display:block;padding:3px 0}
+.heat td:first-child{white-space:nowrap;font-weight:700}
+.linklist a,.linklist .row{display:flex;justify-content:space-between;gap:8px;padding:11px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
+.linklist a::after{content:"›";color:var(--muted)}
+footer{max-width:760px;margin:0 auto;padding:10px 16px 40px;color:var(--muted);font-size:12px;text-align:center}
+footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13px}
+.cal-day{font-weight:700;margin-top:10px;font-size:14px} .cal-day.today{color:var(--red)}
+.cal-list{list-style:none;margin:4px 0 0;padding:0}
+.cal-list li{display:flex;gap:10px;padding:6px 0;border-bottom:1px solid var(--line);font-size:14px}
+.cal-list li:last-child{border-bottom:0}
+.cal-t{flex:0 0 64px;color:var(--muted);font-variant-numeric:tabular-nums}
+.cal-tag{font-size:11px;background:var(--chip);border-radius:6px;padding:1px 6px;margin-left:4px}
+.cal-none{margin:2px 0 0}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="brand">
+    <img src="assets/logo-h-white.svg" alt="Helix H logo">
+    <div>
+      <h1>Helix Coaches Hub</h1>
+      <p>Helix Charter High School Athletics · <span id="yr"></span></p>
+    </div>
+  </div>
+  <div class="quick" id="quick"></div>
+  <div class="search">
+    <input id="q" type="search" placeholder="Search the hub (e.g. physicals, bus, heat)" autocomplete="off" aria-label="Search the hub">
+    <div class="results" id="results" hidden></div>
+  </div>
+</header>
+
+<nav class="tabs" aria-label="Sections"><div class="inner" id="tabbar"></div></nav>
+
+<main>
+
+<!-- ═══════════════ THIS WEEK ═══════════════ -->
+<section class="panel" id="week" data-title="This Week">
+  <h2>This Week</h2>
+
+  <div class="card" id="comingCard">
+    <h3>Coming up · next 14 days</h3>
+    <ul class="up" id="coming"></ul>
+  </div>
+
+  <div class="card">
+    <h3>Facility calendar</h3>
+<!-- FACILITY-CALENDAR:START (the calendar automation rewrites everything between these markers — do not hand-edit) -->
+    <p class="muted">The live facility calendar will appear here once the calendar automation is connected. Until then, see the <a href="https://www.helixathletics.net/calendar">athletics calendar</a>.</p>
+<!-- FACILITY-CALENDAR:END -->
+  </div>
+
+  <div class="card">
+    <h3>Weather &amp; heat (WBGT)</h3>
+    <p id="wx"></p>
+  </div>
+  <details>
+    <summary>Heat rules — what each WBGT reading means</summary>
+    <p class="muted">From the Helix <a href="https://docs.google.com/document/d/1ujM3Vj7PqsgVAjAJQ_M1msggvJ9Jvnr-wyPqv6leKnU/edit?usp=sharing">Heat &amp; Humidity Policy</a>. WBGT is measured at every practice.</p>
+    <div class="tablewrap"><table class="heat">
+      <tr><th>WBGT</th><th>What to do</th></tr>
+      <tr><td>Under 82.0</td><td>Normal activities. At least 3 rest breaks each hour, 3+ minutes each.</td></tr>
+      <tr><td>82.0 – 86.9</td><td>Use discretion for intense or prolonged exercise; watch at-risk players closely. At least 3 rest breaks each hour, 4+ minutes each.</td></tr>
+      <tr><td>87.0 – 89.9</td><td>Max practice 2 hours. Football: helmet, shoulder pads and shorts only; remove all protective equipment for conditioning. All sports: at least 4 rest breaks each hour, 4+ minutes each.</td></tr>
+      <tr><td>90.0 – 92.0</td><td>Max practice 1 hour. No protective equipment, no conditioning. 20 minutes of rest breaks within the hour.</td></tr>
+      <tr><td>Over 92</td><td><strong>No outdoor workouts.</strong> Cancel or delay practice until a cooler reading.</td></tr>
+    </table></div>
+  </details>
+</section>
+
+<!-- ═══════════════ CONTACTS ═══════════════ -->
+<section class="panel" id="contacts" data-title="Contacts">
+  <h2>Contacts</h2>
+  <p class="muted">Main line (619) 644-1940 · Fax (619) 462-9266 · 4200 Lowell St, La Mesa, CA 91942</p>
+  <div class="contacts" id="contactList"></div>
+  <h3>Head coaches</h3>
+  <div id="coachList"></div>
+</section>
+
+<!-- ═══════════════ SCHEDULES ═══════════════ -->
+<section class="panel" id="schedules" data-title="Schedules">
+  <h2>Schedules</h2>
+  <p class="muted">Grossmont Conference — Grossmont Hills or Grossmont Valley League, decided yearly by power rankings. Dates below are first and last regular-season contests from the CIF-SDS season sheet.</p>
+  <div class="tbd-box">The CIF-SDS sheet doesn't print the school year. These dates are being used as 2026–27; confirm before sharing widely. League schedule links will be added as the conference publishes each season's file.</div>
+  <p><strong>Schedules are due to <a href="mailto:kwelch@helixcharter.net">Kathryn Welch</a>:</strong> Fall by June 1 · Winter by Oct 1 · Spring by Dec 1.</p>
+  <div id="seasonTables"></div>
+</section>
+
+<!-- ═══════════════ REPORT SCORE ═══════════════ -->
+<section class="panel" id="score" data-title="Report Score">
+  <h2>Report a Score</h2>
+  <div id="scoreBtn"></div>
+  <ol class="steps">
+    <li>After every game, tap your game under <strong>Tap your game</strong> (it fills itself in) or use the button above.</li>
+    <li>Pick your sport and level, then fill in the date, opponent, home/away and both scores.</li>
+    <li>Submit. The athletic office gets it automatically.</li>
+  </ol>
+  <p class="muted">This form is the <strong>one</strong> place to report scores.</p>
+  <div id="tapGames"></div>
+  <h3>Check your MaxPreps page</h3>
+  <p class="muted">Use these links to <strong>check</strong> your team's page. Don't report scores there. Use the button above.</p>
+  <div class="card linklist" id="mpLinks"></div>
+</section>
+
+<!-- ═══════════════ PUBLICITY ═══════════════ -->
+<section class="panel" id="publicity" data-title="Publicity & Social">
+  <h2>Publicity &amp; Social</h2>
+  <div class="card linklist" id="pubLinks"></div>
+  <div class="card">
+    <h3>Social media playbook</h3>
+    <ul class="list">
+      <li>Tag <a href="https://www.instagram.com/helixathletics/"><strong>@helixathletics</strong></a> on Instagram in every team post.</li>
+      <li>The athletic office runs weekly <strong>game-day posts</strong> and a weekly <strong>athlete of the week</strong> feature.</li>
+      <li>Use the official logos only (logo folder link above). Don't stretch or recolor them.</li>
+      <li>No student personal information in posts beyond name, sport and accomplishment.</li>
+    </ul>
+    <p class="tbd-box" style="margin-top:10px">Needed from AD: athlete-of-the-week nomination deadline and how coaches nominate; any local newspaper athlete-of-the-week rules; any other posting rules.</p>
+  </div>
+</section>
+
+<!-- ═══════════════ CLEARANCE ═══════════════ -->
+<section class="panel" id="clearance" data-title="Clearance">
+  <h2>Athlete Clearance</h2>
+  <p class="muted">Clearance goes in this order. No athlete names or clearance status are ever posted on this site.</p>
+
+  <div class="card">
+    <h3>1 · Family clears the athlete</h3>
+    <ol class="steps">
+      <li>Parent/guardian goes to <a href="https://athleticclearance.com/">athleticclearance.com</a>, logs in, fills out the online forms and signs the agreements.</li>
+      <li>Print and sign the confirmation/consent form.</li>
+      <li>Turn in the signed consent form and a copy of the current physical (both pages) at the <strong>Finance Office (Dawg House)</strong>, <em>or</em> upload both to athleticclearance.com and email Ms. Yeagle at <a href="mailto:jyeagle@helixcharter.net">jyeagle@helixcharter.net</a>.</li>
+    </ol>
+    <ul class="list muted">
+      <li>Physicals are required every year and must be valid through the <em>entire</em> season.</li>
+      <li>Physicals must be signed by an M.D. or D.O. (NP or chiropractor forms need a physician signature). <a href="https://drive.google.com/file/d/0BwRLB03ibtVNTWhsbm1VeklNeEk/view?resourcekey=0-BXcLU33LoKVX63AtnIcpog">Physical form</a></li>
+      <li>School physicals are offered in late July (fall), early November (winter) and early February (spring).</li>
+      <li>Health insurance is required. Families without coverage: <a href="https://studentinsuranceusa.com/">studentinsuranceusa.com</a></li>
+    </ul>
+    <p class="muted">Family-facing page: <a href="https://www.helixathletics.net/athletic-clearance">helixathletics.net/athletic-clearance</a></p>
+  </div>
+
+  <div class="card">
+    <h3>2 · Coach builds the roster in Home Campus</h3>
+    <p>Build and update your roster in <a href="https://www.cifsdshome.org/reports/team-roster">Home Campus</a>.</p>
+  </div>
+  <div class="card">
+    <h3>3 · The athletic office uses your roster</h3>
+    <p>Your Home Campus roster is what the office uses to fill in <strong>Mascot Media</strong> (helixathletics.net) and the <strong>eligibility documents</strong>. Keep it current. Add and drop athletes in Home Campus, not by email.</p>
+  </div>
+  <div class="card">
+    <h3>4 · Coach sends the schedule</h3>
+    <p>Email your season schedule to <a href="mailto:kwelch@helixcharter.net">Kathryn Welch</a>.</p>
+    <div class="tablewrap"><table>
+      <tr><th>Season</th><th>Schedule due</th></tr>
+      <tr><td>Fall</td><td>June 1</td></tr>
+      <tr><td>Winter</td><td>October 1</td></tr>
+      <tr><td>Spring</td><td>December 1</td></tr>
+    </table></div>
+  </div>
+</section>
+
+<!-- ═══════════════ ELIGIBILITY ═══════════════ -->
+<section class="panel" id="eligibility" data-title="Eligibility">
+  <h2>Academic Eligibility</h2>
+  <div class="card">
+    <h3>Requirements</h3>
+    <ul class="list">
+      <li>Minimum <strong>2.0 GPA</strong>, maintained throughout the season.</li>
+      <li>Enrolled in at least <strong>12.5 quarter units</strong> of coursework.</li>
+      <li>Making <strong>minimum progress</strong> toward graduation requirements.</li>
+      <li>No more than <strong>one "U"</strong> in conduct/effort per grading period.</li>
+      <li>Must attend school all day to practice or play that day. See the handbook for excused exceptions.</li>
+    </ul>
+    <h3>Appeals &amp; probation</h3>
+    <ul class="list">
+      <li>9th graders: one appeal per school year to regain eligibility.</li>
+      <li>10th–12th graders: one additional one-time appeal or probationary period.</li>
+      <li>Two "U" grades means the athlete can't use probation.</li>
+    </ul>
+    <p class="muted">Source: <a href="https://www.helixathletics.net/student-athlete-handbook">Student-Athlete Handbook</a>. <span class="tbd">Needed: how a petition is filed and who approves it</span></p>
+  </div>
+  <h3>2026–27 grading periods</h3>
+  <p class="muted">From the board-approved school calendar. The current or next check is highlighted.</p>
+  <p><strong>Eligibility changes take effect on the "determined" date.</strong></p>
+  <div class="card tablewrap"><table id="eligTable"></table></div>
+</section>
+
+<!-- ═══════════════ COACH REQUIREMENTS ═══════════════ -->
+<section class="panel" id="requirements" data-title="Coach Requirements">
+  <h2>Coach Requirements</h2>
+  <a class="btn" href="https://hchs23grad.my.canva.site/helix-athletics-coach-clearance">Open the Coach Clearance page</a>
+  <div class="card">
+    <h3>New coaches — in order</h3>
+    <ol class="steps">
+      <li><strong>Hiring packet.</strong> Fill out the fillable PDF: checklist, Beneficiary Form, Direct Deposit, Oath of Allegiance, Annual Notifications/FERPA and Child Abuse Reporting statement. W-4, DE 4 and I-9 come from the official government sites (linked on the clearance page).</li>
+      <li><strong>Email your completed documents</strong> to <a href="mailto:demers@helixcharter.net">demers@helixcharter.net</a>.</li>
+      <li><strong>Create an NFHS Learn account.</strong></li>
+      <li><strong>Submit your NFHS email</strong>, sport and level (form on the clearance page).</li>
+      <li><strong>Complete the NFHS courses:</strong> Title IX · Fundamentals of Coaching · Concussion in Sports · Heat Illness Prevention · Protecting Students from Abuse · Sudden Cardiac Arrest · Student Mental Health &amp; Suicide Prevention.</li>
+      <li><strong>Sign the Code of Ethics</strong>: the CIF San Diego Section Code of Ethics / Bylaw 207.C &amp; 510 Statement of Compliance (digital signature on the clearance page).</li>
+      <li><strong>CPR certification.</strong> For a class, contact <a href="mailto:jimenez@helixcharter.net">Andie Jimenez</a> or <a href="mailto:ahull@helixcharter.net">Amy Hull</a>.</li>
+      <li><strong>Fingerprinting</strong> through the SDCOE Clearinghouse Live Scan process (documents on the clearance page).</li>
+    </ol>
+  </div>
+  <div class="card">
+    <h3>Returning coaches — keep these current</h3>
+    <div class="tablewrap"><table>
+      <tr><th>Requirement</th><th>Renew</th></tr>
+      <tr><td>First Aid / CPR</td><td class="nw">Every 2 years</td></tr>
+      <tr><td>CA Concussion course (NFHS)</td><td class="nw">Every 2 years</td></tr>
+      <tr><td>Sudden Cardiac Arrest (NFHS)</td><td class="nw">Every 2 years</td></tr>
+      <tr><td>Heat Illness Prevention (NFHS)</td><td class="nw">Every 2 years</td></tr>
+      <tr><td>Title IX (NFHS)</td><td class="nw">Required</td></tr>
+      <tr><td>Protecting Students from Abuse (NFHS)</td><td class="nw">Required</td></tr>
+      <tr><td>Student Mental Health &amp; Suicide Prevention (NFHS)</td><td class="nw">Required</td></tr>
+      <tr><td>Fundamentals of Coaching (NFHS)</td><td class="nw">One time only</td></tr>
+    </table></div>
+    <p class="muted">The athletic office tracks completion.</p>
+  </div>
+  <div class="card">
+    <h3>Pay &amp; stipends</h3>
+    <p><strong>Head coaches:</strong> list every coach in your program and each coach's share of the stipend on the <span id="stipendLink"></span>.</p>
+  </div>
+</section>
+
+<!-- ═══════════════ UNIFORMS ═══════════════ -->
+<section class="panel" id="uniforms" data-title="Uniforms">
+  <h2>Uniforms</h2>
+  <div class="card">
+    <h3>Policy (from the Student-Athlete Handbook)</h3>
+    <ul class="list">
+      <li>Uniforms and equipment are school property and must be returned at the end of the season.</li>
+      <li>Athletes are financially responsible for everything issued to them.</li>
+      <li>An athlete with lost or unreturned items can't play another sport until the items are returned or the fine is paid.</li>
+      <li>Graduation privileges may be withheld for unreturned uniforms or equipment, or unpaid fines.</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>Distribution, returns &amp; fines</h3>
+    <p>Uniforms are managed by <strong>Sam Friend</strong>: <a href="mailto:friend@helixcharter.net">friend@helixcharter.net</a>. Contact Sam for checkout and returns.</p>
+    <p>Fine amounts vary by item. Sam has the current list. Report missing items by email, never on this site.</p>
+  </div>
+</section>
+
+<!-- ═══════════════ TRANSFERS ═══════════════ -->
+<section class="panel" id="transfers" data-title="Transfers">
+  <h2>Transfers</h2>
+  <div class="card">
+    <h3>How transfers work</h3>
+    <ul class="list">
+      <li><strong>Residential eligibility</strong> is set when a student first enrolls in 9th grade at a CIF school.</li>
+      <li>A transfer that isn't tied to a valid change of residence or a documented hardship (e.g., divorce, court order, school-safety issue) carries a <strong>sit-out period</strong>.</li>
+      <li>A student who transfers to follow a coach or move to a club coach must document that the move isn't athletically motivated.</li>
+    </ul>
+    <p class="muted">Full rules: <a href="https://www.cifsds.org/landing/index">CIF San Diego Section</a>.</p>
+  </div>
+  <div class="card">
+    <h3>What coaches must do</h3>
+    <p><span class="tbd">Needed: the steps a coach takes when a transfer student shows up, and who files the paperwork</span></p>
+    <p>Transfer forms: <span id="transferForms"></span></p>
+  </div>
+  <h3>Sit-out period ends, by sport</h3>
+  <p class="muted">A transfer athlete serving a sit-out period may compete again after these dates. Source: <a href="https://docs.google.com/spreadsheets/d/1MryOIlnIGPWinUV5FtBHf9PTOAe9lmqxKHdaw6v9ZXg/edit?gid=0#gid=0">CIF-SDS sit-out sheet</a>.</p>
+  <div class="card tablewrap"><table id="sopTable"></table></div>
+</section>
+
+<!-- ═══════════════ FACILITIES & BUSES ═══════════════ -->
+<section class="panel" id="facilities" data-title="Facilities & Buses">
+  <h2>Facilities &amp; Buses</h2>
+  <div class="card">
+    <h3>Buses</h3>
+    <p>Request a bus: <span id="busLink"></span></p>
+    <p>Dispatch: <a href="tel:+16196448186,5">(619) 644-8186 ext. 5</a> before 5:30 pm · <a href="tel:+16195920703">(619) 592-0703</a> after 5:30 pm</p>
+    <p><span class="tbd">Needed: how far ahead to request, and the rules for late pickups</span></p>
+  </div>
+  <div class="card">
+    <h3>Facilities</h3>
+    <p>Facility reservations and key checkout: <a href="mailto:danner@helixcharter.net">Lindsey Danner</a>, ext. 151</p>
+  </div>
+  <div class="card">
+    <h3>Bell schedules &amp; early release</h3>
+    <p>Bell schedules: <span id="bellLink"></span></p>
+    <p><strong>Early release:</strong> no form needed. Release time is set by the bus departure and game time.</p>
+    <h3>Minimum days 2026–27</h3>
+    <div class="tablewrap"><table id="minTable"></table></div>
+  </div>
+</section>
+
+<!-- ═══════════════ FINANCE ═══════════════ -->
+<section class="panel" id="finance" data-title="Finance">
+  <h2>Finance</h2>
+  <div class="card">
+    <h3>Purchasing</h3>
+    <p>Helix has no formal PO request form. For purchasing and ASB account questions, contact <a href="mailto:krzywicki@helixcharter.net">Adam Krzywicki</a> (ASB), ext. 444.</p>
+  </div>
+</section>
+
+<!-- ═══════════════ POSTSEASON ═══════════════ -->
+<section class="panel" id="postseason" data-title="Postseason">
+  <h2>Postseason</h2>
+  <div class="card">
+    <h3>End-of-season checklist</h3>
+    <ol class="steps">
+      <li><strong>Host your banquet.</strong> Identify, buy and print awards. Tell the AD about banquet awards at least a week ahead using the <span id="awardsLink"></span>.</li>
+      <li><strong>Collect equipment and gear.</strong> Contact <a href="mailto:friend@helixcharter.net">Sam Friend</a>.</li>
+      <li><strong>Put students on the fine list as needed.</strong> Contact <a href="mailto:jyeagle@helixcharter.net">Jessica Yeagle</a>. By email only, never on this site.</li>
+      <li><strong>Set your no-contact period</strong> and tell the AD.</li>
+      <li><strong>Start next season's schedule.</strong> See the due dates on <a href="#clearance">Clearance</a>.</li>
+    </ol>
+    <p class="muted">Full checklist: <span id="seasonEnd"></span></p>
+  </div>
+  <div class="card">
+    <h3>Awards &amp; letters</h3>
+    <div class="tablewrap"><table>
+      <tr><th>Award</th><th>What it is</th></tr>
+      <tr><td><strong>Varsity Chenille</strong></td><td>Large "H", the Varsity Letter</td></tr>
+      <tr><td><strong>JV Chenille</strong></td><td>Small "H", the JV Letter</td></tr>
+      <tr><td><strong>Cloth Figure</strong></td><td>Given the first year, showing the sport</td></tr>
+      <tr><td><strong>Service Bar</strong></td><td>Given for each year of participation</td></tr>
+      <tr><td><strong>Gold Medal Stars</strong></td><td>All-league and first-team members</td></tr>
+      <tr><td><strong>Scholar Athletes</strong></td><td>Seniors with the highest GPA</td></tr>
+    </table></div>
+    <p style="margin-top:10px">Tell the AD your banquet awards at least a week ahead on the <span id="awardsLink2"></span>.</p>
+    <p class="muted">An athlete removed from a team for discipline or academics forfeits all awards, letters and certificates (Student-Athlete Handbook).</p>
+  </div>
+</section>
+
+<!-- ═══════════════ MORE ═══════════════ -->
+<section class="panel" id="more" data-title="More">
+  <h2>More</h2>
+  <div class="card linklist" id="moreLinks"></div>
+</section>
+
+</main>
+
+<footer>
+  <div class="tag">ONCE. ALWAYS.</div>
+  Helix Charter High School Athletics · 4200 Lowell St, La Mesa, CA 91942<br>
+  This site is public. It never contains student information.<br>
+  Hub design modeled on the Granite Hills Athletics Coaches Hub by James Davis.
+</footer>
+
+<script>
+(function(){
+  const $ = s => document.querySelector(s);
+  const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+  const link = (url, label) => url ? `<a href="${esc(url)}">${esc(label)}</a>` : `<span class="soon">Coming soon</span>`;
+  const d = iso => { const [y,m,dd] = iso.split("-").map(Number); return new Date(y, m-1, dd); };
+  const fmt = (iso, opt={weekday:"short", month:"short", day:"numeric"}) => d(iso).toLocaleDateString("en-US", opt);
+  // "Today" always comes from the visitor's own device, never from a build.
+  const now = new Date(); const today = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+  const dayMs = 864e5;
+
+  $("#yr").textContent = HUB.schoolYear;
+
+  /* Quick links */
+  $("#quick").innerHTML = HUB.quickLinks.map(q => q.url
+    ? `<a href="${esc(q.url)}">${esc(q.label)}</a>`
+    : `<span>${esc(q.label)}<small>coming soon</small></span>`).join("");
+
+  /* Coming up */
+  const horizon = new Date(today.getTime() + 14*dayMs);
+  const upcoming = HUB.comingUp.filter(e => {
+    const s = d(e.start), en = d(e.end || e.start);
+    return en >= today && s <= horizon;
+  }).sort((a,b) => d(a.start) - d(b.start));
+  if (!upcoming.length) { $("#comingCard").hidden = true; }
+  else $("#coming").innerHTML = upcoming.map(e => {
+    const s = d(e.start); const diff = Math.round((s - today)/dayMs);
+    const rel = diff <= 0 ? (e.end ? "Now" : "Today") : diff === 1 ? "Tomorrow" : `in ${diff} days`;
+    const sameMonth = e.end && d(e.start).getMonth() === d(e.end).getMonth();
+    const when = !e.end ? fmt(e.start) : `${fmt(e.start,{month:"short",day:"numeric"})}–${sameMonth ? d(e.end).getDate() : fmt(e.end,{month:"short",day:"numeric"})}`;
+    return `<li><div class="when">${when}<small>${rel}</small></div>
+      <a href="#${e.tab}"><span class="what">${esc(e.label)}</span>${e.detail?`<span class="detail">${esc(e.detail)}</span>`:""}</a></li>`;
+  }).join("");
+
+  /* Weather */
+  $("#wx").innerHTML = HUB.links.perryWeather
+    ? `<a class="btn" style="font-size:16px;background:var(--green)" href="${esc(HUB.links.perryWeather)}">Open Perry Weather (live WBGT)</a><span class="muted">Needs a Perry Weather login.</span>`
+    : `<span class="tbd">Needed: Perry Weather public link</span> <span class="muted">— the live WBGT reading will show here.</span>`;
+
+  /* Contacts */
+  $("#contactList").innerHTML = HUB.contacts.map(c => {
+    let acts = "";
+    if (c.email) acts += `<a class="act" href="mailto:${esc(c.email)}">✉ ${esc(c.email)}</a>`;
+    else if (!c.phones) acts += `<span class="tbd">Needed: email</span> `;
+    if (c.ext) acts += `<a class="act" href="tel:+16196441940,${esc(c.ext)}">☎ ext. ${esc(c.ext)}</a>`;
+    (c.phones||[]).forEach(p => acts += `<a class="act" href="tel:+1${p[1].replace(/\D/g,"").slice(0,10)}${p[1].includes("ext")?","+p[1].split("ext.")[1].trim():""}">☎ ${esc(p[0])}: ${esc(p[1])}</a>`);
+    const flyers = c.trainer ? `<div class="flyers"><strong>Sports medicine</strong>${HUB.trainerLinks.map(l=>link(l.url,l.label)).join("")}<a href="https://www.helixathletics.net/sports-medicine">All sports medicine resources</a></div>` : "";
+    return `<div class="card contact"><div class="role">${esc(c.role)}</div><div class="name">${esc(c.name)}</div>
+      ${acts}${c.hours?`<div class="muted">${esc(c.hours)}</div>`:""}${flyers}</div>`;
+  }).join("");
+
+  /* Head coach directory (from the SEASONS list) */
+  $("#coachList").innerHTML = Object.entries(HUB.seasons).map(([season, rows], i) =>
+    `<details><summary>${season}</summary><div class="linklist">${rows.map(r => {
+      const mails = (r.email||"").split(",").map(x=>x.trim()).filter(Boolean);
+      return `<div class="row" style="flex-wrap:wrap"><span><strong>${esc(r.sport)}</strong><br><span class="muted">${esc(r.coach||"")}</span></span>
+        <span style="text-align:right">${mails.map(m=>`<a href="mailto:${esc(m)}" style="display:block;padding:0;border:0">${esc(m)}</a>`).join("") || '<span class="tbd">Needed</span>'}
+        ${r.ext?`<a href="tel:+16196441940,${esc(r.ext)}" style="display:block;padding:0;border:0" class="muted">ext. ${esc(r.ext)}</a>`:""}</span></div>`;
+    }).join("")}</div></details>`).join("");
+
+  /* Report Score: MaxPreps links for in-season teams (check only — not for reporting) */
+  const startYr = parseInt(HUB.schoolYear, 10);
+  const md = t => { const x = new Date(`${t} ${startYr}`); if (isNaN(x)) return null; if (x.getMonth() < 6) x.setFullYear(startYr + 1); return x; };
+  const all = Object.values(HUB.seasons).flat().filter(r => r.maxpreps);
+  let inSeason = all.filter(r => { const f = md(r.first), l = md(r.last); return f && l && today >= new Date(f - 21*dayMs) && today <= new Date(+l + 21*dayMs); });
+  if (!inSeason.length) inSeason = all;
+  $("#mpLinks").innerHTML = inSeason.map(r => `<a href="https://www.maxpreps.com/ca/la-mesa/helix-scotties/${esc(r.maxpreps)}">${esc(r.sport)} — check your page</a>`).join("");
+
+  const to24 = t => { const m = /(\d+):(\d+)\s*(AM|PM)/i.exec(t || ""); return m ? (+m[1] % 12 + (/pm/i.test(m[3]) ? 12 : 0)) * 60 + +m[2] : 0; };
+  /* Tap Your Game: recent games from games.json become pre-filled score links */
+  if (HUB.links.scoreFormPrefill && HUB.links.gamesJson) {
+    fetch(HUB.links.gamesJson, {cache: "no-store"}).then(r => r.ok ? r.json() : []).then(games => {
+      const from = new Date(today - 3*dayMs);
+      const recent = (games || []).filter(g => g.opponent && d(g.date) >= from && d(g.date) <= today)
+        .sort((a,b) => b.date.localeCompare(a.date) || to24(a.time) - to24(b.time));
+      if (!recent.length) return;
+      const fill = g => HUB.links.scoreFormPrefill
+        .replace("{team}", encodeURIComponent(g.team)).replace("{level}", encodeURIComponent(g.level))
+        .replace("{date}", g.date).replace("{opponent}", encodeURIComponent(g.opponent))
+        .replace("{homeaway}", encodeURIComponent(g.homeAway));
+      $("#tapGames").innerHTML = `<h3>Tap your game</h3><p class="muted">Recent games. Tap yours, then just type the two scores.</p>
+        <div class="card linklist">${recent.map(g => `<a href="${esc(fill(g))}"><span><strong>${esc(g.team)} ${esc(g.level)}</strong> ${g.homeAway === "Away" ? "at" : "vs"} ${esc(g.opponent)}<br><span class="muted">${fmt(g.date)}${g.time ? " · " + esc(g.time) : ""}</span></span></a>`).join("")}</div>`;
+    }).catch(() => {});
+  }
+
+  /* Seasons */
+  const teamUrl = p => `https://www.helixathletics.net/sport/${p}/`;
+  $("#seasonTables").innerHTML = Object.entries(HUB.seasons).map(([season, rows]) =>
+    `<h3>${season}</h3><div class="card tablewrap"><table>
+      <tr><th>Sport</th><th>First</th><th>Last</th><th>League schedule</th></tr>
+      ${rows.map(r=>`<tr><td><a href="${teamUrl(r.page)}">${esc(r.sport)}</a></td><td class="nw">${esc(r.first)}</td><td class="nw">${esc(r.last)}</td><td>${link(r.league,"Schedule")}</td></tr>`).join("")}
+    </table></div>`).join("");
+
+  /* Sit-out table */
+  $("#sopTable").innerHTML = `<tr><th>Season</th><th>Sport</th><th>Sit-out ends</th></tr>` +
+    Object.entries(HUB.seasons).map(([s, rows]) => rows.map(r => `<tr><td>${s}</td><td>${esc(r.sport)}</td><td>${esc(r.sop)}</td></tr>`).join("")).join("");
+
+  /* Eligibility table */
+  let marked = false;
+  $("#eligTable").innerHTML = `<tr><th>Grading mark</th><th>Grades due</th><th>Eligibility determined</th></tr>` +
+    HUB.eligibility.map(e => {
+      const key = e.determined || e.due; let cls = "";
+      if (d(key) < today) cls = "past"; else if (!marked) { cls = "next"; marked = true; }
+      return `<tr class="${cls}"><td>${esc(e.mark)}</td><td class="nw">${fmt(e.due)}</td><td class="nw">${e.determined ? fmt(e.determined) : '<span class="tbd">Next year</span>'}</td></tr>`;
+    }).join("");
+
+  /* Minimum days */
+  $("#minTable").innerHTML = HUB.minimumDays.map(([dt, why]) =>
+    `<tr class="${d(dt) < today ? "past" : ""}"><td style="white-space:nowrap">${fmt(dt)}</td><td>${esc(why)}</td></tr>`).join("");
+
+  /* Scattered links */
+  const L = HUB.links, qx = n => (HUB.quickLinks.find(q => q.label === n) || {}).url;
+  $("#scoreBtn").innerHTML = L.scoreForm ? `<a class="btn" href="${esc(L.scoreForm)}">Report a score</a>` : `<span class="btn disabled">Score form coming soon</span>`;
+  $("#transferForms").innerHTML = link(L.transferForms, "CIF-SDS transfer forms");
+  $("#busLink").innerHTML = link(qx("Bus Request"), "Transportation request sheet");
+  $("#seasonEnd").innerHTML = link(L.seasonEndChecklist, "End of Year Checklist");
+  $("#awardsLink").innerHTML = link(L.awardsForm, "Banquet Awards Form");
+  $("#awardsLink2").innerHTML = link(L.awardsForm, "Banquet Awards Form");
+  $("#stipendLink").innerHTML = link(L.stipendSheet, "stipend sheet");
+  $("#bellLink").innerHTML = link(L.bellSchedule, "Bell schedules");
+  const row = (label, url) => url ? `<a href="${esc(url)}">${esc(label)}</a>` : `<div class="row"><span>${esc(label)}</span><span class="soon">Coming soon</span></div>`;
+  $("#pubLinks").innerHTML = [
+    ["Instagram @helixathletics", L.socialAccount], ["Bulletin / announcement request", L.bulletinRequest],
+    ["Official logo folder", L.logoFolder],
+    ["Broadcasts", "https://www.helixathletics.net/broadcasts"], ["Athletics news", "https://www.helixathletics.net/news"]
+  ].map(r => row(...r)).join("");
+  $("#moreLinks").innerHTML = [
+    ["2026–27 school calendar", "https://docs.google.com/spreadsheets/d/1o-TGxib5UT-5tDvBIJ8JEFYvnP1KZSDzWdHIbrBwwCs/edit?gid=2036715448#gid=2036715448"],
+    ["Helix Athletics website", "https://www.helixathletics.net/"],
+    ["Athletics calendar", "https://www.helixathletics.net/calendar"],
+    ["Student-Athlete Handbook", "https://www.helixathletics.net/student-athlete-handbook"],
+    ["Sports medicine", "https://www.helixathletics.net/sports-medicine"],
+    ["Title IX", "https://www.helixathletics.net/title-ix"],
+    ["Tickets (GoFan)", "https://gofan.co/app/school/CA22796"],
+    ["CIF San Diego Section", "https://www.cifsds.org/landing/index"],
+    ["Home Campus", "https://www.cifsdshome.org/reports/team-roster"],
+    ["Coach clearance page", "https://hchs23grad.my.canva.site/helix-athletics-coach-clearance"],
+    ["Conference schedules", L.leagueSite],
+    ["MaxPreps school page", L.maxprepsSchool]
+  ].map(r => row(...r)).join("");
+
+  /* Tabs + deep links (#tabname) */
+  const panels = [...document.querySelectorAll("section.panel")];
+  $("#tabbar").innerHTML = panels.map(p => `<a href="#${p.id}" role="tab" aria-controls="${p.id}">${p.dataset.title}</a>`).join("");
+  function show(id, scroll){
+    if (!panels.some(p => p.id === id)) id = "week";
+    panels.forEach(p => p.classList.toggle("active", p.id === id));
+    document.querySelectorAll("#tabbar a").forEach(a => {
+      const on = a.getAttribute("href") === "#" + id; a.setAttribute("aria-selected", on);
+      if (on) { const bar = a.closest("nav"); bar.scrollLeft = a.offsetLeft - (bar.clientWidth - a.offsetWidth) / 2; }
+    });
+    if (scroll) document.querySelector("nav.tabs").scrollIntoView();
+  }
+  window.addEventListener("hashchange", () => show(location.hash.slice(1), true));
+  show(location.hash.slice(1), false);
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  window.scrollTo(0, 0); window.addEventListener("load", () => setTimeout(() => window.scrollTo(0, 0), 0));
+
+  /* Search: jumps to the matching tab */
+  const q = $("#q"), res = $("#results");
+  const index = panels.map(p => ({ id: p.id, title: p.dataset.title, text: p.innerText.replace(/\s+/g," ") }));
+  function search(){
+    const term = q.value.trim().toLowerCase();
+    if (term.length < 2) { res.hidden = true; return []; }
+    const hits = index.map(p => {
+      const t = p.text.toLowerCase(); const i = t.indexOf(term); const n = t.split(term).length - 1;
+      const score = (p.title.toLowerCase().includes(term) ? 100 : 0) + n;
+      return { ...p, score, snip: i < 0 ? "" : "…" + p.text.slice(Math.max(0, i-40), i+70) + "…" };
+    }).filter(h => h.score > 0).sort((a,b) => b.score - a.score).slice(0, 6);
+    res.innerHTML = hits.length ? hits.map(h => `<button data-id="${h.id}"><b>${esc(h.title)}</b><small>${esc(h.snip)}</small></button>`).join("")
+                                : `<button disabled><small>No matches. Try another word.</small></button>`;
+    res.hidden = false; return hits;
+  }
+  // index is built from rendered text, so refresh it after rendering
+  setTimeout(() => panels.forEach((p,i) => { p.classList.add("active"); index[i].text = p.innerText.replace(/\s+/g," "); p.classList.remove("active"); show(location.hash.slice(1), false); }), 0);
+  q.addEventListener("input", search);
+  q.addEventListener("keydown", e => { if (e.key === "Enter") { const h = search(); if (h[0]) go(h[0].id); } if (e.key === "Escape") res.hidden = true; });
+  res.addEventListener("click", e => { const b = e.target.closest("button[data-id]"); if (b) go(b.dataset.id); });
+  document.addEventListener("click", e => { if (!e.target.closest(".search")) res.hidden = true; });
+  function go(id){ res.hidden = true; q.value = ""; q.blur(); location.hash = id; }
+
+  /* Facility calendar: mark "today" in the visitor's browser (the robot never stamps it) */
+  const iso = `${today.getFullYear()}-${String(today.getMonth()+1).padStart(2,"0")}-${String(today.getDate()).padStart(2,"0")}`;
+  const lastDay = new Date(today.getTime() + 6*dayMs);
+  const isoOf = x => `${x.getFullYear()}-${String(x.getMonth()+1).padStart(2,"0")}-${String(x.getDate()).padStart(2,"0")}`;
+  document.querySelectorAll("[data-cal-day]").forEach(b => { if (b.dataset.calDay < iso || b.dataset.calDay > isoOf(lastDay)) b.hidden = true; });
+  document.querySelectorAll("[data-cal-date]").forEach(el => { if (el.dataset.calDate === iso) { el.classList.add("today"); el.textContent = "Today · " + el.textContent; } });
+})();
+</script>
+</body>
+</html>
