@@ -16,7 +16,7 @@
  *
  * ── SETTINGS — edit between the quotes ─────────────────────────────────── */
 const CONFIG = {
-  SITE_URL: "",                                  // your Netlify address, e.g. "https://helix-coaches.netlify.app"
+  SITE_URL: "https://helix-coaches.netlify.app",  // your Netlify address
   OFFICE_EMAILS: "kwelch@helixcharter.net",      // who gets each score (comma-separate several)
   AD_EMAIL: "kwelch@helixcharter.net",           // gets test emails and the clearance summary
 
@@ -283,12 +283,12 @@ function doPost(e) {
   const out = [];
   (body.teams || []).forEach(t => {
     const L = k => Array.isArray(t[k]) ? t[k] : [];
-    const counts = { cleared: L("cleared").length, pending: L("pending").length, incomplete: L("incomplete").length, expiredPhysical: L("expiredPhysical").length };
-    const problem = counts.pending + counts.incomplete + counts.expiredPhysical > 0;
+    const counts = { cleared: L("cleared").length, pending: L("pending").length, incomplete: L("incomplete").length, expiredPhysical: L("expiredPhysical").length, other: L("other").length };
+    const problem = counts.pending + counts.incomplete + counts.expiredPhysical + counts.other > 0;
     const c = coaches[norm_(t.team)];
     let emailed = "";
     if (mode === "send" && problem && c && c.email) {
-      const n = counts.pending + counts.incomplete + counts.expiredPhysical;
+      const n = counts.pending + counts.incomplete + counts.expiredPhysical + counts.other;
       send_(c.email, `Clearance check: ${t.team}: ${n} ${n === 1 ? "athlete needs" : "athletes need"} attention`, clearanceHtml_(t, c), CONFIG.CLEARANCE_TEST_MODE);
       emailed = CONFIG.CLEARANCE_TEST_MODE ? "test → AD" : "coach";
     }
@@ -310,10 +310,11 @@ function clearanceHtml_(t, c) {
     ? `<h3 style="margin:16px 0 4px">${title} (${arr.length})</h3>${note ? `<p style="margin:0;color:#666">${note}</p>` : ""}<ul>${arr.map(n => `<li>${esc_(n)}</li>`).join("")}</ul>` : "";
   return `<div style="font-family:Arial,sans-serif;font-size:15px">
     <p>Hi Coach ${esc_(c.name.split(" ")[0])},</p>
-    <p>Here's this week's clearance check for <strong>${esc_(t.team)}</strong>. Athletes in the first three lists are not cleared yet.</p>
+    <p>Here's this week's clearance check for <strong>${esc_(t.team)}</strong>. Athletes in every list except "Cleared" are not cleared yet.</p>
     ${list("Expired physical", t.expiredPhysical, "Physical must be valid for the whole season.")}
     ${list("Incomplete", t.incomplete, "")}
     ${list("Pending", t.pending, "")}
+    ${list("Denied / practice only", t.other, "")}
     ${list("Cleared", t.cleared, "")}
     <p style="color:#666;font-size:13px">Confidential student information. Please don't forward or post it. You only get this email when something needs attention.</p></div>`;
 }
