@@ -216,8 +216,9 @@ const HUB = {
     scoreFormPrefill: "https://docs.google.com/forms/d/e/1FAIpQLSe8kf8RXHRnPhm_IWpy5JUpentiUHmv_XONTVoL1LqKCBI4yA/viewform?usp=pp_url&entry.527004443={team}&entry.1652485329={level}&entry.1874708339={date}&entry.1234175381={opponent}&entry.1612048045={homeaway}",
     gamesJson:        "games.json",  // written by the calendar robot; leave as is
     perryWeather:     "https://app.perryweather.com/",  // swap for a public link if Perry Weather gives you one
-    bulletinRequest:  "",   // Bulletin / announcement request form
-    logoFolder:       "",   // Official logo Drive folder
+    bulletinRequest:  "mailto:demers@helixcharter.net?subject=Bulletin%20%2F%20announcement%20request",   // Mark Demers
+    athleteOfWeek:    "https://docs.google.com/forms/d/e/1FAIpQLScsiIeyyvPyh0kQIupJutxGh9CS44HksH9GyohsPv4Rq-Ne2w/viewform?usp=header",
+    logoFolder:       "logos.html",   // Official logos page
     socialAccount:    "https://www.instagram.com/helixathletics/",
     maxprepsSchool:   "https://www.maxpreps.com/ca/la-mesa/helix-scotties/",
     leagueSite:       "",   // Grossmont Conference schedules page
@@ -469,11 +470,10 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
     <h3>Social media playbook</h3>
     <ul class="list">
       <li>Tag <a href="https://www.instagram.com/helixathletics/"><strong>@helixathletics</strong></a> on Instagram in every team post.</li>
-      <li>The athletic office runs weekly <strong>game-day posts</strong> and a weekly <strong>athlete of the week</strong> feature.</li>
+      <li>The athletic office runs weekly <strong>game-day posts</strong> and a weekly <strong>athlete of the week</strong> feature. Nominate an athlete with the <a href="https://docs.google.com/forms/d/e/1FAIpQLScsiIeyyvPyh0kQIupJutxGh9CS44HksH9GyohsPv4Rq-Ne2w/viewform?usp=header">Athlete of the Week form</a>.</li>
       <li>Use the official logos only (logo folder link above). Don't stretch or recolor them.</li>
       <li>No student personal information in posts beyond name, sport and accomplishment.</li>
     </ul>
-    <p class="tbd-box" style="margin-top:10px">Needed from AD: athlete-of-the-week nomination deadline and how coaches nominate; any local newspaper athlete-of-the-week rules; any other posting rules.</p>
   </div>
 </section>
 
@@ -822,9 +822,9 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   $("#bellLink").innerHTML = link(L.bellSchedule, "Bell schedules");
   const row = (label, url) => url ? `<a href="${esc(url)}">${esc(label)}</a>` : `<div class="row"><span>${esc(label)}</span><span class="soon">Coming soon</span></div>`;
   $("#pubLinks").innerHTML = [
-    ["Instagram @helixathletics", L.socialAccount], ["Bulletin / announcement request", L.bulletinRequest],
-    ["Official logo folder", L.logoFolder],
-    ["Broadcasts", "https://www.helixathletics.net/broadcasts"], ["Athletics news", "https://www.helixathletics.net/news"]
+    ["Athlete of the Week nomination", L.athleteOfWeek], ["Instagram @helixathletics", L.socialAccount],
+    ["Bulletin / announcement request (email Mark Demers)", L.bulletinRequest],
+    ["Official logos", L.logoFolder]
   ].map(r => row(...r)).join("");
   $("#moreLinks").innerHTML = [
     ["2026–27 school calendar", "https://docs.google.com/spreadsheets/d/1o-TGxib5UT-5tDvBIJ8JEFYvnP1KZSDzWdHIbrBwwCs/edit?gid=2036715448#gid=2036715448"],
