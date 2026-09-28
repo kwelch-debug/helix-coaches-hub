@@ -225,8 +225,8 @@ const HUB = {
     bellSchedule:     "https://docs.google.com/drawings/d/13t7lQ-hyosZn_KoWPEh660xebI4zUZwQAwXBakUwLy8/edit",   // Bell schedules
     transferForms:    "",   // CIF-SDS transfer forms
     seasonEndChecklist: "https://docs.google.com/document/d/1wIdrcNc-3vZQl2E9IZjCBuQAbvjq0qpWEb9t9or5jqU/edit?usp=sharing",
-    clubCharter:      "",   // Club charter application (link coming)
-    fundraisingRequest: "", // Fundraising request form (link coming)
+    clubCharter:      "https://docs.google.com/forms/d/e/1FAIpQLSd-ldEEdAxMtZc0VRVnEr9IIBAtXAuYdVody0TiA0UZjwrYNQ/viewform?usp=dialog",
+    fundraisingRequest: "https://docs.google.com/forms/d/e/1FAIpQLSej_mGin1Yzs4FY90Ab_PAbUJ9fTC0Y9rv5iV5nTkDW6aPKYA/viewform?usp=dialog",
     awardsForm:       "https://docs.google.com/forms/d/e/1FAIpQLSesK0NXsEg1yzl8zJnOl8egIGas_2Ej879xFo2WdsoEq2PGrw/viewform?usp=sharing",
     stipendSheet:     "https://docs.google.com/spreadsheets/d/1KtwxY329TsQJYKFKr47iUfsAah_6-X7tWwT1T6wadrI/edit?gid=0#gid=0"
   }
@@ -668,10 +668,17 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   <h2>Finance</h2>
   <div class="card">
     <h3>Fundraising</h3>
-    <p>Any organization that wants to fundraise must complete <strong>both</strong> of these first:</p>
+    <p>Any organization that wants to fundraise must complete <strong>both</strong> of these forms:</p>
     <ol class="steps">
-      <li><strong>Club charter application</strong>: <span id="clubCharterLink"></span></li>
-      <li><strong>Fundraising request form</strong>: <span id="fundraiseLink"></span></li>
+      <li><strong><span id="clubCharterLink"></span></strong>
+        <ul class="list"><li>All athletic teams need to submit this form in order to spend money during the school year.</li></ul>
+      </li>
+      <li><strong><span id="fundraiseLink"></span></strong>
+        <ul class="list">
+          <li>Submit this form for every fundraiser you have during the year (SnapRaise, snack bars, tournaments, gear sales, restaurant nights, etc.).</li>
+          <li>For snack bars, submit one form for all of the dates you will host a snack bar at your events.</li>
+        </ul>
+      </li>
     </ol>
     <p class="muted">ASB questions: <a href="mailto:krzywicki@helixcharter.net">Adam Krzywicki</a>, ext. 444</p>
   </div>
@@ -838,8 +845,8 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   $("#transferForms").innerHTML = link(L.transferForms, "CIF-SDS transfer forms");
   $("#busLink").innerHTML = link(qx("Bus Request"), "Transportation request sheet");
   $("#seasonEnd").innerHTML = link(L.seasonEndChecklist, "End of Year Checklist");
-  $("#clubCharterLink").innerHTML = link(L.clubCharter, "Club charter application");
-  $("#fundraiseLink").innerHTML = link(L.fundraisingRequest, "Fundraising request form");
+  $("#clubCharterLink").innerHTML = link(L.clubCharter, "HCHS Student Organization Charter Form");
+  $("#fundraiseLink").innerHTML = link(L.fundraisingRequest, "HCHS Fundraiser Request Form");
   $("#awardsLink").innerHTML = link(L.awardsForm, "Banquet Awards Form");
   $("#awardsLink2").innerHTML = link(L.awardsForm, "Banquet Awards Form");
   $("#stipendLink").innerHTML = link(L.stipendSheet, "stipend sheet");
