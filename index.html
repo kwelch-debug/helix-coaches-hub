@@ -35,7 +35,7 @@ const HUB = {
   /* ── 1. QUICK LINKS (the four buttons under the header) ───────────── */
   quickLinks: [
     { label: "Home Campus",      url: "https://www.cifsdshome.org/reports/team-roster" },
-    { label: "Bus Request",      url: "https://docs.google.com/spreadsheets/d/1V8hdz5mgObF7J59aztkYRrWP_TPCNe39AJZpS3KV_qA/edit?gid=0#gid=0" },
+    { label: "Bus Request",      url: "bus.html" },
     { label: "Report Score",     url: "#score" },
     { label: "Coach Clearance",  url: "https://hchs23grad.my.canva.site/helix-athletics-coach-clearance" }
   ],
@@ -843,7 +843,7 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   const L = HUB.links, qx = n => (HUB.quickLinks.find(q => q.label === n) || {}).url;
   $("#scoreBtn").innerHTML = L.scoreForm ? `<a class="btn" href="${esc(L.scoreForm)}">Report a score</a>` : `<span class="btn disabled">Score form coming soon</span>`;
   $("#transferForms").innerHTML = link(L.transferForms, "CIF-SDS transfer forms");
-  $("#busLink").innerHTML = link(qx("Bus Request"), "Transportation request sheet");
+  $("#busLink").innerHTML = link(qx("Bus Request"), "Bus request form (many trips at once)");
   $("#seasonEnd").innerHTML = link(L.seasonEndChecklist, "End of Year Checklist");
   $("#clubCharterLink").innerHTML = link(L.clubCharter, "HCHS Student Organization Charter Form");
   $("#fundraiseLink").innerHTML = link(L.fundraisingRequest, "HCHS Fundraiser Request Form");
