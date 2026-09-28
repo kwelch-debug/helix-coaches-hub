@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bus Request · Helix Coaches Hub</title>
+<meta name="robots" content="noindex">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<style>
+:root{--green:#024A3C;--red:#C8102E;--bg:#F3F5F4;--card:#fff;--ink:#16201D;--muted:#5B6662;--line:#DCE3E0;--field:#fff}
+@media (prefers-color-scheme: dark){:root{--bg:#0E1513;--card:#17211E;--ink:#E7EEEB;--muted:#9FB0AA;--line:#2A3833;--field:#0F1916}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,sans-serif}
+header{background:var(--green);color:#fff;padding:16px}
+header div{max-width:760px;margin:0 auto;display:flex;align-items:center;gap:12px}
+header img{height:40px}
+header h1{margin:0;font-size:20px}
+header a{color:#fff;font-size:14px}
+main{max-width:760px;margin:0 auto;padding:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:14px;margin-bottom:14px}
+.card h2{font-size:16px;margin:0 0 10px}
+.note{color:var(--muted);font-size:14px;margin:0 0 12px}
+.grid{display:grid;gap:10px;grid-template-columns:1fr}
+@media(min-width:560px){.grid{grid-template-columns:1fr 1fr}.grid .wide{grid-column:1/-1}}
+label{display:block;font-size:13px;font-weight:600;color:var(--muted);margin-bottom:3px}
+input,select,textarea{width:100%;font:inherit;color:var(--ink);background:var(--field);border:1px solid var(--line);border-radius:10px;padding:10px;min-height:44px}
+textarea{min-height:70px;resize:vertical}
+.trip{border:1px solid var(--line);border-radius:12px;padding:12px;margin-bottom:12px}
+.trip-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px}
+.trip-head b{font-size:15px}
+.day{font-size:13px;color:var(--green);font-weight:700;margin-left:6px}
+@media (prefers-color-scheme: dark){.day{color:#7FD3B8}}
+.x{background:none;border:0;color:var(--red);font:inherit;font-size:14px;cursor:pointer;padding:6px}
+.btn{display:inline-block;border:0;border-radius:10px;font:inherit;font-weight:700;padding:12px 16px;cursor:pointer;min-height:44px}
+.add{background:transparent;border:2px dashed var(--line);color:var(--ink);width:100%}
+.go{background:var(--red);color:#fff;width:100%;font-size:17px}
+.go[disabled]{opacity:.6}
+.msg{border-radius:12px;padding:12px 14px;margin-bottom:14px;display:none}
+.msg.ok{display:block;background:#E3F4EC;color:#0B3D2E;border:1px solid #A9D8C2}
+.msg.err{display:block;background:#FDE8EA;color:#7A0A1A;border:1px solid #F2B3BC}
+.hp{position:absolute;left:-9999px}
+.test{background:#FFF6DA;color:#5A4500;border-radius:10px;padding:8px 12px;font-size:14px;margin-bottom:14px}
+</style>
+</head>
+<body>
+<header><div><img src="logo-h-white.svg" alt=""><div><h1>Bus Request</h1><a href="./#facilities">← Back to the Coaches Hub</a></div></div></header>
+<main>
+  <div id="testNote" class="test" hidden>Test mode: this request emails only Kathryn and is marked "TEST" on the sheet.</div>
+  <div id="msg" class="msg" role="status" aria-live="polite"></div>
+
+  <form id="f" novalidate>
+    <div class="card">
+      <h2>Team</h2>
+      <p class="note">Request buses as soon as your schedule is confirmed. Add every trip you need, then send once.</p>
+      <div class="grid">
+        <div><label for="sport">Sport</label><select id="sport" required></select></div>
+        <div><label for="level">Level</label><select id="level" required></select></div>
+        <div><label for="coach">Your name</label><input id="coach" autocomplete="name" required></div>
+        <div><label for="email">Your email</label><input id="email" type="email" autocomplete="email" placeholder="you@helixcharter.net"></div>
+      </div>
+      <input class="hp" id="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+    </div>
+
+    <div class="card">
+      <h2>Trips</h2>
+      <div id="trips"></div>
+      <button type="button" class="btn add" id="addTrip">+ Add another trip</button>
+    </div>
+
+    <div class="card">
+      <label for="notes">Notes for the athletic office (optional)</label>
+      <textarea id="notes" placeholder="Anything dispatch should know, like a second bus or equipment."></textarea>
+    </div>
+
+    <button class="btn go" id="send" type="submit">Send bus request</button>
+  </form>
+</main>
+
+<script>
+/* ===== EDIT HERE: sport and level choices ===== */
+const SPORTS = ["Baseball", "Basketball (B)", "Basketball (G)", "Beach Volleyball (G)", "Cheer", "Cross Country",
+  "Field Hockey (G)", "Flag Football (G)", "Football", "Golf (B)", "Golf (G)", "Lacrosse (B)", "Lacrosse (G)",
+  "Soccer (B)", "Soccer (G)", "Softball", "Swim & Dive", "Tennis (B)", "Tennis (G)", "Track & Field",
+  "Volleyball (B)", "Volleyball (G)", "Water Polo (B)", "Water Polo (G)", "Wrestling (B)", "Wrestling (G)", "Other"];
+const LEVELS = ["Varsity", "JV", "Freshman", "Novice", "Multiple levels"];
+/* ===== end of edit area ===== */
+
+const ENDPOINT = "https://script.google.com/macros/s/AKfycbzM56HSLVZDQR00HAvcAymQx3XOOVPG01OGtsDSzpRwOZmfYlURm00aBQXI566wjZI/exec";
+const TEST = new URLSearchParams(location.search).get("test") === "1";
+const $ = s => document.querySelector(s);
+const opt = (arr, ph) => `<option value="">${ph}</option>` + arr.map(v => `<option>${v}</option>`).join("");
+$("#sport").innerHTML = opt(SPORTS, "Choose a sport");
+$("#level").innerHTML = opt(LEVELS, "Choose a level");
+if (TEST) $("#testNote").hidden = false;
+
+const store = { get(k) { try { return localStorage.getItem(k) || ""; } catch (e) { return ""; } },
+                set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} } };
+["sport", "level", "coach", "email"].forEach(id => { const v = store.get("bus-" + id); if (v) $("#" + id).value = v; });
+
+const today = new Date(); today.setMinutes(today.getMinutes() - today.getTimezoneOffset());
+const minDate = today.toISOString().slice(0, 10);
+const dayName = d => d ? new Date(d + "T12:00:00").toLocaleDateString("en-US", { weekday: "long" }) : "";
+
+function tripHtml() {
+  return `<div class="trip">
+    <div class="trip-head"><b><span class="n"></span><span class="day"></span></b><button type="button" class="x">Remove</button></div>
+    <div class="grid">
+      <div><label>Date</label><input type="date" name="date" min="${minDate}" required></div>
+      <div><label>Destination</label><input name="destination" placeholder="School or venue" required></div>
+      <div><label>Leave Helix</label><input type="time" name="leave"></div>
+      <div><label>Leave destination</label><input type="time" name="ret"></div>
+      <div><label>Number of riders</label><input type="number" name="riders" min="1" max="200" inputmode="numeric"></div>
+      <div><label>Number of staff</label><input type="number" name="staff" min="0" max="20" inputmode="numeric"></div>
+    </div></div>`;
+}
+function renumber() {
+  const all = [...document.querySelectorAll(".trip")];
+  all.forEach((t, i) => { t.querySelector(".n").textContent = "Trip " + (i + 1); t.querySelector(".x").hidden = all.length === 1; });
+}
+function addTrip() {
+  const prev = [...document.querySelectorAll(".trip")].pop();
+  $("#trips").insertAdjacentHTML("beforeend", tripHtml());
+  const t = [...document.querySelectorAll(".trip")].pop();
+  if (prev) ["leave", "ret", "riders", "staff"].forEach(n => t.querySelector(`[name=${n}]`).value = prev.querySelector(`[name=${n}]`).value);
+  t.querySelector(".x").onclick = () => { t.remove(); renumber(); };
+  t.querySelector("[name=date]").oninput = e => t.querySelector(".day").textContent = dayName(e.target.value) ? " · " + dayName(e.target.value) : "";
+  renumber();
+  return t;
+}
+$("#addTrip").onclick = () => addTrip().querySelector("[name=date]").focus();
+addTrip();
+
+function show(kind, html) { const m = $("#msg"); m.className = "msg " + kind; m.innerHTML = html; m.scrollIntoView({ behavior: "smooth", block: "center" }); }
+
+$("#f").onsubmit = async e => {
+  e.preventDefault();
+  const trips = [...document.querySelectorAll(".trip")].map(t => {
+    const g = n => t.querySelector(`[name=${n}]`).value.trim();
+    return { date: g("date"), destination: g("destination"), leave: g("leave"), ret: g("ret"), riders: g("riders"), staff: g("staff") };
+  }).filter(t => t.date || t.destination);
+  const missing = [];
+  if (!$("#sport").value) missing.push("sport");
+  if (!$("#level").value) missing.push("level");
+  if (!$("#coach").value.trim()) missing.push("your name");
+  if (!trips.length) missing.push("at least one trip");
+  if (trips.some(t => !t.date || !t.destination)) missing.push("a date and destination for every trip");
+  if (missing.length) return show("err", "Please add " + missing.join(", ") + ".");
+
+  const body = { mode: "bus-request", test: TEST, website: $("#website").value, sport: $("#sport").value, level: $("#level").value,
+    coach: $("#coach").value.trim(), email: $("#email").value.trim(), notes: $("#notes").value.trim(), trips };
+  ["sport", "level", "coach", "email"].forEach(id => store.set("bus-" + id, $("#" + id).value));
+  const btn = $("#send"); btn.disabled = true; btn.textContent = "Sending…";
+  try {
+    const r = await fetch(ENDPOINT, { method: "POST", headers: { "Content-Type": "text/plain;charset=utf-8" }, body: JSON.stringify(body) }).then(r => r.json());
+    if (!r.ok) throw new Error(r.error || "Something went wrong.");
+    show("ok", `<b>Sent.</b> ${r.trips} trip${r.trips > 1 ? "s" : ""} requested (request # ${r.request}). The athletic office got an email.`);
+    $("#trips").innerHTML = ""; $("#notes").value = ""; addTrip();
+  } catch (err) {
+    show("err", "Your request didn't send: " + String(err.message || err).replace(/</g, "&lt;") + " Please try again, or email Damon Chase at chase@helixcharter.net.");
+  } finally { btn.disabled = false; btn.textContent = "Send bus request"; }
+};
+</script>
+</body>
+</html>
