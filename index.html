@@ -56,7 +56,8 @@ const HUB = {
     { role: "Certified Athletic Trainer", name: "Chris Whyte",
       email: "whyte@helixcharter.net", ext: "", cell: "(619) 312-9068", hours: "" },
     { role: "Sports Social Worker", name: "Katie Morrill",
-      email: "morrill@helixcharter.net", ext: "206", hours: "" },
+      email: "morrill@helixcharter.net", ext: "206", hours: "",
+      links: [["Sports social worker referral form", "https://docs.google.com/forms/d/e/1FAIpQLSeKf-kS4foC7PJZvP3gTdCkM2Vl3G5mFSjtaT5-aeVlLfXazA/viewform?usp=header"]] },
     { role: "ASB / Finance", name: "Adam Krzywicki",
       email: "krzywicki@helixcharter.net", ext: "444", hours: "" },
     { role: "Facilities, reservations & keys", name: "Lindsey Danner",
@@ -256,10 +257,10 @@ html{scroll-padding-top:120px}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.5 var(--font);-webkit-text-size-adjust:100%}
 a{color:var(--green-2)}
 header.top{
+  /* Official Helix tartan (tartan.webp). The dark layer keeps the white text readable. */
   background:
-    repeating-linear-gradient(90deg, rgba(255,255,255,.05) 0 10px, transparent 10px 34px),
-    repeating-linear-gradient(0deg, rgba(0,0,0,.10) 0 10px, transparent 10px 34px),
-    repeating-linear-gradient(90deg, transparent 0 22px, rgba(200,16,46,.35) 22px 24px, transparent 24px 34px),
+    linear-gradient(rgba(1,38,30,.60), rgba(1,38,30,.60)),
+    url("tartan.webp") 0 0 / 240px 240px repeat,
     var(--green);
   color:#fff;padding:14px 16px 12px;padding-top:max(14px, env(safe-area-inset-top));
 }
@@ -641,7 +642,6 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
     <h3>What coaches must do</h3>
     <p>Please provide the names of any transfer students to the <a href="mailto:chase@helixcharter.net">Athletic Director</a> to initiate the transfer process.</p>
     <p><strong>Transfer students MAY NOT COMPETE in scrimmages or contests until cleared by CIF.</strong></p>
-    <p>Transfer forms: <span id="transferForms"></span></p>
   </div>
   <h3>Sit-out period ends, by sport</h3>
   <p class="muted">A transfer athlete serving a sit-out period may compete again after these dates. Source: <a href="https://docs.google.com/spreadsheets/d/1MryOIlnIGPWinUV5FtBHf9PTOAe9lmqxKHdaw6v9ZXg/edit?gid=0#gid=0">CIF-SDS sit-out sheet</a>.</p>
@@ -782,6 +782,7 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
     if (c.email) acts += `<a class="act" href="mailto:${esc(c.email)}">✉ ${esc(c.email)}</a>`;
     else if (!c.phones) acts += `<span class="tbd">Needed: email</span> `;
     if (c.ext) acts += `<a class="act" href="tel:+16196441940,${esc(c.ext)}">☎ ext. ${esc(c.ext)}</a>`;
+    (c.links||[]).forEach(l => acts += `<a class="act" href="${esc(l[1])}">📝 ${esc(l[0])}</a>`);
     if (c.cell) acts += `<a class="act" href="tel:+1${c.cell.replace(/\D/g,"").slice(-10)}">📱 cell ${esc(c.cell)}</a>`;
     (c.phones||[]).forEach(p => acts += `<a class="act" href="tel:+1${p[1].replace(/\D/g,"").slice(0,10)}${p[1].includes("ext")?","+p[1].split("ext.")[1].trim():""}">☎ ${esc(p[0])}: ${esc(p[1])}</a>`);
     const flyers = c.trainer ? `<div class="flyers"><strong>Sports medicine</strong>${HUB.trainerLinks.map(l=>link(l.url,l.label)).join("")}<a href="https://www.helixathletics.net/sports-medicine">All sports medicine resources</a></div>` : "";
@@ -851,7 +852,6 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   /* Scattered links */
   const L = HUB.links, qx = n => (HUB.quickLinks.find(q => q.label === n) || {}).url;
   $("#scoreBtn").innerHTML = L.scoreForm ? `<a class="btn" href="${esc(L.scoreForm)}">Report a score</a>` : `<span class="btn disabled">Score form coming soon</span>`;
-  $("#transferForms").innerHTML = link(L.transferForms, "CIF-SDS transfer forms");
   $("#busLink").innerHTML = link(qx("Bus Request"), "Bus request form (many trips at once)");
   $("#seasonEnd").innerHTML = link(L.seasonEndChecklist, "End of Year Checklist");
   $("#clubCharterLink").innerHTML = link(L.clubCharter, "HCHS Student Organization Charter Form");
