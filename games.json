@@ -1,75 +1,5 @@
 [
  {
-  "date": "2026-09-28",
-  "time": "7:15 PM",
-  "team": "Girls Field Hockey",
-  "level": "Varsity",
-  "opponent": "Eastlake",
-  "homeAway": "Away",
-  "location": "Eastlake",
-  "id": "4928661@mmboltapi.azurewebsites.net|2026-09-28"
- },
- {
-  "date": "2026-09-28",
-  "time": "6:00 PM",
-  "team": "Girls Field Hockey",
-  "level": "JV",
-  "opponent": "Eastlake",
-  "homeAway": "Away",
-  "location": "Eastlake",
-  "id": "4928662@mmboltapi.azurewebsites.net|2026-09-28"
- },
- {
-  "date": "2026-09-28",
-  "time": "7:00 PM",
-  "team": "Girls Flag Football",
-  "level": "JV Grey",
-  "opponent": "Cathedral Catholic",
-  "homeAway": "Away",
-  "location": "Cathedral Catholic",
-  "id": "4928562@mmboltapi.azurewebsites.net|2026-09-28"
- },
- {
-  "date": "2026-09-28",
-  "time": "4:00 PM",
-  "team": "Girls Tennis",
-  "level": "JV",
-  "opponent": "Coronado",
-  "homeAway": "Away",
-  "location": "Coronado High School",
-  "id": "4854158@mmboltapi.azurewebsites.net|2026-09-28"
- },
- {
-  "date": "2026-09-28",
-  "time": "6:30 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "Steele Canyon",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416646@mmboltapi.azurewebsites.net|2026-09-28"
- },
- {
-  "date": "2026-09-28",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "JV",
-  "opponent": "Steele Canyon",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4430014@mmboltapi.azurewebsites.net|2026-09-28"
- },
- {
-  "date": "2026-09-28",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Freshman",
-  "opponent": "Steele Canyon High School",
-  "homeAway": "Home",
-  "location": "Steele Canyon",
-  "id": "4427183@mmboltapi.azurewebsites.net|2026-09-28"
- },
- {
   "date": "2026-09-29",
   "time": "3:00 PM",
   "team": "Girls Golf",
@@ -1068,5 +998,15 @@
   "homeAway": "Away",
   "location": "Olympian High School",
   "id": "4430291@mmboltapi.azurewebsites.net|2026-10-28"
+ },
+ {
+  "date": "2026-10-29",
+  "time": "5:15 PM",
+  "team": "Boys Football",
+  "level": "Freshman",
+  "opponent": "Granite Hills High School",
+  "homeAway": "Away",
+  "location": "",
+  "id": "4427144@mmboltapi.azurewebsites.net|2026-10-29"
  }
 ]
