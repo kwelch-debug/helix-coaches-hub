@@ -317,6 +317,14 @@ details summary{font-weight:700;cursor:pointer}
 .flyers{margin-top:8px;padding-top:8px;border-top:1px solid var(--line);font-size:14px}
 .flyers a{display:block;padding:3px 0}
 .heat td:first-child{white-space:nowrap;font-weight:700}
+.wx-now{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap}
+.wx-temp{font-size:42px;font-weight:800;line-height:1}
+.wx-cond{font-size:18px;font-weight:600}
+.wx-facts{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.wx-facts span,.wx-h{background:var(--chip);border-radius:8px;padding:5px 9px;font-size:14px}
+.wx-hours{display:flex;gap:6px;overflow-x:auto;padding-bottom:4px;margin-bottom:8px}
+.wx-h{text-align:center;min-width:58px;font-size:13px}
+.wx-h b{display:block;font-size:15px}
 .linklist a,.linklist .row{display:flex;justify-content:space-between;gap:8px;padding:11px 0;border-bottom:1px solid var(--line);text-decoration:none;color:inherit}
 .linklist a::after{content:"›";color:var(--muted)}
 footer{max-width:760px;margin:0 auto;padding:10px 16px 40px;color:var(--muted);font-size:12px;text-align:center}
@@ -420,8 +428,8 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   </div>
 
   <div class="card">
-    <h3>Weather &amp; heat (WBGT)</h3>
-    <p id="wx"></p>
+    <h3>Weather at Helix right now</h3>
+    <div id="wx"></div>
   </div>
   <details>
     <summary>Heat rules — what each WBGT reading means</summary>
@@ -772,10 +780,27 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
       <a href="#${e.tab}"><span class="what">${esc(e.label)}</span>${e.detail?`<span class="detail">${esc(e.detail)}</span>`:""}</a></li>`;
   }).join("");
 
-  /* Weather */
-  $("#wx").innerHTML = HUB.links.perryWeather
-    ? `<a class="btn" style="font-size:16px;background:var(--green)" href="${esc(HUB.links.perryWeather)}">Open Perry Weather (live WBGT)</a><span class="muted">Needs a Perry Weather login.</span>`
-    : `<span class="tbd">Needed: Perry Weather public link</span> <span class="muted">— the live WBGT reading will show here.</span>`;
+  /* Weather: current conditions at Helix from Open-Meteo (free, no key). Not a WBGT reading. */
+  const loadWx = async () => {
+    const el = $("#wx");
+    const perry = HUB.links.perryWeather ? ` Live WBGT: <a href="${esc(HUB.links.perryWeather)}">Perry Weather</a> (staff login).` : "";
+    const WX = c => c === 0 ? ["☀️", "Clear"] : c <= 2 ? ["🌤️", "Partly cloudy"] : c === 3 ? ["☁️", "Cloudy"] : c <= 48 ? ["🌫️", "Fog"]
+      : c <= 57 ? ["🌦️", "Drizzle"] : c <= 67 ? ["🌧️", "Rain"] : c <= 77 ? ["❄️", "Snow"] : c <= 82 ? ["🌧️", "Showers"] : ["⛈️", "Thunderstorm"];
+    const hr = t => new Date(t).toLocaleTimeString("en-US", { hour: "numeric" });
+    try {
+      const u = "https://api.open-meteo.com/v1/forecast?latitude=32.768&longitude=-117.020&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,uv_index&hourly=temperature_2m,weather_code&forecast_hours=7&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FLos_Angeles";
+      const d = await fetch(u).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
+      const c = d.current, [icon, cond] = WX(c.weather_code), R = Math.round;
+      const hours = d.hourly.time.slice(1).map((t, k) => `<div class="wx-h">${esc(hr(t))}<b>${R(d.hourly.temperature_2m[k + 1])}°</b>${WX(d.hourly.weather_code[k + 1])[0]}</div>`).join("");
+      el.innerHTML = `<div class="wx-now"><span class="wx-temp">${R(c.temperature_2m)}°F</span><span class="wx-cond">${icon} ${esc(cond)}</span></div>
+        <div class="wx-facts"><span>Feels like ${R(c.apparent_temperature)}°</span><span>Humidity ${R(c.relative_humidity_2m)}%</span><span>Wind ${R(c.wind_speed_10m)} mph</span><span>UV ${R(c.uv_index)}</span></div>
+        <div class="wx-hours">${hours}</div>
+        <p class="muted" style="margin:0">Updated ${esc(new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }))} · forecast data from Open-Meteo. <strong>This is not a WBGT reading.</strong> The heat rules below use the WBGT measured at practice.${perry}</p>`;
+    } catch (e) {
+      el.innerHTML = `<p class="muted" style="margin:0">Current weather isn't available right now.${perry}</p>`;
+    }
+  };
+  loadWx(); setInterval(loadWx, 10 * 60 * 1000);
 
   /* Contacts */
   $("#contactList").innerHTML = HUB.contacts.map(c => {
