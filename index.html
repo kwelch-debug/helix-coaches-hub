@@ -42,18 +42,19 @@ const HUB = {
   ],
 
   /* ── 2. CONTACTS ─────────────────────────────────────────────────────
-     phone: main line is (619) 644-1940. Put the extension in "ext".   */
+     phone: main line is (619) 644-1940. Put the extension in "ext".
+     cell: cell phone, e.g. "(619) 555-1234" ("" = none).              */
   contacts: [
     { role: "Athletic Director · Grade Level Principal", name: "Damon Chase, CMAA",
-      email: "chase@helixcharter.net", ext: "127", hours: "7:30 am – 4:00 pm" },
+      email: "chase@helixcharter.net", ext: "127", cell: "(619) 572-6489", hours: "7:30 am – 4:00 pm" },
     { role: "Assistant Athletic Director", name: "Kathryn Welch",
-      email: "kwelch@helixcharter.net", ext: "206", hours: "Varies (teaching schedule) — email first" },
+      email: "kwelch@helixcharter.net", ext: "206", cell: "(619) 370-7885", hours: "Varies (teaching schedule) — email first" },
     { role: "Assistant Athletic Director", name: "Jordan Jackson",
-      email: "jjackson@helixcharter.net", ext: "206", hours: "Varies (teaching schedule) — email first" },
+      email: "jjackson@helixcharter.net", ext: "206", cell: "(619) 971-0156", hours: "Varies (teaching schedule) — email first" },
     { role: "Head Athletic Trainer", name: "Andie Jimenez", trainer: true,
-      email: "jimenez@helixcharter.net", ext: "399", hours: "Training room 2:00 pm – at least 6:00 pm" },
+      email: "jimenez@helixcharter.net", ext: "399", cell: "(760) 703-6813", hours: "Training room 2:00 pm – at least 6:00 pm" },
     { role: "Certified Athletic Trainer", name: "Chris Whyte",
-      email: "whyte@helixcharter.net", ext: "", hours: "" },
+      email: "whyte@helixcharter.net", ext: "", cell: "(619) 312-9068", hours: "" },
     { role: "Sports Social Worker", name: "Katie Morrill",
       email: "morrill@helixcharter.net", ext: "206", hours: "" },
     { role: "ASB / Finance", name: "Adam Krzywicki",
@@ -638,7 +639,8 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   </div>
   <div class="card">
     <h3>What coaches must do</h3>
-    <p><span class="tbd">Needed: the steps a coach takes when a transfer student shows up, and who files the paperwork</span></p>
+    <p>Please provide the names of any transfer students to the <a href="mailto:chase@helixcharter.net">Athletic Director</a> to initiate the transfer process.</p>
+    <p><strong>Transfer students MAY NOT COMPETE in scrimmages or contests until cleared by CIF.</strong></p>
     <p>Transfer forms: <span id="transferForms"></span></p>
   </div>
   <h3>Sit-out period ends, by sport</h3>
@@ -780,6 +782,7 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
     if (c.email) acts += `<a class="act" href="mailto:${esc(c.email)}">✉ ${esc(c.email)}</a>`;
     else if (!c.phones) acts += `<span class="tbd">Needed: email</span> `;
     if (c.ext) acts += `<a class="act" href="tel:+16196441940,${esc(c.ext)}">☎ ext. ${esc(c.ext)}</a>`;
+    if (c.cell) acts += `<a class="act" href="tel:+1${c.cell.replace(/\D/g,"").slice(-10)}">📱 cell ${esc(c.cell)}</a>`;
     (c.phones||[]).forEach(p => acts += `<a class="act" href="tel:+1${p[1].replace(/\D/g,"").slice(0,10)}${p[1].includes("ext")?","+p[1].split("ext.")[1].trim():""}">☎ ${esc(p[0])}: ${esc(p[1])}</a>`);
     const flyers = c.trainer ? `<div class="flyers"><strong>Sports medicine</strong>${HUB.trainerLinks.map(l=>link(l.url,l.label)).join("")}<a href="https://www.helixathletics.net/sports-medicine">All sports medicine resources</a></div>` : "";
     return `<div class="card contact"><div class="role">${esc(c.role)}</div><div class="name">${esc(c.name)}</div>
