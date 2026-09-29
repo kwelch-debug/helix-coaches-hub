@@ -428,8 +428,12 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   </div>
 
   <div class="card">
-    <h3>Weather at Helix right now</h3>
-    <div id="wx"></div>
+    <h3>Weather &amp; heat — live from Perry Weather</h3>
+    <!-- Perry Weather widget (embed code from Perry Weather) -->
+    <div style="width: 100%; border-radius: 30px; position:relative" id="pwWidget:84404a38-98be-44ba-a79d-f455b49dc4e9">
+      <script src="https://widget.perryweather.com/js/PwIframe.min.js"></script>
+      <script>PwIframe.createPerryWeatherWidget('84404a38-98be-44ba-a79d-f455b49dc4e9');</script>
+    </div>
   </div>
   <details>
     <summary>Heat rules — what each WBGT reading means</summary>
@@ -780,27 +784,6 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
       <a href="#${e.tab}"><span class="what">${esc(e.label)}</span>${e.detail?`<span class="detail">${esc(e.detail)}</span>`:""}</a></li>`;
   }).join("");
 
-  /* Weather: current conditions at Helix from Open-Meteo (free, no key). Not a WBGT reading. */
-  const loadWx = async () => {
-    const el = $("#wx");
-    const perry = HUB.links.perryWeather ? ` Live WBGT: <a href="${esc(HUB.links.perryWeather)}">Perry Weather</a> (staff login).` : "";
-    const WX = c => c === 0 ? ["☀️", "Clear"] : c <= 2 ? ["🌤️", "Partly cloudy"] : c === 3 ? ["☁️", "Cloudy"] : c <= 48 ? ["🌫️", "Fog"]
-      : c <= 57 ? ["🌦️", "Drizzle"] : c <= 67 ? ["🌧️", "Rain"] : c <= 77 ? ["❄️", "Snow"] : c <= 82 ? ["🌧️", "Showers"] : ["⛈️", "Thunderstorm"];
-    const hr = t => new Date(t).toLocaleTimeString("en-US", { hour: "numeric" });
-    try {
-      const u = "https://api.open-meteo.com/v1/forecast?latitude=32.768&longitude=-117.020&current=temperature_2m,relative_humidity_2m,apparent_temperature,weather_code,wind_speed_10m,uv_index&hourly=temperature_2m,weather_code&forecast_hours=7&temperature_unit=fahrenheit&wind_speed_unit=mph&timezone=America%2FLos_Angeles";
-      const d = await fetch(u).then(r => { if (!r.ok) throw new Error(r.status); return r.json(); });
-      const c = d.current, [icon, cond] = WX(c.weather_code), R = Math.round;
-      const hours = d.hourly.time.slice(1).map((t, k) => `<div class="wx-h">${esc(hr(t))}<b>${R(d.hourly.temperature_2m[k + 1])}°</b>${WX(d.hourly.weather_code[k + 1])[0]}</div>`).join("");
-      el.innerHTML = `<div class="wx-now"><span class="wx-temp">${R(c.temperature_2m)}°F</span><span class="wx-cond">${icon} ${esc(cond)}</span></div>
-        <div class="wx-facts"><span>Feels like ${R(c.apparent_temperature)}°</span><span>Humidity ${R(c.relative_humidity_2m)}%</span><span>Wind ${R(c.wind_speed_10m)} mph</span><span>UV ${R(c.uv_index)}</span></div>
-        <div class="wx-hours">${hours}</div>
-        <p class="muted" style="margin:0">Updated ${esc(new Date().toLocaleTimeString("en-US", { hour: "numeric", minute: "2-digit" }))} · forecast data from Open-Meteo. <strong>This is not a WBGT reading.</strong> The heat rules below use the WBGT measured at practice.${perry}</p>`;
-    } catch (e) {
-      el.innerHTML = `<p class="muted" style="margin:0">Current weather isn't available right now.${perry}</p>`;
-    }
-  };
-  loadWx(); setInterval(loadWx, 10 * 60 * 1000);
 
   /* Contacts */
   $("#contactList").innerHTML = HUB.contacts.map(c => {
