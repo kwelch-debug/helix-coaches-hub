@@ -1,55 +1,5 @@
 [
  {
-  "date": "2026-09-29",
-  "time": "3:00 PM",
-  "team": "Girls Golf",
-  "level": "Varsity",
-  "opponent": "West Hills",
-  "homeAway": "Home",
-  "location": "Cottonwood GC",
-  "id": "4442031@mmboltapi.azurewebsites.net|2026-09-29"
- },
- {
-  "date": "2026-09-29",
-  "time": "4:00 PM",
-  "team": "Girls Golf",
-  "level": "JV",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Cottonwood GC",
-  "id": "4871937@mmboltapi.azurewebsites.net|2026-09-29"
- },
- {
-  "date": "2026-09-29",
-  "time": "3:30 PM",
-  "team": "Girls Tennis",
-  "level": "Varsity",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4442052@mmboltapi.azurewebsites.net|2026-09-29"
- },
- {
-  "date": "2026-09-29",
-  "time": "3:30 PM",
-  "team": "Girls Tennis",
-  "level": "JV",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4442070@mmboltapi.azurewebsites.net|2026-09-29"
- },
- {
-  "date": "2026-09-29",
-  "time": "4:00 PM",
-  "team": "Girls Tennis",
-  "level": "Novice",
-  "opponent": "Grossmont",
-  "homeAway": "Away",
-  "location": "Grossmont",
-  "id": "4871962@mmboltapi.azurewebsites.net|2026-09-29"
- },
- {
   "date": "2026-09-30",
   "time": "4:00 PM",
   "team": "Girls Flag Football",
@@ -1008,5 +958,55 @@
   "homeAway": "Away",
   "location": "",
   "id": "4427144@mmboltapi.azurewebsites.net|2026-10-29"
+ },
+ {
+  "date": "2026-10-30",
+  "time": "7:00 PM",
+  "team": "Boys Football",
+  "level": "Varsity",
+  "opponent": "Granite Hills",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416687@mmboltapi.azurewebsites.net|2026-10-30"
+ },
+ {
+  "date": "2026-10-30",
+  "time": "4:30 PM",
+  "team": "Boys Football",
+  "level": "JV",
+  "opponent": "Granite Hills",
+  "homeAway": "Home",
+  "location": "Helix Charter",
+  "id": "4416683@mmboltapi.azurewebsites.net|2026-10-30"
+ },
+ {
+  "date": "2026-10-30",
+  "time": "6:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Varsity",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon Pool",
+  "id": "4416703@mmboltapi.azurewebsites.net|2026-10-30"
+ },
+ {
+  "date": "2026-10-30",
+  "time": "5:00 PM",
+  "team": "Boys Water Polo",
+  "level": "JV",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon Pool",
+  "id": "4416695@mmboltapi.azurewebsites.net|2026-10-30"
+ },
+ {
+  "date": "2026-10-30",
+  "time": "7:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Novice",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon Pool",
+  "id": "4434273@mmboltapi.azurewebsites.net|2026-10-30"
  }
 ]
