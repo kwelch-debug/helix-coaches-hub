@@ -1,45 +1,5 @@
 [
  {
-  "date": "2026-09-30",
-  "time": "4:00 PM",
-  "team": "Girls Flag Football",
-  "level": "JV Grey",
-  "opponent": "Point Loma High School",
-  "homeAway": "Away",
-  "location": "Point Loma High School",
-  "id": "4928563@mmboltapi.azurewebsites.net|2026-09-30"
- },
- {
-  "date": "2026-09-30",
-  "time": "6:30 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "Santana",
-  "homeAway": "Away",
-  "location": "Santana",
-  "id": "4416647@mmboltapi.azurewebsites.net|2026-09-30"
- },
- {
-  "date": "2026-09-30",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "JV",
-  "opponent": "Santana",
-  "homeAway": "Away",
-  "location": "Santana",
-  "id": "4416657@mmboltapi.azurewebsites.net|2026-09-30"
- },
- {
-  "date": "2026-09-30",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Freshman",
-  "opponent": "Santana",
-  "homeAway": "Away",
-  "location": "Santana",
-  "id": "4430060@mmboltapi.azurewebsites.net|2026-09-30"
- },
- {
   "date": "2026-10-01",
   "time": "7:15 PM",
   "team": "Girls Flag Football",
@@ -311,7 +271,7 @@
  },
  {
   "date": "2026-10-08",
-  "time": "6:00 PM",
+  "time": "7:30 PM",
   "team": "Girls Flag Football",
   "level": "Varsity",
   "opponent": "Grossmont",
@@ -321,7 +281,7 @@
  },
  {
   "date": "2026-10-08",
-  "time": "5:45 PM",
+  "time": "6:00 PM",
   "team": "Girls Flag Football",
   "level": "JV Green",
   "opponent": "Grossmont HS",
