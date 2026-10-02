@@ -1,35 +1,5 @@
 [
  {
-  "date": "2026-10-01",
-  "time": "7:15 PM",
-  "team": "Girls Flag Football",
-  "level": "Varsity",
-  "opponent": "El Capitan/Lakeside",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416674@mmboltapi.azurewebsites.net|2026-10-01"
- },
- {
-  "date": "2026-10-01",
-  "time": "5:45 PM",
-  "team": "Girls Flag Football",
-  "level": "JV Grey",
-  "opponent": "El Capitan HS",
-  "homeAway": "Home",
-  "location": "Helix High School",
-  "id": "4852204@mmboltapi.azurewebsites.net|2026-10-01"
- },
- {
-  "date": "2026-10-01",
-  "time": "3:30 PM",
-  "team": "Girls Golf",
-  "level": "Varsity",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon Golf Club",
-  "id": "4442032@mmboltapi.azurewebsites.net|2026-10-01"
- },
- {
   "date": "2026-10-02",
   "time": "7:00 PM",
   "team": "Boys Football",
@@ -91,7 +61,7 @@
  },
  {
   "date": "2026-10-05",
-  "time": "3:30 PM",
+  "time": "4:00 PM",
   "team": "Girls Tennis",
   "level": "Varsity",
   "opponent": "Valhalla",
@@ -101,7 +71,7 @@
  },
  {
   "date": "2026-10-05",
-  "time": "3:30 PM",
+  "time": "4:00 PM",
   "team": "Girls Tennis",
   "level": "JV",
   "opponent": "Valhalla",
@@ -161,7 +131,7 @@
  },
  {
   "date": "2026-10-06",
-  "time": "3:30 PM",
+  "time": "4:00 PM",
   "team": "Girls Golf",
   "level": "Varsity",
   "opponent": "Granite Hills",
@@ -291,7 +261,7 @@
  },
  {
   "date": "2026-10-08",
-  "time": "3:30 PM",
+  "time": "4:00 PM",
   "team": "Girls Golf",
   "level": "Varsity",
   "opponent": "West Hills",
@@ -311,7 +281,7 @@
  },
  {
   "date": "2026-10-08",
-  "time": "3:30 PM",
+  "time": "4:00 PM",
   "team": "Girls Tennis",
   "level": "Varsity",
   "opponent": "El Capitan/Lakeside",
@@ -321,7 +291,7 @@
  },
  {
   "date": "2026-10-08",
-  "time": "3:30 PM",
+  "time": "4:00 PM",
   "team": "Girls Tennis",
   "level": "JV",
   "opponent": "El Capitan/Lakeside",
@@ -481,7 +451,7 @@
  },
  {
   "date": "2026-10-13",
-  "time": "3:30 PM",
+  "time": "4:00 PM",
   "team": "Girls Golf",
   "level": "Varsity",
   "opponent": "Steele Canyon",
@@ -491,7 +461,7 @@
  },
  {
   "date": "2026-10-13",
-  "time": "3:30 PM",
+  "time": "4:00 PM",
   "team": "Girls Tennis",
   "level": "Varsity",
   "opponent": "Steele Canyon",
@@ -501,7 +471,7 @@
  },
  {
   "date": "2026-10-13",
-  "time": "3:30 PM",
+  "time": "4:00 PM",
   "team": "Girls Tennis",
   "level": "JV",
   "opponent": "Steele Canyon",
