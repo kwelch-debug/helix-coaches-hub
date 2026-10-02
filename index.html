@@ -231,7 +231,7 @@ const HUB = {
     clubCharter:      "https://docs.google.com/forms/d/e/1FAIpQLSd-ldEEdAxMtZc0VRVnEr9IIBAtXAuYdVody0TiA0UZjwrYNQ/viewform?usp=dialog",
     fundraisingRequest: "https://docs.google.com/forms/d/e/1FAIpQLSej_mGin1Yzs4FY90Ab_PAbUJ9fTC0Y9rv5iV5nTkDW6aPKYA/viewform?usp=dialog",
     awardsForm:       "https://docs.google.com/forms/d/e/1FAIpQLSesK0NXsEg1yzl8zJnOl8egIGas_2Ej879xFo2WdsoEq2PGrw/viewform?usp=sharing",
-    stipendSheet:     "https://docs.google.com/spreadsheets/d/1KtwxY329TsQJYKFKr47iUfsAah_6-X7tWwT1T6wadrI/edit?gid=0#gid=0"
+    stipendSheet:     "stipend.html"
   }
 };
 </script>
@@ -626,7 +626,8 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   </div>
   <div class="card">
     <h3>Pay &amp; stipends</h3>
-    <p><strong>Head coaches:</strong> list every coach in your program and each coach's share of the stipend on the <span id="stipendLink"></span>.</p>
+    <p><strong>Head coaches:</strong> list every coach in your program and each coach's share of the stipend. Your sheet goes straight to Damon Chase and Kathryn Welch.</p>
+    <p><a class="btn" href="stipend.html">Fill out the stipend sheet</a></p>
   </div>
 </section>
 
@@ -877,7 +878,6 @@ footer .tag{font-weight:800;color:var(--green-2);letter-spacing:1px;font-size:13
   $("#fundraiseLink").innerHTML = link(L.fundraisingRequest, "HCHS Fundraiser Request Form");
   $("#awardsLink").innerHTML = link(L.awardsForm, "Banquet Awards Form");
   $("#awardsLink2").innerHTML = link(L.awardsForm, "Banquet Awards Form");
-  $("#stipendLink").innerHTML = link(L.stipendSheet, "stipend sheet");
   $("#bellLink").innerHTML = link(L.bellSchedule, "Bell schedules");
   const row = (label, url) => url ? `<a href="${esc(url)}">${esc(label)}</a>` : `<div class="row"><span>${esc(label)}</span><span class="soon">Coming soon</span></div>`;
   $("#pubLinks").innerHTML = [
