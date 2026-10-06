@@ -1,55 +1,5 @@
 [
  {
-  "date": "2026-10-05",
-  "time": "4:00 PM",
-  "team": "Girls Tennis",
-  "level": "Varsity",
-  "opponent": "Valhalla",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4442053@mmboltapi.azurewebsites.net|2026-10-05"
- },
- {
-  "date": "2026-10-05",
-  "time": "4:00 PM",
-  "team": "Girls Tennis",
-  "level": "JV",
-  "opponent": "Valhalla",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4442071@mmboltapi.azurewebsites.net|2026-10-05"
- },
- {
-  "date": "2026-10-05",
-  "time": "6:30 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "El Capitan/Lakeside",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416648@mmboltapi.azurewebsites.net|2026-10-05"
- },
- {
-  "date": "2026-10-05",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "JV",
-  "opponent": "El Capitan/Lakeside",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4430016@mmboltapi.azurewebsites.net|2026-10-05"
- },
- {
-  "date": "2026-10-05",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Freshman",
-  "opponent": "El Capitan/Lakeside",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4430061@mmboltapi.azurewebsites.net|2026-10-05"
- },
- {
   "date": "2026-10-06",
   "time": "7:15 PM",
   "team": "Girls Flag Football",
