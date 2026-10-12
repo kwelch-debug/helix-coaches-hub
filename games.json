@@ -191,16 +191,6 @@
  },
  {
   "date": "2026-10-15",
-  "time": "6:00 PM",
-  "team": "Boys Football",
-  "level": "JV",
-  "opponent": "Santana",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "4924106@mmboltapi.azurewebsites.net|2026-10-15"
- },
- {
-  "date": "2026-10-15",
   "time": "3:00 PM",
   "team": "Girls Golf",
   "level": "Varsity",
