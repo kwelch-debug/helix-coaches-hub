@@ -1,65 +1,5 @@
 [
  {
-  "date": "2026-10-12",
-  "time": "5:30 PM",
-  "team": "Girls Field Hockey",
-  "level": "Varsity",
-  "opponent": "Eastlake High School",
-  "homeAway": "Home",
-  "location": "Helix Charter High School",
-  "id": "4425997@mmboltapi.azurewebsites.net|2026-10-12"
- },
- {
-  "date": "2026-10-12",
-  "time": "7:00 PM",
-  "team": "Girls Field Hockey",
-  "level": "JV",
-  "opponent": "Eastlake High School",
-  "homeAway": "Home",
-  "location": "Helix Charter High School",
-  "id": "4430287@mmboltapi.azurewebsites.net|2026-10-12"
- },
- {
-  "date": "2026-10-12",
-  "time": "5:30 PM",
-  "team": "Girls Field Hockey",
-  "level": "JV",
-  "opponent": "Eastlake High School",
-  "homeAway": "Home",
-  "location": "Helix Charter High School",
-  "id": "4430288@mmboltapi.azurewebsites.net|2026-10-12"
- },
- {
-  "date": "2026-10-12",
-  "time": "6:30 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416650@mmboltapi.azurewebsites.net|2026-10-12"
- },
- {
-  "date": "2026-10-12",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "JV",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4430018@mmboltapi.azurewebsites.net|2026-10-12"
- },
- {
-  "date": "2026-10-12",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Freshman",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4430063@mmboltapi.azurewebsites.net|2026-10-12"
- },
- {
   "date": "2026-10-13",
   "time": "5:30 PM",
   "team": "Girls Flag Football",
@@ -188,6 +128,16 @@
   "homeAway": "Away",
   "location": "Westview HS",
   "id": "4886560@mmboltapi.azurewebsites.net|2026-10-15"
+ },
+ {
+  "date": "2026-10-15",
+  "time": "4:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Varsity",
+  "opponent": "Bainbridge (WA)",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4434248@mmboltapi.azurewebsites.net|2026-10-15"
  },
  {
   "date": "2026-10-15",
