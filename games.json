@@ -1,65 +1,5 @@
 [
  {
-  "date": "2026-10-13",
-  "time": "5:30 PM",
-  "team": "Girls Flag Football",
-  "level": "Varsity",
-  "opponent": "Granite Hills",
-  "homeAway": "Away",
-  "location": "Granite Hills",
-  "id": "4416677@mmboltapi.azurewebsites.net|2026-10-13"
- },
- {
-  "date": "2026-10-13",
-  "time": "4:00 PM",
-  "team": "Girls Flag Football",
-  "level": "JV Grey",
-  "opponent": "Granite Hills HS",
-  "homeAway": "Away",
-  "location": "Granite Hills High School",
-  "id": "4852207@mmboltapi.azurewebsites.net|2026-10-13"
- },
- {
-  "date": "2026-10-13",
-  "time": "3:00 PM",
-  "team": "Girls Golf",
-  "level": "Varsity",
-  "opponent": "Steele Canyon",
-  "homeAway": "Home",
-  "location": "Cottonwood GC",
-  "id": "4442035@mmboltapi.azurewebsites.net|2026-10-13"
- },
- {
-  "date": "2026-10-13",
-  "time": "4:00 PM",
-  "team": "Girls Tennis",
-  "level": "Varsity",
-  "opponent": "Steele Canyon",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4442055@mmboltapi.azurewebsites.net|2026-10-13"
- },
- {
-  "date": "2026-10-13",
-  "time": "4:00 PM",
-  "team": "Girls Tennis",
-  "level": "JV",
-  "opponent": "Steele Canyon",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4442073@mmboltapi.azurewebsites.net|2026-10-13"
- },
- {
-  "date": "2026-10-13",
-  "time": "4:00 PM",
-  "team": "Girls Tennis",
-  "level": "Novice",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon",
-  "id": "4847587@mmboltapi.azurewebsites.net|2026-10-13"
- },
- {
   "date": "2026-10-14",
   "time": "6:00 PM",
   "team": "Boys Water Polo",
@@ -131,16 +71,6 @@
  },
  {
   "date": "2026-10-15",
-  "time": "4:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Varsity",
-  "opponent": "Bainbridge (WA)",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "4434248@mmboltapi.azurewebsites.net|2026-10-15"
- },
- {
-  "date": "2026-10-15",
   "time": "3:00 PM",
   "team": "Girls Golf",
   "level": "Varsity",
@@ -148,6 +78,16 @@
   "homeAway": "Away",
   "location": "Cottonwood GC",
   "id": "4958267@mmboltapi.azurewebsites.net|2026-10-15"
+ },
+ {
+  "date": "2026-10-16",
+  "time": "4:00 PM",
+  "team": "Boys Water Polo",
+  "level": "Varsity",
+  "opponent": "Bainbridge (WA)",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4434248@mmboltapi.azurewebsites.net|2026-10-16"
  },
  {
   "date": "2026-10-19",
