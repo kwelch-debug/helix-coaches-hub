@@ -1,65 +1,5 @@
 [
  {
-  "date": "2026-10-14",
-  "time": "6:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Varsity",
-  "opponent": "Steele Canyon",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416699@mmboltapi.azurewebsites.net|2026-10-14"
- },
- {
-  "date": "2026-10-14",
-  "time": "5:00 PM",
-  "team": "Boys Water Polo",
-  "level": "JV",
-  "opponent": "Steele Canyon",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416691@mmboltapi.azurewebsites.net|2026-10-14"
- },
- {
-  "date": "2026-10-14",
-  "time": "7:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Novice",
-  "opponent": "Steele Canyon",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4434269@mmboltapi.azurewebsites.net|2026-10-14"
- },
- {
-  "date": "2026-10-14",
-  "time": "6:30 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon",
-  "id": "4416651@mmboltapi.azurewebsites.net|2026-10-14"
- },
- {
-  "date": "2026-10-14",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "JV",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon",
-  "id": "4416661@mmboltapi.azurewebsites.net|2026-10-14"
- },
- {
-  "date": "2026-10-14",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Freshman",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon",
-  "id": "4430064@mmboltapi.azurewebsites.net|2026-10-14"
- },
- {
   "date": "2026-10-15",
   "time": "4:00 PM",
   "team": "Boys Football",
@@ -448,5 +388,45 @@
   "homeAway": "Away",
   "location": "Steele Canyon Pool",
   "id": "4434273@mmboltapi.azurewebsites.net|2026-10-30"
+ },
+ {
+  "date": "2026-11-14",
+  "time": "9:00 AM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Gym",
+  "id": "4932220@mmboltapi.azurewebsites.net|2026-11-14"
+ },
+ {
+  "date": "2026-11-14",
+  "time": "2:00 PM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "La Jolla Country Day",
+  "homeAway": "Away",
+  "location": "La Jolla Country Day",
+  "id": "4932221@mmboltapi.azurewebsites.net|2026-11-14"
+ },
+ {
+  "date": "2026-11-14",
+  "time": "10:30 AM",
+  "team": "Boys Basketball",
+  "level": "JV",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Gym",
+  "id": "4932243@mmboltapi.azurewebsites.net|2026-11-14"
+ },
+ {
+  "date": "2026-11-14",
+  "time": "12:00 PM",
+  "team": "Boys Green Basketball",
+  "level": "Freshman",
+  "opponent": "Grossmont",
+  "homeAway": "Home",
+  "location": "Helix Gym",
+  "id": "4932262@mmboltapi.azurewebsites.net|2026-11-14"
  }
 ]
