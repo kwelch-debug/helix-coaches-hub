@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-10-15",
-  "time": "4:00 PM",
-  "team": "Boys Football",
-  "level": "Freshman",
-  "opponent": "Westview",
-  "homeAway": "Away",
-  "location": "Westview HS",
-  "id": "4886560@mmboltapi.azurewebsites.net|2026-10-15"
- },
- {
-  "date": "2026-10-15",
-  "time": "3:00 PM",
-  "team": "Girls Golf",
-  "level": "Varsity",
-  "opponent": "Granite Hills",
-  "homeAway": "Away",
-  "location": "Cottonwood GC",
-  "id": "4958267@mmboltapi.azurewebsites.net|2026-10-15"
- },
- {
   "date": "2026-10-16",
   "time": "4:00 PM",
   "team": "Boys Water Polo",
