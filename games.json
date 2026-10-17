@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-10-16",
-  "time": "4:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Varsity",
-  "opponent": "Bainbridge (WA)",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "4434248@mmboltapi.azurewebsites.net|2026-10-16"
- },
- {
   "date": "2026-10-19",
   "time": "6:30 PM",
   "team": "Girls Volleyball",
@@ -408,5 +398,25 @@
   "homeAway": "Home",
   "location": "Helix Gym",
   "id": "4932262@mmboltapi.azurewebsites.net|2026-11-14"
+ },
+ {
+  "date": "2026-11-16",
+  "time": "6:00 PM",
+  "team": "Girls Water Polo",
+  "level": "Varsity",
+  "opponent": "Patrick Henry",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4932383@mmboltapi.azurewebsites.net|2026-11-16"
+ },
+ {
+  "date": "2026-11-16",
+  "time": "5:00 PM",
+  "team": "Girls Water Polo",
+  "level": "JV",
+  "opponent": "Patrick Henry",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4932367@mmboltapi.azurewebsites.net|2026-11-16"
  }
 ]
