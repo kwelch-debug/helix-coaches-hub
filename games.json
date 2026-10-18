@@ -418,5 +418,25 @@
   "homeAway": "Home",
   "location": "Helix",
   "id": "4932367@mmboltapi.azurewebsites.net|2026-11-16"
+ },
+ {
+  "date": "2026-11-17",
+  "time": "6:00 PM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "Francis Parker",
+  "homeAway": "Away",
+  "location": "Francis Parker",
+  "id": "4932222@mmboltapi.azurewebsites.net|2026-11-17"
+ },
+ {
+  "date": "2026-11-17",
+  "time": "4:30 PM",
+  "team": "Boys Basketball",
+  "level": "JV",
+  "opponent": "Francis Parker",
+  "homeAway": "Away",
+  "location": "Francis Parker",
+  "id": "4932244@mmboltapi.azurewebsites.net|2026-11-17"
  }
 ]
