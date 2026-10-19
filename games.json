@@ -438,5 +438,25 @@
   "homeAway": "Away",
   "location": "Francis Parker",
   "id": "4932244@mmboltapi.azurewebsites.net|2026-11-17"
+ },
+ {
+  "date": "2026-11-18",
+  "time": "4:30 PM",
+  "team": "Girls Water Polo",
+  "level": "Varsity",
+  "opponent": "Coronado",
+  "homeAway": "Away",
+  "location": "Coronado",
+  "id": "4932384@mmboltapi.azurewebsites.net|2026-11-18"
+ },
+ {
+  "date": "2026-11-18",
+  "time": "3:30 PM",
+  "team": "Girls Water Polo",
+  "level": "JV",
+  "opponent": "Coronado",
+  "homeAway": "Away",
+  "location": "Coronado",
+  "id": "4932368@mmboltapi.azurewebsites.net|2026-11-18"
  }
 ]
