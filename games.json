@@ -1,35 +1,5 @@
 [
  {
-  "date": "2026-10-19",
-  "time": "6:30 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "Santana",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416652@mmboltapi.azurewebsites.net|2026-10-19"
- },
- {
-  "date": "2026-10-19",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "JV",
-  "opponent": "Santana",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416662@mmboltapi.azurewebsites.net|2026-10-19"
- },
- {
-  "date": "2026-10-19",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Freshman",
-  "opponent": "Santana High School",
-  "homeAway": "Home",
-  "location": "Santana",
-  "id": "4427189@mmboltapi.azurewebsites.net|2026-10-19"
- },
- {
   "date": "2026-10-20",
   "time": "6:00 PM",
   "team": "Girls Flag Football",
