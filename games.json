@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-10-20",
-  "time": "6:00 PM",
-  "team": "Girls Flag Football",
-  "level": "Varsity",
-  "opponent": "El Capitan/Lakeside",
-  "homeAway": "Away",
-  "location": "El Capitan",
-  "id": "4416678@mmboltapi.azurewebsites.net|2026-10-20"
- },
- {
-  "date": "2026-10-20",
-  "time": "4:30 PM",
-  "team": "Girls Flag Football",
-  "level": "JV Green",
-  "opponent": "El Capitan HS",
-  "homeAway": "Away",
-  "location": "El Capitan HS",
-  "id": "4852399@mmboltapi.azurewebsites.net|2026-10-20"
- },
- {
   "date": "2026-10-21",
   "time": "6:00 PM",
   "team": "Boys Water Polo",
@@ -428,5 +408,25 @@
   "homeAway": "Away",
   "location": "Coronado",
   "id": "4932368@mmboltapi.azurewebsites.net|2026-11-18"
+ },
+ {
+  "date": "2026-11-20",
+  "time": "1:00 PM",
+  "team": "Boys Wrestling",
+  "level": "JV",
+  "opponent": "Vista Frosh/Soph Duals",
+  "homeAway": "Away",
+  "location": "Vista High School",
+  "id": "4941285@mmboltapi.azurewebsites.net|2026-11-20"
+ },
+ {
+  "date": "2026-11-20",
+  "time": "1:00 PM",
+  "team": "Boys Wrestling",
+  "level": "Freshman",
+  "opponent": "Vista Frosh/Soph Duals",
+  "homeAway": "Away",
+  "location": "Vista High School",
+  "id": "4943287@mmboltapi.azurewebsites.net|2026-11-20"
  }
 ]
