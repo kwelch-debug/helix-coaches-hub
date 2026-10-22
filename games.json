@@ -1,85 +1,5 @@
 [
  {
-  "date": "2026-10-21",
-  "time": "6:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Varsity",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416700@mmboltapi.azurewebsites.net|2026-10-21"
- },
- {
-  "date": "2026-10-21",
-  "time": "5:00 PM",
-  "team": "Boys Water Polo",
-  "level": "JV",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416692@mmboltapi.azurewebsites.net|2026-10-21"
- },
- {
-  "date": "2026-10-21",
-  "time": "7:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Novice",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4434270@mmboltapi.azurewebsites.net|2026-10-21"
- },
- {
-  "date": "2026-10-21",
-  "time": "6:00 PM",
-  "team": "Girls Field Hockey",
-  "level": "Varsity",
-  "opponent": "Otay Ranch Senior High School",
-  "homeAway": "Home",
-  "location": "Helix Charter High School",
-  "id": "4425999@mmboltapi.azurewebsites.net|2026-10-21"
- },
- {
-  "date": "2026-10-21",
-  "time": "7:15 PM",
-  "team": "Girls Field Hockey",
-  "level": "JV",
-  "opponent": "Del Norte",
-  "homeAway": "Home",
-  "location": "Helix Charter High School",
-  "id": "4430289@mmboltapi.azurewebsites.net|2026-10-21"
- },
- {
-  "date": "2026-10-21",
-  "time": "6:30 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "El Capitan/Lakeside",
-  "homeAway": "Away",
-  "location": "El Capitan",
-  "id": "4416653@mmboltapi.azurewebsites.net|2026-10-21"
- },
- {
-  "date": "2026-10-21",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "JV",
-  "opponent": "El Capitan/Lakeside",
-  "homeAway": "Away",
-  "location": "El Capitan",
-  "id": "4416663@mmboltapi.azurewebsites.net|2026-10-21"
- },
- {
-  "date": "2026-10-21",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Freshman",
-  "opponent": "El Capitan High School",
-  "homeAway": "Away",
-  "location": "El Capitan",
-  "id": "4427190@mmboltapi.azurewebsites.net|2026-10-21"
- },
- {
   "date": "2026-10-22",
   "time": "5:15 PM",
   "team": "Boys Football",
@@ -428,5 +348,35 @@
   "homeAway": "Away",
   "location": "Vista High School",
   "id": "4943287@mmboltapi.azurewebsites.net|2026-11-20"
+ },
+ {
+  "date": "2026-11-21",
+  "time": "6:30 PM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "Carlsbad",
+  "homeAway": "Away",
+  "location": "Montgomery HS",
+  "id": "4932223@mmboltapi.azurewebsites.net|2026-11-21"
+ },
+ {
+  "date": "2026-11-21",
+  "time": "9:00 AM",
+  "team": "Girls Wrestling",
+  "level": "Varsity",
+  "opponent": "Girl on Fire",
+  "homeAway": "Away",
+  "location": "Sweetwater High School",
+  "id": "4941240@mmboltapi.azurewebsites.net|2026-11-21"
+ },
+ {
+  "date": "2026-11-21",
+  "time": "9:00 AM",
+  "team": "Girls Wrestling",
+  "level": "Novice",
+  "opponent": "Girl on Fire",
+  "homeAway": "Away",
+  "location": "Sweetwater High School",
+  "id": "4943292@mmboltapi.azurewebsites.net|2026-11-21"
  }
 ]
