@@ -1,45 +1,5 @@
 [
  {
-  "date": "2026-10-23",
-  "time": "7:00 PM",
-  "team": "Boys Football",
-  "level": "Varsity",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon",
-  "id": "4416686@mmboltapi.azurewebsites.net|2026-10-23"
- },
- {
-  "date": "2026-10-23",
-  "time": "4:30 PM",
-  "team": "Boys Football",
-  "level": "JV",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon",
-  "id": "4416682@mmboltapi.azurewebsites.net|2026-10-23"
- },
- {
-  "date": "2026-10-23",
-  "time": "7:30 PM",
-  "team": "Girls Field Hockey",
-  "level": "Varsity",
-  "opponent": "Bonita Vista Senior High School",
-  "homeAway": "Away",
-  "location": "Bonita Vista Senior High School",
-  "id": "4426000@mmboltapi.azurewebsites.net|2026-10-23"
- },
- {
-  "date": "2026-10-23",
-  "time": "6:00 PM",
-  "team": "Girls Field Hockey",
-  "level": "JV",
-  "opponent": "Bonita Vista Senior High School",
-  "homeAway": "Away",
-  "location": "Bonita Vista Senior High School",
-  "id": "4430290@mmboltapi.azurewebsites.net|2026-10-23"
- },
- {
   "date": "2026-10-26",
   "time": "6:00 PM",
   "team": "Boys Water Polo",
@@ -348,5 +308,25 @@
   "homeAway": "Away",
   "location": "Sweetwater High School",
   "id": "4943292@mmboltapi.azurewebsites.net|2026-11-21"
+ },
+ {
+  "date": "2026-11-23",
+  "time": "4:30 PM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "Madison",
+  "homeAway": "Away",
+  "location": "Hoover HS",
+  "id": "4932224@mmboltapi.azurewebsites.net|2026-11-23"
+ },
+ {
+  "date": "2026-11-23",
+  "time": "3:00 PM",
+  "team": "Boys Basketball",
+  "level": "JV",
+  "opponent": "Madison",
+  "homeAway": "Away",
+  "location": "Hoover HS",
+  "id": "4932245@mmboltapi.azurewebsites.net|2026-11-23"
  }
 ]
