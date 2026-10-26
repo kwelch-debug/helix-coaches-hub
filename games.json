@@ -51,7 +51,7 @@
  },
  {
   "date": "2026-10-27",
-  "time": "",
+  "time": "2:30 PM",
   "team": "Girls Tennis",
   "level": "Varsity",
   "opponent": "Mater Dei Catholic",
@@ -378,5 +378,25 @@
   "homeAway": "Home",
   "location": "Helix Gym",
   "id": "4932246@mmboltapi.azurewebsites.net|2026-11-24"
+ },
+ {
+  "date": "2026-11-25",
+  "time": "4:30 PM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "Coronado",
+  "homeAway": "Away",
+  "location": "Olympian HS",
+  "id": "4932226@mmboltapi.azurewebsites.net|2026-11-25"
+ },
+ {
+  "date": "2026-11-25",
+  "time": "3:00 PM",
+  "team": "Boys Basketball",
+  "level": "JV",
+  "opponent": "Coronado",
+  "homeAway": "Away",
+  "location": "Olympian HS",
+  "id": "4932247@mmboltapi.azurewebsites.net|2026-11-25"
  }
 ]
