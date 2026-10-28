@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-10-27",
-  "time": "2:30 PM",
-  "team": "Girls Tennis",
-  "level": "Varsity",
-  "opponent": "Mater Dei Catholic",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "4979525@mmboltapi.azurewebsites.net|2026-10-27"
- },
- {
   "date": "2026-10-28",
   "time": "6:00 PM",
   "team": "Boys Water Polo",
