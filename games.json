@@ -1,75 +1,5 @@
 [
  {
-  "date": "2026-10-28",
-  "time": "6:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Varsity",
-  "opponent": "Santana",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416702@mmboltapi.azurewebsites.net|2026-10-28"
- },
- {
-  "date": "2026-10-28",
-  "time": "5:00 PM",
-  "team": "Boys Water Polo",
-  "level": "JV",
-  "opponent": "Santana",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416694@mmboltapi.azurewebsites.net|2026-10-28"
- },
- {
-  "date": "2026-10-28",
-  "time": "7:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Novice",
-  "opponent": "Santana",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4434272@mmboltapi.azurewebsites.net|2026-10-28"
- },
- {
-  "date": "2026-10-28",
-  "time": "6:00 PM",
-  "team": "Girls Field Hockey",
-  "level": "Varsity",
-  "opponent": "Olympian High School",
-  "homeAway": "Away",
-  "location": "Olympian High School",
-  "id": "4426001@mmboltapi.azurewebsites.net|2026-10-28"
- },
- {
-  "date": "2026-10-28",
-  "time": "4:30 PM",
-  "team": "Girls Field Hockey",
-  "level": "JV",
-  "opponent": "Olympian High School",
-  "homeAway": "Away",
-  "location": "Olympian High School",
-  "id": "4430291@mmboltapi.azurewebsites.net|2026-10-28"
- },
- {
-  "date": "2026-10-28",
-  "time": "7:00 PM",
-  "team": "Girls Flag Football",
-  "level": "Varsity",
-  "opponent": "Mission Hills",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "4979322@mmboltapi.azurewebsites.net|2026-10-28"
- },
- {
-  "date": "2026-10-28",
-  "time": "6:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "Maranatha Christian",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "4979323@mmboltapi.azurewebsites.net|2026-10-28"
- },
- {
   "date": "2026-10-29",
   "time": "5:15 PM",
   "team": "Boys Football",
@@ -128,6 +58,16 @@
   "homeAway": "Away",
   "location": "Steele Canyon Pool",
   "id": "4434273@mmboltapi.azurewebsites.net|2026-10-30"
+ },
+ {
+  "date": "2026-11-03",
+  "time": "7:00 PM",
+  "team": "Girls Flag Football",
+  "level": "Varsity",
+  "opponent": "Classical Academy",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4987073@mmboltapi.azurewebsites.net|2026-11-03"
  },
  {
   "date": "2026-11-14",
@@ -208,6 +148,26 @@
   "homeAway": "Away",
   "location": "Francis Parker",
   "id": "4932244@mmboltapi.azurewebsites.net|2026-11-17"
+ },
+ {
+  "date": "2026-11-17",
+  "time": "6:30 PM",
+  "team": "Girls Basketball",
+  "level": "Varsity",
+  "opponent": "Great Oak",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4970862@mmboltapi.azurewebsites.net|2026-11-17"
+ },
+ {
+  "date": "2026-11-17",
+  "time": "5:00 PM",
+  "team": "Girls Basketball",
+  "level": "JV",
+  "opponent": "Great Oak",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4973174@mmboltapi.azurewebsites.net|2026-11-17"
  },
  {
   "date": "2026-11-18",
@@ -338,5 +298,15 @@
   "homeAway": "Away",
   "location": "Olympian HS",
   "id": "4932247@mmboltapi.azurewebsites.net|2026-11-25"
+ },
+ {
+  "date": "2026-11-28",
+  "time": "9:00 AM",
+  "team": "Girls Soccer",
+  "level": "Novice",
+  "opponent": "Our Lady of Peace",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "4932313@mmboltapi.azurewebsites.net|2026-11-28"
  }
 ]
