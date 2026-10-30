@@ -290,6 +290,36 @@
   "id": "4932247@mmboltapi.azurewebsites.net|2026-11-25"
  },
  {
+  "date": "2026-11-25",
+  "time": "1:30 PM",
+  "team": "Boys Green Basketball",
+  "level": "Freshman",
+  "opponent": "Canyon Crest",
+  "homeAway": "Away",
+  "location": "Valhalla",
+  "id": "4991741@mmboltapi.azurewebsites.net|2026-11-25"
+ },
+ {
+  "date": "2026-11-27",
+  "time": "1:30 PM",
+  "team": "Boys Green Basketball",
+  "level": "Freshman",
+  "opponent": "Olympian",
+  "homeAway": "Away",
+  "location": "Valhalla",
+  "id": "4991742@mmboltapi.azurewebsites.net|2026-11-27"
+ },
+ {
+  "date": "2026-11-28",
+  "time": "4:30 PM",
+  "team": "Boys Green Basketball",
+  "level": "Freshman",
+  "opponent": "Carlsbad",
+  "homeAway": "Away",
+  "location": "Valhalla",
+  "id": "4991743@mmboltapi.azurewebsites.net|2026-11-28"
+ },
+ {
   "date": "2026-11-28",
   "time": "9:00 AM",
   "team": "Girls Soccer",
