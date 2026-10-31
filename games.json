@@ -1,55 +1,5 @@
 [
  {
-  "date": "2026-10-30",
-  "time": "7:00 PM",
-  "team": "Boys Football",
-  "level": "Varsity",
-  "opponent": "Granite Hills",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416687@mmboltapi.azurewebsites.net|2026-10-30"
- },
- {
-  "date": "2026-10-30",
-  "time": "4:30 PM",
-  "team": "Boys Football",
-  "level": "JV",
-  "opponent": "Granite Hills",
-  "homeAway": "Home",
-  "location": "Helix Charter",
-  "id": "4416683@mmboltapi.azurewebsites.net|2026-10-30"
- },
- {
-  "date": "2026-10-30",
-  "time": "6:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Varsity",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon Pool",
-  "id": "4416703@mmboltapi.azurewebsites.net|2026-10-30"
- },
- {
-  "date": "2026-10-30",
-  "time": "5:00 PM",
-  "team": "Boys Water Polo",
-  "level": "JV",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon Pool",
-  "id": "4416695@mmboltapi.azurewebsites.net|2026-10-30"
- },
- {
-  "date": "2026-10-30",
-  "time": "7:00 PM",
-  "team": "Boys Water Polo",
-  "level": "Novice",
-  "opponent": "Steele Canyon",
-  "homeAway": "Away",
-  "location": "Steele Canyon Pool",
-  "id": "4434273@mmboltapi.azurewebsites.net|2026-10-30"
- },
- {
   "date": "2026-11-03",
   "time": "7:00 PM",
   "team": "Girls Flag Football",
@@ -328,5 +278,55 @@
   "homeAway": "Home",
   "location": "Benton Hart Stadium",
   "id": "4932313@mmboltapi.azurewebsites.net|2026-11-28"
+ },
+ {
+  "date": "2026-11-30",
+  "time": "7:00 PM",
+  "team": "Boys Soccer",
+  "level": "Freshman",
+  "opponent": "Steele Canyon",
+  "homeAway": "Away",
+  "location": "Steele Canyon High School",
+  "id": "4981866@mmboltapi.azurewebsites.net|2026-11-30"
+ },
+ {
+  "date": "2026-11-30",
+  "time": "6:00 PM",
+  "team": "Girls Basketball",
+  "level": "Varsity",
+  "opponent": "Crawford",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4970856@mmboltapi.azurewebsites.net|2026-11-30"
+ },
+ {
+  "date": "2026-11-30",
+  "time": "4:30 PM",
+  "team": "Girls Basketball",
+  "level": "JV",
+  "opponent": "Crawford",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4973169@mmboltapi.azurewebsites.net|2026-11-30"
+ },
+ {
+  "date": "2026-11-30",
+  "time": "4:30 PM",
+  "team": "Girls Soccer",
+  "level": "Novice",
+  "opponent": "Torrey Pines",
+  "homeAway": "Away",
+  "location": "Torrey Pines",
+  "id": "4932353@mmboltapi.azurewebsites.net|2026-11-30"
+ },
+ {
+  "date": "2026-11-30",
+  "time": "4:00 PM",
+  "team": "Girls Soccer",
+  "level": "JV",
+  "opponent": "Torrey Pines",
+  "homeAway": "Away",
+  "location": "Torrey Pines",
+  "id": "4932284@mmboltapi.azurewebsites.net|2026-11-30"
  }
 ]
