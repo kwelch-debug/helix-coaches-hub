@@ -10,6 +10,26 @@
   "id": "4987073@mmboltapi.azurewebsites.net|2026-11-03"
  },
  {
+  "date": "2026-11-04",
+  "time": "6:00 PM",
+  "team": "Girls Field Hockey",
+  "level": "Varsity",
+  "opponent": "Hilltop CIF DII Playoffs",
+  "homeAway": "Away",
+  "location": "Hilltop",
+  "id": "4991851@mmboltapi.azurewebsites.net|2026-11-04"
+ },
+ {
+  "date": "2026-11-04",
+  "time": "6:00 PM",
+  "team": "Girls Volleyball",
+  "level": "Varsity",
+  "opponent": "Granite Hills CIF DII Semifinals",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4991852@mmboltapi.azurewebsites.net|2026-11-04"
+ },
+ {
   "date": "2026-11-14",
   "time": "9:00 AM",
   "team": "Boys Basketball",
