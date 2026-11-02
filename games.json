@@ -30,6 +30,16 @@
   "id": "4991852@mmboltapi.azurewebsites.net|2026-11-04"
  },
  {
+  "date": "2026-11-13",
+  "time": "7:00 PM",
+  "team": "Boys Football",
+  "level": "Varsity",
+  "opponent": "Torrey Pines",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4991853@mmboltapi.azurewebsites.net|2026-11-13"
+ },
+ {
   "date": "2026-11-14",
   "time": "9:00 AM",
   "team": "Boys Basketball",
