@@ -468,5 +468,15 @@
   "homeAway": "Home",
   "location": "Benton Hart Stadium",
   "id": "4932281@mmboltapi.azurewebsites.net|2026-12-02"
+ },
+ {
+  "date": "2026-12-03",
+  "time": "7:00 PM",
+  "team": "Boys Soccer",
+  "level": "Freshman",
+  "opponent": "Helix",
+  "homeAway": "Away",
+  "location": "Helix High School",
+  "id": "4981867@mmboltapi.azurewebsites.net|2026-12-03"
  }
 ]
