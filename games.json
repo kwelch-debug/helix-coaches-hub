@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-11-03",
-  "time": "7:00 PM",
-  "team": "Girls Flag Football",
-  "level": "Varsity",
-  "opponent": "Classical Academy",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "4987073@mmboltapi.azurewebsites.net|2026-11-03"
- },
- {
   "date": "2026-11-04",
   "time": "7:00 PM",
   "team": "Girls Field Hockey",
@@ -478,5 +468,75 @@
   "homeAway": "Away",
   "location": "Helix High School",
   "id": "4981867@mmboltapi.azurewebsites.net|2026-12-03"
+ },
+ {
+  "date": "2026-12-04",
+  "time": "6:00 PM",
+  "team": "Girls Basketball",
+  "level": "Varsity",
+  "opponent": "Lincoln",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4970858@mmboltapi.azurewebsites.net|2026-12-04"
+ },
+ {
+  "date": "2026-12-04",
+  "time": "4:30 PM",
+  "team": "Girls Basketball",
+  "level": "JV",
+  "opponent": "Lincoln",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4973171@mmboltapi.azurewebsites.net|2026-12-04"
+ },
+ {
+  "date": "2026-12-04",
+  "time": "4:00 PM",
+  "team": "Girls Soccer",
+  "level": "Varsity",
+  "opponent": "Hilltop",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "4932298@mmboltapi.azurewebsites.net|2026-12-04"
+ },
+ {
+  "date": "2026-12-04",
+  "time": "4:00 PM",
+  "team": "Girls Soccer",
+  "level": "Novice",
+  "opponent": "Hilltop",
+  "homeAway": "Away",
+  "location": "Hilltop",
+  "id": "4932351@mmboltapi.azurewebsites.net|2026-12-04"
+ },
+ {
+  "date": "2026-12-04",
+  "time": "6:00 PM",
+  "team": "Girls Soccer",
+  "level": "JV",
+  "opponent": "Hilltop",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "4932282@mmboltapi.azurewebsites.net|2026-12-04"
+ },
+ {
+  "date": "2026-12-04",
+  "time": "9:00 AM",
+  "team": "Girls Wrestling",
+  "level": "Varsity",
+  "opponent": "Queen of the Beach",
+  "homeAway": "Away",
+  "location": "Mar Vista High School",
+  "id": "4941241@mmboltapi.azurewebsites.net|2026-12-04"
+ },
+ {
+  "date": "2026-12-04",
+  "time": "9:00 AM",
+  "team": "Girls Wrestling",
+  "level": "Novice",
+  "opponent": "Queen of the Beach",
+  "homeAway": "Away",
+  "location": "Mar Vista High School",
+  "id": "4943293@mmboltapi.azurewebsites.net|2026-12-04"
  }
 ]
