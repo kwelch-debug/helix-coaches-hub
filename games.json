@@ -1,23 +1,23 @@
 [
  {
-  "date": "2026-11-04",
-  "time": "7:00 PM",
+  "date": "2026-11-07",
+  "time": "1:00 PM",
   "team": "Girls Field Hockey",
   "level": "Varsity",
-  "opponent": "Hilltop CIF DII Playoffs",
+  "opponent": "Pt. Loma",
   "homeAway": "Away",
-  "location": "Hilltop",
-  "id": "4991851@mmboltapi.azurewebsites.net|2026-11-04"
+  "location": "Pt. Loma",
+  "id": "4997911@mmboltapi.azurewebsites.net|2026-11-07"
  },
  {
-  "date": "2026-11-04",
-  "time": "6:00 PM",
-  "team": "Girls Volleyball",
+  "date": "2026-11-10",
+  "time": "3:00 PM",
+  "team": "Boys Water Polo",
   "level": "Varsity",
-  "opponent": "Granite Hills CIF DII Semifinals",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "4991852@mmboltapi.azurewebsites.net|2026-11-04"
+  "opponent": "Poway",
+  "homeAway": "Away",
+  "location": "Coggan Aquatics Center",
+  "id": "4997920@mmboltapi.azurewebsites.net|2026-11-10"
  },
  {
   "date": "2026-11-13",
@@ -538,5 +538,55 @@
   "homeAway": "Away",
   "location": "Mar Vista High School",
   "id": "4943293@mmboltapi.azurewebsites.net|2026-12-04"
+ },
+ {
+  "date": "2026-12-05",
+  "time": "6:00 PM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "Mission Bay",
+  "homeAway": "Away",
+  "location": "Victory Christian",
+  "id": "4932228@mmboltapi.azurewebsites.net|2026-12-05"
+ },
+ {
+  "date": "2026-12-05",
+  "time": "9:00 AM",
+  "team": "Boys Basketball",
+  "level": "JV",
+  "opponent": "Victory Christian",
+  "homeAway": "Away",
+  "location": "Victory Christian",
+  "id": "4932249@mmboltapi.azurewebsites.net|2026-12-05"
+ },
+ {
+  "date": "2026-12-05",
+  "time": "10:00 AM",
+  "team": "Boys Soccer",
+  "level": "Freshman",
+  "opponent": "Otay Ranch",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4981868@mmboltapi.azurewebsites.net|2026-12-05"
+ },
+ {
+  "date": "2026-12-05",
+  "time": "",
+  "team": "Girls Basketball",
+  "level": "Varsity",
+  "opponent": "Alumni Game",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4970859@mmboltapi.azurewebsites.net|2026-12-05"
+ },
+ {
+  "date": "2026-12-05",
+  "time": "9:00 AM",
+  "team": "Girls Soccer",
+  "level": "Novice",
+  "opponent": "Granite Hills",
+  "homeAway": "Away",
+  "location": "Granite Hills",
+  "id": "4932314@mmboltapi.azurewebsites.net|2026-12-05"
  }
 ]
