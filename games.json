@@ -588,5 +588,15 @@
   "homeAway": "Away",
   "location": "Granite Hills",
   "id": "4932314@mmboltapi.azurewebsites.net|2026-12-05"
+ },
+ {
+  "date": "2026-12-07",
+  "time": "7:30 PM",
+  "team": "Boys Soccer",
+  "level": "Freshman",
+  "opponent": "Hilltop",
+  "homeAway": "Away",
+  "location": "Hilltop High School",
+  "id": "4981869@mmboltapi.azurewebsites.net|2026-12-07"
  }
 ]
