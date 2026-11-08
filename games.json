@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-11-07",
-  "time": "1:00 PM",
-  "team": "Girls Field Hockey",
-  "level": "Varsity",
-  "opponent": "Pt. Loma",
-  "homeAway": "Away",
-  "location": "Pt. Loma",
-  "id": "4997911@mmboltapi.azurewebsites.net|2026-11-07"
- },
- {
   "date": "2026-11-10",
   "time": "3:00 PM",
   "team": "Boys Water Polo",
@@ -598,5 +588,65 @@
   "homeAway": "Away",
   "location": "Hilltop High School",
   "id": "4981869@mmboltapi.azurewebsites.net|2026-12-07"
+ },
+ {
+  "date": "2026-12-08",
+  "time": "7:30 PM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "Bonita Vista",
+  "homeAway": "Home",
+  "location": "Helix Gym",
+  "id": "4932229@mmboltapi.azurewebsites.net|2026-12-08"
+ },
+ {
+  "date": "2026-12-08",
+  "time": "6:00 PM",
+  "team": "Boys Basketball",
+  "level": "JV",
+  "opponent": "Bonita Vista",
+  "homeAway": "Home",
+  "location": "Helix Gym",
+  "id": "4932250@mmboltapi.azurewebsites.net|2026-12-08"
+ },
+ {
+  "date": "2026-12-08",
+  "time": "6:30 PM",
+  "team": "Girls Basketball",
+  "level": "Varsity",
+  "opponent": "La Costa Canyon",
+  "homeAway": "Away",
+  "location": "La Costa Canyon High School",
+  "id": "4970860@mmboltapi.azurewebsites.net|2026-12-08"
+ },
+ {
+  "date": "2026-12-08",
+  "time": "5:00 PM",
+  "team": "Girls Basketball",
+  "level": "JV",
+  "opponent": "La Costa Canyon",
+  "homeAway": "Away",
+  "location": "La Costa Canyon High School",
+  "id": "4973172@mmboltapi.azurewebsites.net|2026-12-08"
+ },
+ {
+  "date": "2026-12-08",
+  "time": "5:30 PM",
+  "team": "Girls Water Polo",
+  "level": "Varsity",
+  "opponent": "Mt. Carmel",
+  "homeAway": "Away",
+  "location": "Mt. Carmel",
+  "id": "4932385@mmboltapi.azurewebsites.net|2026-12-08"
+ },
+ {
+  "date": "2026-12-08",
+  "time": "4:30 PM",
+  "team": "Girls Water Polo",
+  "level": "JV",
+  "opponent": "Mt. Carmel",
+  "homeAway": "Away",
+  "location": "Mt. Carmel",
+  "id": "4932369@mmboltapi.azurewebsites.net|2026-12-08"
  }
 ]
