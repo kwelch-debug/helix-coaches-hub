@@ -658,5 +658,45 @@
   "homeAway": "Away",
   "location": "Mt. Carmel",
   "id": "4932369@mmboltapi.azurewebsites.net|2026-12-08"
+ },
+ {
+  "date": "2026-12-09",
+  "time": "6:00 PM",
+  "team": "Boys Soccer",
+  "level": "Varsity",
+  "opponent": "Calexico",
+  "homeAway": "Away",
+  "location": "Calexico",
+  "id": "4932337@mmboltapi.azurewebsites.net|2026-12-09"
+ },
+ {
+  "date": "2026-12-09",
+  "time": "4:00 PM",
+  "team": "Boys Soccer",
+  "level": "JV",
+  "opponent": "Calexico",
+  "homeAway": "Away",
+  "location": "Calexico",
+  "id": "4932322@mmboltapi.azurewebsites.net|2026-12-09"
+ },
+ {
+  "date": "2026-12-09",
+  "time": "4:00 PM",
+  "team": "Girls Soccer",
+  "level": "Varsity",
+  "opponent": "Francis Parker",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "4932299@mmboltapi.azurewebsites.net|2026-12-09"
+ },
+ {
+  "date": "2026-12-09",
+  "time": "6:00 PM",
+  "team": "Girls Soccer",
+  "level": "JV",
+  "opponent": "Calexico",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "4975288@mmboltapi.azurewebsites.net|2026-12-09"
  }
 ]
