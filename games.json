@@ -698,5 +698,45 @@
   "homeAway": "Home",
   "location": "Benton Hart Stadium",
   "id": "4975288@mmboltapi.azurewebsites.net|2026-12-09"
+ },
+ {
+  "date": "2026-12-10",
+  "time": "6:30 PM",
+  "team": "Girls Basketball",
+  "level": "Varsity",
+  "opponent": "Otay Ranch",
+  "homeAway": "Away",
+  "location": "Otay Ranch High School",
+  "id": "4970861@mmboltapi.azurewebsites.net|2026-12-10"
+ },
+ {
+  "date": "2026-12-10",
+  "time": "5:00 PM",
+  "team": "Girls Basketball",
+  "level": "JV",
+  "opponent": "Otay Ranch",
+  "homeAway": "Away",
+  "location": "Otay Ranch High School",
+  "id": "4973173@mmboltapi.azurewebsites.net|2026-12-10"
+ },
+ {
+  "date": "2026-12-10",
+  "time": "5:30 PM",
+  "team": "Girls Water Polo",
+  "level": "Varsity",
+  "opponent": "Rancho Bernardo",
+  "homeAway": "Away",
+  "location": "Rancho Bernardo",
+  "id": "4932386@mmboltapi.azurewebsites.net|2026-12-10"
+ },
+ {
+  "date": "2026-12-10",
+  "time": "4:30 PM",
+  "team": "Girls Water Polo",
+  "level": "JV",
+  "opponent": "Rancho Bernardo",
+  "homeAway": "Away",
+  "location": "Rancho Bernardo",
+  "id": "4932370@mmboltapi.azurewebsites.net|2026-12-10"
  }
 ]
