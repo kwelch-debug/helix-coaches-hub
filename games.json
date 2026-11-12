@@ -171,6 +171,16 @@
  },
  {
   "date": "2026-11-21",
+  "time": "11:30 PM",
+  "team": "Girls Water Polo",
+  "level": "Varsity",
+  "opponent": "Bonita Vista",
+  "homeAway": "Away",
+  "location": "Mar Vista HS",
+  "id": "5007354@mmboltapi.azurewebsites.net|2026-11-21"
+ },
+ {
+  "date": "2026-11-21",
   "time": "9:00 AM",
   "team": "Girls Wrestling",
   "level": "Varsity",
@@ -768,5 +778,15 @@
   "homeAway": "Away",
   "location": "El Camino",
   "id": "4932283@mmboltapi.azurewebsites.net|2026-12-11"
+ },
+ {
+  "date": "2026-12-12",
+  "time": "10:00 AM",
+  "team": "Boys Soccer",
+  "level": "Freshman",
+  "opponent": "Mater Dei Catholic",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4981870@mmboltapi.azurewebsites.net|2026-12-12"
  }
 ]
