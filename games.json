@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-11-12",
-  "time": "5:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "Taft HS",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "5006351@mmboltapi.azurewebsites.net|2026-11-12"
- },
- {
   "date": "2026-11-13",
   "time": "7:00 PM",
   "team": "Boys Football",
