@@ -1,15 +1,5 @@
 [
  {
-  "date": "2026-11-13",
-  "time": "7:00 PM",
-  "team": "Boys Football",
-  "level": "Varsity",
-  "opponent": "Torrey Pines",
-  "homeAway": "Home",
-  "location": "Helix",
-  "id": "4991853@mmboltapi.azurewebsites.net|2026-11-13"
- },
- {
   "date": "2026-11-14",
   "time": "9:00 AM",
   "team": "Boys Basketball",
@@ -778,5 +768,55 @@
   "homeAway": "Home",
   "location": "Helix High School",
   "id": "4981870@mmboltapi.azurewebsites.net|2026-12-12"
+ },
+ {
+  "date": "2026-12-14",
+  "time": "6:00 PM",
+  "team": "Boys Soccer",
+  "level": "Varsity",
+  "opponent": "Otay Ranch",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "4932338@mmboltapi.azurewebsites.net|2026-12-14"
+ },
+ {
+  "date": "2026-12-14",
+  "time": "4:00 PM",
+  "team": "Boys Soccer",
+  "level": "JV",
+  "opponent": "Otay Ranch",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "4932323@mmboltapi.azurewebsites.net|2026-12-14"
+ },
+ {
+  "date": "2026-12-14",
+  "time": "7:00 PM",
+  "team": "Boys Soccer",
+  "level": "Freshman",
+  "opponent": "Scripps Ranch",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4981871@mmboltapi.azurewebsites.net|2026-12-14"
+ },
+ {
+  "date": "2026-12-14",
+  "time": "6:00 PM",
+  "team": "Girls Basketball",
+  "level": "Varsity",
+  "opponent": "Mount Miguel",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4970863@mmboltapi.azurewebsites.net|2026-12-14"
+ },
+ {
+  "date": "2026-12-14",
+  "time": "4:30 PM",
+  "team": "Girls Basketball",
+  "level": "JV",
+  "opponent": "Mount Miguel",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4973175@mmboltapi.azurewebsites.net|2026-12-14"
  }
 ]
