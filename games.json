@@ -1,57 +1,7 @@
 [
  {
-  "date": "2026-11-14",
-  "time": "9:00 AM",
-  "team": "Boys Basketball",
-  "level": "Varsity",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Gym",
-  "id": "4932220@mmboltapi.azurewebsites.net|2026-11-14"
- },
- {
-  "date": "2026-11-14",
-  "time": "2:00 PM",
-  "team": "Boys Basketball",
-  "level": "Varsity",
-  "opponent": "La Jolla Country Day",
-  "homeAway": "Away",
-  "location": "La Jolla Country Day",
-  "id": "4932221@mmboltapi.azurewebsites.net|2026-11-14"
- },
- {
-  "date": "2026-11-14",
-  "time": "10:30 AM",
-  "team": "Boys Basketball",
-  "level": "JV",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Gym",
-  "id": "4932243@mmboltapi.azurewebsites.net|2026-11-14"
- },
- {
-  "date": "2026-11-14",
-  "time": "12:00 PM",
-  "team": "Boys Green Basketball",
-  "level": "Freshman",
-  "opponent": "Grossmont",
-  "homeAway": "Home",
-  "location": "Helix Gym",
-  "id": "4932262@mmboltapi.azurewebsites.net|2026-11-14"
- },
- {
-  "date": "2026-11-14",
-  "time": "6:00 PM",
-  "team": "Girls Volleyball",
-  "level": "Varsity",
-  "opponent": "Santa Barbara State regional semifnals",
-  "homeAway": "Away",
-  "location": "Santa Barbara",
-  "id": "5010505@mmboltapi.azurewebsites.net|2026-11-14"
- },
- {
   "date": "2026-11-16",
-  "time": "6:00 PM",
+  "time": "7:00 PM",
   "team": "Girls Water Polo",
   "level": "Varsity",
   "opponent": "Patrick Henry",
@@ -61,7 +11,7 @@
  },
  {
   "date": "2026-11-16",
-  "time": "5:00 PM",
+  "time": "6:00 PM",
   "team": "Girls Water Polo",
   "level": "JV",
   "opponent": "Patrick Henry",
@@ -828,5 +778,55 @@
   "homeAway": "Home",
   "location": "Helix High School",
   "id": "4973175@mmboltapi.azurewebsites.net|2026-12-14"
+ },
+ {
+  "date": "2026-12-15",
+  "time": "6:00 PM",
+  "team": "Boys Basketball",
+  "level": "JV",
+  "opponent": "Lincoln",
+  "homeAway": "Home",
+  "location": "Helix Gym",
+  "id": "4932251@mmboltapi.azurewebsites.net|2026-12-15"
+ },
+ {
+  "date": "2026-12-15",
+  "time": "4:30 PM",
+  "team": "Boys Green Basketball",
+  "level": "Freshman",
+  "opponent": "Lincoln",
+  "homeAway": "Home",
+  "location": "Helix Gym",
+  "id": "4932264@mmboltapi.azurewebsites.net|2026-12-15"
+ },
+ {
+  "date": "2026-12-15",
+  "time": "6:00 PM",
+  "team": "Boys Soccer",
+  "level": "Freshman",
+  "opponent": "Hilltop",
+  "homeAway": "Home",
+  "location": "Helix High School",
+  "id": "4981872@mmboltapi.azurewebsites.net|2026-12-15"
+ },
+ {
+  "date": "2026-12-15",
+  "time": "6:00 PM",
+  "team": "Girls Water Polo",
+  "level": "Varsity",
+  "opponent": "Westview",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4932387@mmboltapi.azurewebsites.net|2026-12-15"
+ },
+ {
+  "date": "2026-12-15",
+  "time": "5:00 PM",
+  "team": "Girls Water Polo",
+  "level": "JV",
+  "opponent": "Westview",
+  "homeAway": "Home",
+  "location": "Helix",
+  "id": "4932371@mmboltapi.azurewebsites.net|2026-12-15"
  }
 ]
