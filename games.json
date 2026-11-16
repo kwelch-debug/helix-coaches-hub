@@ -341,7 +341,7 @@
  },
  {
   "date": "2026-12-01",
-  "time": "6:00 PM",
+  "time": "5:00 PM",
   "team": "Girls Water Polo",
   "level": "Varsity",
   "opponent": "Santana",
@@ -351,7 +351,7 @@
  },
  {
   "date": "2026-12-01",
-  "time": "5:00 PM",
+  "time": "6:00 PM",
   "team": "Girls Water Polo",
   "level": "JV",
   "opponent": "Santana",
@@ -828,5 +828,25 @@
   "homeAway": "Home",
   "location": "Helix",
   "id": "4932371@mmboltapi.azurewebsites.net|2026-12-15"
+ },
+ {
+  "date": "2026-12-16",
+  "time": "5:00 PM",
+  "team": "Girls Soccer",
+  "level": "Varsity",
+  "opponent": "Mater Dei",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "4932301@mmboltapi.azurewebsites.net|2026-12-16"
+ },
+ {
+  "date": "2026-12-16",
+  "time": "7:00 PM",
+  "team": "Girls Soccer",
+  "level": "JV",
+  "opponent": "Mater Dei",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "4932285@mmboltapi.azurewebsites.net|2026-12-16"
  }
 ]
