@@ -1,25 +1,5 @@
 [
  {
-  "date": "2026-11-20",
-  "time": "1:00 PM",
-  "team": "Boys Wrestling",
-  "level": "JV",
-  "opponent": "Vista Frosh/Soph Duals",
-  "homeAway": "Away",
-  "location": "Vista High School",
-  "id": "4941285@mmboltapi.azurewebsites.net|2026-11-20"
- },
- {
-  "date": "2026-11-20",
-  "time": "1:00 PM",
-  "team": "Boys Wrestling",
-  "level": "Freshman",
-  "opponent": "Vista Frosh/Soph Duals",
-  "homeAway": "Away",
-  "location": "Vista High School",
-  "id": "4943287@mmboltapi.azurewebsites.net|2026-11-20"
- },
- {
   "date": "2026-11-21",
   "time": "6:30 PM",
   "team": "Boys Basketball",
@@ -938,5 +918,75 @@
   "homeAway": "Away",
   "location": "Steele Canyon",
   "id": "4932315@mmboltapi.azurewebsites.net|2026-12-19"
+ },
+ {
+  "date": "2026-12-21",
+  "time": "5:00 PM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "Mission Hills",
+  "homeAway": "Away",
+  "location": "Sweetwater High School",
+  "id": "4932231@mmboltapi.azurewebsites.net|2026-12-21"
+ },
+ {
+  "date": "2026-12-21",
+  "time": "7:00 PM",
+  "team": "Boys Soccer",
+  "level": "Freshman",
+  "opponent": "Bonita Vista",
+  "homeAway": "Away",
+  "location": "Bonita Vista High School",
+  "id": "4981874@mmboltapi.azurewebsites.net|2026-12-21"
+ },
+ {
+  "date": "2026-12-21",
+  "time": "6:00 PM",
+  "team": "Girls Basketball",
+  "level": "Varsity",
+  "opponent": "Torrey Pines",
+  "homeAway": "Away",
+  "location": "Torrey Pines High School",
+  "id": "4970865@mmboltapi.azurewebsites.net|2026-12-21"
+ },
+ {
+  "date": "2026-12-21",
+  "time": "4:30 PM",
+  "team": "Girls Basketball",
+  "level": "JV",
+  "opponent": "Torrey Pines",
+  "homeAway": "Away",
+  "location": "Torrey Pines High School",
+  "id": "4973177@mmboltapi.azurewebsites.net|2026-12-21"
+ },
+ {
+  "date": "2026-12-21",
+  "time": "11:00 AM",
+  "team": "Girls Soccer",
+  "level": "Varsity",
+  "opponent": "Cathedral Catholic",
+  "homeAway": "Away",
+  "location": "Cathedral Catholic",
+  "id": "4932302@mmboltapi.azurewebsites.net|2026-12-21"
+ },
+ {
+  "date": "2026-12-21",
+  "time": "1:00 PM",
+  "team": "Girls Soccer",
+  "level": "Novice",
+  "opponent": "Cathedral Catholic",
+  "homeAway": "Away",
+  "location": "Cathedral Catholic",
+  "id": "4932354@mmboltapi.azurewebsites.net|2026-12-21"
+ },
+ {
+  "date": "2026-12-21",
+  "time": "1:00 PM",
+  "team": "Girls Soccer",
+  "level": "JV",
+  "opponent": "Cathedral Catholic",
+  "homeAway": "Away",
+  "location": "Cathedral Catholic",
+  "id": "4932286@mmboltapi.azurewebsites.net|2026-12-21"
  }
 ]
