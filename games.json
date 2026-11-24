@@ -1,35 +1,5 @@
 [
  {
-  "date": "2026-11-23",
-  "time": "4:30 PM",
-  "team": "Boys Basketball",
-  "level": "Varsity",
-  "opponent": "Madison",
-  "homeAway": "Away",
-  "location": "Hoover HS",
-  "id": "4932224@mmboltapi.azurewebsites.net|2026-11-23"
- },
- {
-  "date": "2026-11-23",
-  "time": "3:00 PM",
-  "team": "Boys Basketball",
-  "level": "JV",
-  "opponent": "Madison",
-  "homeAway": "Away",
-  "location": "Hoover HS",
-  "id": "4932245@mmboltapi.azurewebsites.net|2026-11-23"
- },
- {
-  "date": "2026-11-23",
-  "time": "3:00 PM",
-  "team": "Girls Basketball",
-  "level": "Varsity",
-  "opponent": "Vista HS",
-  "homeAway": "Away",
-  "location": "El Capitan High School",
-  "id": "5014196@mmboltapi.azurewebsites.net|2026-11-23"
- },
- {
   "date": "2026-11-24",
   "time": "7:30 PM",
   "team": "Boys Basketball",
