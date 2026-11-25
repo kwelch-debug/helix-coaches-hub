@@ -1,35 +1,5 @@
 [
  {
-  "date": "2026-11-24",
-  "time": "7:30 PM",
-  "team": "Boys Basketball",
-  "level": "Varsity",
-  "opponent": "Olympian",
-  "homeAway": "Home",
-  "location": "Helix Gym",
-  "id": "4932225@mmboltapi.azurewebsites.net|2026-11-24"
- },
- {
-  "date": "2026-11-24",
-  "time": "6:00 PM",
-  "team": "Boys Basketball",
-  "level": "JV",
-  "opponent": "Olympian",
-  "homeAway": "Home",
-  "location": "Helix Gym",
-  "id": "4932246@mmboltapi.azurewebsites.net|2026-11-24"
- },
- {
-  "date": "2026-11-24",
-  "time": "10:30 AM",
-  "team": "Girls Basketball",
-  "level": "Varsity",
-  "opponent": "Escondido Charter",
-  "homeAway": "Away",
-  "location": "El Capitan High School",
-  "id": "5014197@mmboltapi.azurewebsites.net|2026-11-24"
- },
- {
   "date": "2026-11-25",
   "time": "4:30 PM",
   "team": "Boys Basketball",
