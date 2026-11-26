@@ -1,45 +1,5 @@
 [
  {
-  "date": "2026-11-25",
-  "time": "4:30 PM",
-  "team": "Boys Basketball",
-  "level": "Varsity",
-  "opponent": "Coronado",
-  "homeAway": "Away",
-  "location": "Olympian HS",
-  "id": "4932226@mmboltapi.azurewebsites.net|2026-11-25"
- },
- {
-  "date": "2026-11-25",
-  "time": "3:00 PM",
-  "team": "Boys Basketball",
-  "level": "JV",
-  "opponent": "Coronado",
-  "homeAway": "Away",
-  "location": "Olympian HS",
-  "id": "4932247@mmboltapi.azurewebsites.net|2026-11-25"
- },
- {
-  "date": "2026-11-25",
-  "time": "1:30 PM",
-  "team": "Boys Green Basketball",
-  "level": "Freshman",
-  "opponent": "Canyon Crest",
-  "homeAway": "Away",
-  "location": "Valhalla",
-  "id": "4991741@mmboltapi.azurewebsites.net|2026-11-25"
- },
- {
-  "date": "2026-11-25",
-  "time": "6:00 PM",
-  "team": "Girls Basketball",
-  "level": "JV",
-  "opponent": "La Costa Canyon",
-  "homeAway": "Away",
-  "location": "El Capitan High School",
-  "id": "5014208@mmboltapi.azurewebsites.net|2026-11-25"
- },
- {
   "date": "2026-11-27",
   "time": "1:30 PM",
   "team": "Boys Green Basketball",
@@ -48,6 +8,16 @@
   "homeAway": "Away",
   "location": "Valhalla",
   "id": "4991742@mmboltapi.azurewebsites.net|2026-11-27"
+ },
+ {
+  "date": "2026-11-28",
+  "time": "6:00 PM",
+  "team": "Boys Basketball",
+  "level": "Varsity",
+  "opponent": "St. Augustine",
+  "homeAway": "Away",
+  "location": "Canyon Hills High School",
+  "id": "5023181@mmboltapi.azurewebsites.net|2026-11-28"
  },
  {
   "date": "2026-11-28",
@@ -311,6 +281,26 @@
  },
  {
   "date": "2026-12-05",
+  "time": "11:00 AM",
+  "team": "Boys Soccer",
+  "level": "JV",
+  "opponent": "La Costa Canyon",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "5023178@mmboltapi.azurewebsites.net|2026-12-05"
+ },
+ {
+  "date": "2026-12-05",
+  "time": "3:00 PM",
+  "team": "Boys Soccer",
+  "level": "JV",
+  "opponent": "Olympian",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "5023179@mmboltapi.azurewebsites.net|2026-12-05"
+ },
+ {
+  "date": "2026-12-05",
   "time": "10:00 AM",
   "team": "Boys Soccer",
   "level": "Freshman",
@@ -511,6 +501,16 @@
  },
  {
   "date": "2026-12-11",
+  "time": "5:00 PM",
+  "team": "Boys Soccer",
+  "level": "Varsity",
+  "opponent": "Eastlake",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "5023175@mmboltapi.azurewebsites.net|2026-12-11"
+ },
+ {
+  "date": "2026-12-11",
   "time": "3:00 PM",
   "team": "Boys Wrestling",
   "level": "Freshman",
@@ -548,6 +548,26 @@
   "homeAway": "Away",
   "location": "El Camino",
   "id": "4932283@mmboltapi.azurewebsites.net|2026-12-11"
+ },
+ {
+  "date": "2026-12-12",
+  "time": "5:00 PM",
+  "team": "Boys Soccer",
+  "level": "Varsity",
+  "opponent": "La Costa Canyon",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "5023176@mmboltapi.azurewebsites.net|2026-12-12"
+ },
+ {
+  "date": "2026-12-12",
+  "time": "9:00 AM",
+  "team": "Boys Soccer",
+  "level": "JV",
+  "opponent": "Rancho Bernardo",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "5023180@mmboltapi.azurewebsites.net|2026-12-12"
  },
  {
   "date": "2026-12-12",
@@ -773,6 +793,16 @@
   "date": "2026-12-19",
   "time": "10:00 AM",
   "team": "Boys Soccer",
+  "level": "Varsity",
+  "opponent": "Mission Hills",
+  "homeAway": "Home",
+  "location": "Benton Hart Stadium",
+  "id": "5023177@mmboltapi.azurewebsites.net|2026-12-19"
+ },
+ {
+  "date": "2026-12-19",
+  "time": "10:00 AM",
+  "team": "Boys Soccer",
   "level": "Freshman",
   "opponent": "Hoover",
   "homeAway": "Home",
@@ -878,5 +908,45 @@
   "homeAway": "Away",
   "location": "Cathedral Catholic",
   "id": "4932286@mmboltapi.azurewebsites.net|2026-12-21"
+ },
+ {
+  "date": "2026-12-26",
+  "time": "4:30 PM",
+  "team": "Boys Basketball",
+  "level": "JV",
+  "opponent": "Del Lago Academy",
+  "homeAway": "Away",
+  "location": "Crawford HS",
+  "id": "5014455@mmboltapi.azurewebsites.net|2026-12-26"
+ },
+ {
+  "date": "2026-12-26",
+  "time": "4:30 PM",
+  "team": "Boys Green Basketball",
+  "level": "Freshman",
+  "opponent": "Mira Mesa",
+  "homeAway": "Away",
+  "location": "Morse",
+  "id": "4991744@mmboltapi.azurewebsites.net|2026-12-26"
+ },
+ {
+  "date": "2026-12-26",
+  "time": "1:30 PM",
+  "team": "Girls Basketball",
+  "level": "Varsity",
+  "opponent": "Montgomery HS",
+  "homeAway": "Away",
+  "location": "Montgomery High School",
+  "id": "4970866@mmboltapi.azurewebsites.net|2026-12-26"
+ },
+ {
+  "date": "2026-12-26",
+  "time": "9:00 AM",
+  "team": "Girls Basketball",
+  "level": "JV",
+  "opponent": "Chuka Vista HS",
+  "homeAway": "Away",
+  "location": "Montgomery HS",
+  "id": "5014213@mmboltapi.azurewebsites.net|2026-12-26"
  }
 ]
